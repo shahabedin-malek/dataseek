@@ -1,0 +1,43 @@
+# Environments and builds
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.next/
+.vercel/
+*.log
+logs/*.log
+
+# Secrets and prompt files that contain credentials — never commit
+.env
+.env.*
+!.env.example
+backend/.admin_token
+*.pem
+*.key
+prompt1.md
+prompt2.md
+RESUME-PROMPT.md
+DATASEEK FULL REBUILD.md
+
+# Legacy low-confidence processing outputs (retained locally, not in the repo)
+legacy/
+tasks/
+progress/
+continuation/
+reports/
+exports/
+data/entities/
+data/master/
+data/images/
+data/ocr/
+data/preprocess/
+data/vision/
+data/research/
+
+# Database and raw OCR text (regenerate locally)
+*.sqlite
+*.sqlite3
+*.db
+database/*.sqlite3*

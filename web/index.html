@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataSeek — screenshot-derived knowledge search</title>
+  <meta name="description" content="Search resources, tools, repositories, websites and apps discovered from a screenshot collection, with OCR and research provenance." />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply the stored theme before first paint.
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("ds-theme") || "dark");
+  </script>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="#/">
+        <span class="dot"></span> DataSeek <small>visual knowledge base</small>
+      </a>
+      <div class="top-search">
+        <span class="ico">⌕</span>
+        <input id="q" type="search" placeholder="Search resources, tools, repositories, technologies…"
+               autocomplete="off" aria-label="Search" />
+      </div>
+      <span class="spacer"></span>
+      <button class="icon-btn" id="theme-toggle" title="Toggle light/dark">◐</button>
+    </div>
+  </header>
+  <main></main>
+  <footer class="foot">
+    DataSeek · screenshot-derived knowledge search engine · originals remain private source evidence ·
+    OCR and vision output is evidence, not verified fact.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

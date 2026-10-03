@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DataSeek Admin</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="/"><span class="dot"></span> DataSeek <small>admin</small></a>
+      <span class="spacer"></span>
+      <input id="token" type="password" placeholder="Admin token" style="padding:8px 10px;border-radius:9px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text)" />
+      <button class="icon-btn" id="save-token">Save token</button>
+      <a class="icon-btn" href="/">Public site</a>
+    </div>
+  </header>
+  <main>
+    <div class="banner">Every action here is written to <code>audit_log</code>. Originals are never modified;
+      delete/merge are soft and reversible.</div>
+    <div class="layout">
+      <aside class="filters">
+        <h4>Find resource</h4>
+        <input type="text" id="admin-q" placeholder="name, ID, category…" />
+        <div id="admin-results"></div>
+      </aside>
+      <section id="admin-detail">
+        <div class="empty">Select a resource to edit.</div>
+      </section>
+    </div>
+  </main>
+  <script>
+    const $ = (s, r = document) => r.querySelector(s);
+    const tokenInput = $("#token");
+    tokenInput.value = localStorage.getItem("ds-admin-token") || "";
+    $("#save-token").onclick = () => {
+      localStorage.setItem("ds-admin-token", tokenInput.value);
+      alert("Token saved for this browser session.");
+    };
+    const headers = () => ({ "Content-Type": "application/json", "X-Admin-Token": tokenInput.value });
+    let resources = [];
+
+    async function load() {
+      resources = await (await fetch("/api/resources")).json();
+      renderResults("");
+    }
+    function renderResults(q) {
+      const ql = q.toLowerCase();
+      const list = resources.filter(r => !ql ||
+        (r.name || "").toLowerCase().includes(ql) ||
+        (r.entity_id || "").toLowerCase().includes(ql) ||
+        (r.primary_category || "").toLowerCase().includes(ql)).slice(0, 40);
+      $("#admin-results").innerHTML = list.map(r =>
+        `<div class="card" style="padding:10px;cursor:pointer" data-id="${r.entity_id}">
+           <strong>${r.name}</strong>
+           <div class="foot"><span>${r.entity_id}</span><span>${r.primary_category}</span></div>
+         </div>`).join("");
+      $("#admin-results").querySelectorAll("[data-id]").forEach(el =>
+        el.onclick = () => show(el.dataset.id));
+    }
+    async function show(id) {
+      const r = await (await fetch("/api/resources/" + id)).json();
+      const fields = ["name", "canonical_name", "short_description", "primary_category",
+        "subcategory", "resource_type", "confidence", "license", "developer", "platforms"];
+      $("#admin-detail").innerHTML = `<div class="detail">
+        <h1>${r.name} <small style="color:var(--text-dim)">${r.entity_id}</small></h1>
+        <div class="sub">${r.primary_category}${r.subcategory ? " › " + r.subcategory : ""} · ${r.type || ""}</div>
+        ${fields.map(f => `<label class="pill">${f}</label>
+          <input data-f="${f}" value="${(r[f] ?? "")}" style="width:100%;padding:8px;margin:4px 0 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg-elev2);color:var(--text)" />`).join("")}
+        <div class="toolbar">
+          <button class="icon-btn" id="save">Save edits</button>
+          <button class="icon-btn" id="reprocess">Reprocess OCR</button>
+          <input id="merge-into" placeholder="merge into ENT-…" style="padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg-elev2);color:var(--text)" />
+          <button class="icon-btn" id="merge">Merge</button>
+          <button class="icon-btn" id="delete">Soft delete</button>
+        </div>
+        <div class="section-title">Source screenshots (${r.screenshots.length})</div>
+        <div>${r.screenshots.map(s => `<a class="pill" href="/#screenshot/${s}">${s}</a>`).join(" ") || "—"}</div>
+        <div class="section-title">Evidence</div>
+        <table class="data"><tr><th>Kind</th><th>Label</th><th>Content</th></tr>
+          ${(r.evidence || []).map(e => `<tr><td>${e.kind}</td><td>${e.label}</td><td>${e.content || ""}</td></tr>`).join("")}</table>
+        <div class="section-title">Audit (latest)</div>
+        <pre class="ocr" id="audit">Loading…</pre>
+      </div>`;
+      $("#save").onclick = async () => {
+        const body = {};
+        $("#admin-detail").querySelectorAll("[data-f]").forEach(i => body[i.dataset.f] = i.value);
+        const res = await fetch(`/api/admin/resource/${id}/edit`, { method: "POST", headers: headers(), body: JSON.stringify(body) });
+        alert(JSON.stringify(await res.json()));
+      };
+      $("#reprocess").onclick = async () => {
+        const s = r.screenshots[0];
+        if (!s) return alert("No source screenshot to reprocess.");
+        if (!confirm("Reprocess OCR for " + s + "?")) return;
+        const res = await fetch("/api/admin/reprocess", { method: "POST", headers: headers(), body: JSON.stringify({ task_id: s }) });
+        alert(JSON.stringify(await res.json()));
+      };
+      $("#merge").onclick = async () => {
+        const into = $("#merge-into").value.trim();
+        if (!into || !confirm(`Merge ${id} into ${into}?`)) return;
+        const res = await fetch(`/api/admin/resource/${id}/merge`, { method: "POST", headers: headers(), body: JSON.stringify({ into }) });
+        alert(JSON.stringify(await res.json())); load();
+      };
+      $("#delete").onclick = async () => {
+        if (!confirm("Soft-delete " + id + "?")) return;
+        const res = await fetch(`/api/admin/resource/${id}`, { method: "DELETE", headers: headers() });
+        alert(JSON.stringify(await res.json())); load();
+      };
+      fetch("/api/audit", { headers: headers() }).then(r => r.json()).then(a =>
+        $("#audit").textContent = JSON.stringify(a.slice(0, 20), null, 1));
+    }
+    $("#admin-q").oninput = (e) => renderResults(e.target.value);
+    load();
+  </script>
+</body>
+</html>
