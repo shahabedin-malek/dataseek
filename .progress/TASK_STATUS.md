@@ -4,9 +4,9 @@ Total: 907
 
 | Status | Count |
 |---|---:|
-| COMPLETED | 95 |
-| NEEDS_RESEARCH | 86 |
-| NEEDS_VISION | 1 |
-| OCR_PROCESSING | 4 |
-| OCR_REVIEW | 16 |
-| PENDING | 705 |
+| COMPLETED | 171 |
+| NEEDS_RESEARCH | 20 |
+| NEEDS_VISION | 10 |
+| OCR_PROCESSING | 3 |
+| OCR_REVIEW | 9 |
+| PENDING | 694 |

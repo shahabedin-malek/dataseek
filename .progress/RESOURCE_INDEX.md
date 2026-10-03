@@ -1,69 +1,85 @@
 # Resource Index
 
-- ENT-000065: Higgsfield — Other — sources: 1
+- ENT-000066: immich — Development > DevOps — sources: 2
+- ENT-000011: memU — AI > AI Assistants — sources: 2
+- ENT-000067: n8n — Development — sources: 2
+- ENT-000019: skills — Development > Library — sources: 3
+- ENT-000006: supabase — Data > Database — sources: 2
+- ENT-000077: Fire — Development — sources: 1
+- ENT-000064: GPT-Image2-Skill — AI > AI Assistants — sources: 1
+- ENT-000065: Higgsfield — AI > AI Image — sources: 1
+- ENT-000044: Nova3D — Other > AI Image — sources: 1
+- ENT-000083: OpenMontage — AI > AI Assistants — sources: 1
+- ENT-000043: OpenWhip — Other — sources: 1
+- ENT-000024: Pixelle-Video — Other — sources: 1
+- ENT-000073: PortableLM — Applications > Mobile App — sources: 1
+- ENT-000049: RockyVoice — AI > AI Voice — sources: 1
+- ENT-000063: Sketch2Motion — Other — sources: 1
+- ENT-000052: Stash — AI > AI Developer Tools — sources: 1
+- ENT-000081: TurboLLM — AI > AI Assistants — sources: 1
+- ENT-000079: ai-berkshire — Development > Framework — sources: 1
+- ENT-000041: alem-env — AI > AI Assistants — sources: 1
+- ENT-000056: autocache — Development > API — sources: 1
+- ENT-000061: brain.md — Development > CLI — sources: 1
+- ENT-000045: burn-baby-burn — Other — sources: 1
+- ENT-000029: cc-haha — AI > AI Agents — sources: 1
+- ENT-000026: claude-code-best-practice — AI > AI Agents — sources: 1
+- ENT-000062: codex-orange-book — AI > AI Assistants — sources: 1
+- ENT-000046: colibri — Other — sources: 1
+- ENT-000071: coolify — Data > Database — sources: 1
+- ENT-000072: excalidraw — Development — sources: 1
+- ENT-000032: gbro-collage-broll — AI > AI Agents — sources: 1
 - ENT-000003: graphify — Other — sources: 1
-- ENT-000066: immich — Development — sources: 1
-- ENT-000001: intercept — AI > AI Research — sources: 1
-- ENT-000067: n8n — Development — sources: 1
+- ENT-000040: grok-build — AI > AI Agents — sources: 1
+- ENT-000075: gstack — AI > AI Assistants — sources: 1
+- ENT-000084: headroom — AI > AI Assistants — sources: 1
+- ENT-000080: honey-for-devs — AI > AI Assistants — sources: 1
+- ENT-000036: i-have-adhd — AI > AI Agents — sources: 1
+- ENT-000001: intercept — Security > OSINT — sources: 1
+- ENT-000054: itsyhome-macos — Other > AI Assistants — sources: 1
+- ENT-000057: lavish-axi — Other > AI Agents — sources: 1
+- ENT-000076: llm-agent-trader — AI > AI Assistants — sources: 1
+- ENT-000070: nocodb — Data > Database — sources: 1
+- ENT-000082: open-agent-builder — AI > AI Agents — sources: 1
+- ENT-000033: opencodex — AI > AI Assistants — sources: 1
 - ENT-000069: penpot — Development — sources: 1
 - ENT-000068: posthog — Development — sources: 1
-- ENT-000006: supabase — Data > Database — sources: 1
-- ENT-000023: Accio Work — AI business tools / sourcing — sources: 1
-- ENT-000007: Chatly — AI tools / multi-model assistants — sources: 2
-- ENT-000018: Claude Code — AI coding tools — sources: 2
-- ENT-000014: Claude Cowork — AI tools / productivity assistants — sources: 2
-- ENT-000059: FaceAnything — Software / developer tools — sources: 1
-- ENT-000064: GPT-Image2-Skill — Software / developer tools — sources: 1
-- ENT-000025: Graft — Software / developer tools — sources: 1
-- ENT-000002: Higgsfield MCP — AI tools / MCP integrations — sources: 1
-- ENT-000016: Infisical — Security / developer tools — sources: 1
-- ENT-000035: LLM Agent Trader — Open-source software / financial analysis — sources: 1
-- ENT-000005: MiniMax-M2.5 — Software / developer tools — sources: 1
-- ENT-000044: Nova3D — Software / developer tools — sources: 1
-- ENT-000015: OmniRoute — AI tools / developer tools — sources: 1
-- ENT-000043: OpenWhip — Open-source software / developer utilities — sources: 1
-- ENT-000024: Pixelle-Video — Software / developer tools — sources: 1
-- ENT-000017: Rive — Design / animation tools — sources: 1
-- ENT-000049: RockyVoice — Software / developer tools — sources: 1
-- ENT-000012: Shubhamsaboo Awesome LLM Apps — Open-source software / AI developer resources — sources: 1
-- ENT-000063: Sketch2Motion — Developer tools / graphics — sources: 1
-- ENT-000030: Skills — Software / developer tools — sources: 1
-- ENT-000052: Stash — AI / agent knowledge infrastructure — sources: 1
-- ENT-000013: Stitch Agent Skills — AI tools / design and developer tools — sources: 1
-- ENT-000009: Sunly AI — AI tools / multi-model assistants — sources: 2
-- ENT-000047: Three.js Object Sculptor — Open-source software / 3D developer tools — sources: 1
-- ENT-000042: Threejs-Awesome-Graphics-Agent-Skills — Software / developer tools — sources: 1
-- ENT-000027: TurboFieldfare — Local AI / developer tools — sources: 1
-- ENT-000051: agoracosmica — Software / developer tools — sources: 1
-- ENT-000041: alem-env — Software / developer tools — sources: 1
-- ENT-000056: autocache — Software / developer tools — sources: 1
-- ENT-000061: brain.md — Software / developer tools — sources: 1
-- ENT-000045: burn-baby-burn — Software / developer tools — sources: 1
-- ENT-000029: cc-haha — Software / developer tools — sources: 1
-- ENT-000026: claude-code-best-practice — Software / developer tools — sources: 1
-- ENT-000022: claude-handoff — Software / developer tools — sources: 1
-- ENT-000020: claude-mem — Software / developer tools — sources: 1
-- ENT-000062: codex-orange-book — Software / developer tools — sources: 1
-- ENT-000046: colibri — Software / developer tools — sources: 1
-- ENT-000008: doola — Business services / company formation — sources: 1
-- ENT-000038: film-space — Software / developer tools — sources: 1
-- ENT-000032: gbro-collage-broll — Software / developer tools — sources: 1
-- ENT-000040: grok-build — Software / developer tools — sources: 1
-- ENT-000048: herdr — Software / developer tools — sources: 1
-- ENT-000055: hermes-agent-control-room — Software / developer tools — sources: 1
-- ENT-000036: i-have-adhd — Software / developer tools — sources: 1
-- ENT-000037: img2threejs — Software / developer tools — sources: 1
-- ENT-000021: impeccable — Software / developer tools — sources: 1
-- ENT-000054: itsyhome-macos — Software / developer tools — sources: 1
-- ENT-000057: lavish-axi — Software / developer tools — sources: 1
-- ENT-000031: megaphone — Software / developer tools — sources: 1
-- ENT-000011: memU — Software / developer tools — sources: 2
-- ENT-000058: mini-vla — Software / developer tools — sources: 1
-- ENT-000034: motion-anything — Software / developer tools — sources: 1
-- ENT-000033: opencodex — Software / developer tools — sources: 1
-- ENT-000039: openlive — Software / developer tools — sources: 1
-- ENT-000053: pxpipe — Developer tools / AI context optimization — sources: 1
-- ENT-000019: skills — Software / developer tools — sources: 1
-- ENT-000060: smart-ralph — Software / developer tools — sources: 1
-- ENT-000028: vox-director — Software / developer tools — sources: 1
-- ENT-000050: watch-skill — Software / developer tools — sources: 1
+- ENT-000053: pxpipe — Other > Security Tools — sources: 1
+- ENT-000085: server-survival — Development — sources: 1
+- ENT-000074: shannon — Documents > PDF — sources: 1
+- ENT-000078: skills-manager — Development — sources: 1
+- ENT-000060: smart-ralph — Other — sources: 1
+- ENT-000028: vox-director — AI > AI Agents — sources: 1
+- ENT-000023: Accio Work — AI > AI Assistants — sources: 1
+- ENT-000007: Chatly — AI > AI Agents — sources: 2
+- ENT-000018: Claude Code — Other — sources: 2
+- ENT-000014: Claude Cowork — Other — sources: 2
+- ENT-000059: FaceAnything — Other — sources: 1
+- ENT-000025: Graft — AI > AI Agents — sources: 1
+- ENT-000002: Higgsfield MCP — AI > AI Assistants — sources: 1
+- ENT-000016: Infisical — AI > AI Agents — sources: 1
+- ENT-000035: LLM Agent Trader — AI > AI Assistants — sources: 1
+- ENT-000005: MiniMax-M2.5 — Other — sources: 1
+- ENT-000015: OmniRoute — AI > AI Assistants — sources: 1
+- ENT-000017: Rive — AI > AI Agents — sources: 1
+- ENT-000012: Shubhamsaboo Awesome LLM Apps — AI > AI Voice — sources: 1
+- ENT-000030: Skills — AI > AI Agents — sources: 1
+- ENT-000013: Stitch Agent Skills — AI > AI Agents — sources: 1
+- ENT-000009: Sunly AI — Other — sources: 2
+- ENT-000047: Three.js Object Sculptor — Other — sources: 1
+- ENT-000042: Threejs-Awesome-Graphics-Agent-Skills — AI > AI Agents — sources: 1
+- ENT-000027: TurboFieldfare — Other — sources: 1
+- ENT-000051: agoracosmica — Development > Library — sources: 1
+- ENT-000022: claude-handoff — Other — sources: 1
+- ENT-000020: claude-mem — Security > Privacy — sources: 1
+- ENT-000008: doola — Other — sources: 1
+- ENT-000038: film-space — Other — sources: 1
+- ENT-000048: herdr — Other — sources: 1
+- ENT-000055: hermes-agent-control-room — AI > AI Agents — sources: 1
+- ENT-000037: img2threejs — Other — sources: 1
+- ENT-000021: impeccable — Other — sources: 1
+- ENT-000031: megaphone — Other — sources: 1
+- ENT-000058: mini-vla — Other — sources: 1
+- ENT-000034: motion-anything — AI > AI Agents — sources: 1
+- ENT-000039: openlive — AI > AI Voice — sources: 1
+- ENT-000050: watch-skill — AI > AI Agents — sources: 1

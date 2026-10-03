@@ -1,180 +1,55 @@
 {
- "generated_at": "2026-10-03T20:44:12+00:00",
+ "generated_at": "2026-10-03T21:09:24+00:00",
  "statistics": {
   "screenshots": 907,
-  "v2_processed": 61,
-  "resources": 67,
-  "categories": 23,
-  "technologies": 3,
-  "github_repositories": 66,
-  "ai_tools": 1,
-  "verified_resources": 66,
-  "urls": 40,
+  "v2_processed": 174,
+  "resources": 75,
+  "categories": 7,
+  "technologies": 5,
+  "github_repositories": 74,
+  "ai_tools": 32,
+  "verified_resources": 74,
+  "urls": 178,
   "open_errors": 0,
   "category_breakdown": [
    {
-    "category": "Software / developer tools",
-    "count": 40
-   },
-   {
-    "category": "Development",
-    "count": 4
+    "category": "AI",
+    "count": 32
    },
    {
     "category": "Other",
-    "count": 2
+    "count": 26
    },
    {
-    "category": "AI tools / multi-model assistants",
-    "count": 2
-   },
-   {
-    "category": "Security / developer tools",
-    "count": 1
-   },
-   {
-    "category": "Open-source software / financial analysis",
-    "count": 1
-   },
-   {
-    "category": "Open-source software / developer utilities",
-    "count": 1
-   },
-   {
-    "category": "Open-source software / AI developer resources",
-    "count": 1
-   },
-   {
-    "category": "Open-source software / 3D developer tools",
-    "count": 1
-   },
-   {
-    "category": "Local AI / developer tools",
-    "count": 1
-   },
-   {
-    "category": "Developer tools / graphics",
-    "count": 1
-   },
-   {
-    "category": "Developer tools / AI context optimization",
-    "count": 1
-   },
-   {
-    "category": "Design / animation tools",
-    "count": 1
+    "category": "Development",
+    "count": 10
    },
    {
     "category": "Data",
+    "count": 3
+   },
+   {
+    "category": "Security",
+    "count": 2
+   },
+   {
+    "category": "Documents",
     "count": 1
    },
    {
-    "category": "Business services / company formation",
-    "count": 1
-   },
-   {
-    "category": "AI tools / productivity assistants",
-    "count": 1
-   },
-   {
-    "category": "AI tools / developer tools",
-    "count": 1
-   },
-   {
-    "category": "AI tools / design and developer tools",
-    "count": 1
-   },
-   {
-    "category": "AI tools / MCP integrations",
-    "count": 1
-   },
-   {
-    "category": "AI coding tools",
-    "count": 1
-   },
-   {
-    "category": "AI business tools / sourcing",
-    "count": 1
-   },
-   {
-    "category": "AI / agent knowledge infrastructure",
-    "count": 1
-   },
-   {
-    "category": "AI",
+    "category": "Applications",
     "count": 1
    }
   ]
  },
  "resources": [
   {
-   "entity_id": "ENT-000065",
-   "name": "Higgsfield",
-   "canonical_name": null,
-   "type": "Product",
-   "primary_category": "Other",
-   "subcategory": null,
-   "secondary_categories": [
-    "AI"
-   ],
-   "short_description": "Candidate resource: name corroborated by OCR and vision model; not yet web-verified.",
-   "confidence": "LOW",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [],
-   "github_url": null,
-   "documentation_url": null,
-   "tags": [
-    "Product"
-   ],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0002"
-   ],
-   "quality_level": 5,
-   "updated_at": "2026-10-03T20:12:36+00:00"
-  },
-  {
-   "entity_id": "ENT-000003",
-   "name": "graphify",
-   "canonical_name": "Graphify-Labs/graphify",
-   "type": "Repository",
-   "primary_category": "Other",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/graphify-labs/graphify",
-    "https://www.graphify.com"
-   ],
-   "github_url": "https://github.com/graphify-labs/graphify",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0003"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T20:13:36+00:00"
-  },
-  {
    "entity_id": "ENT-000066",
    "name": "immich",
    "canonical_name": "immich-app/immich",
    "type": "Repository",
    "primary_category": "Development",
-   "subcategory": null,
+   "subcategory": "DevOps",
    "secondary_categories": [
     "Open Source"
    ],
@@ -199,46 +74,50 @@
    "technologies": [
     "TypeScript"
    ],
-   "source_count": 1,
+   "source_count": 2,
    "screenshots": [
-    "IMG-0054"
+    "IMG-0054",
+    "IMG-0066"
    ],
    "quality_level": 6,
-   "updated_at": "2026-10-03T20:43:00+00:00"
+   "updated_at": "2026-10-03T21:02:06+00:00"
   },
   {
-   "entity_id": "ENT-000001",
-   "name": "intercept",
-   "canonical_name": "smittix/intercept",
+   "entity_id": "ENT-000011",
+   "name": "memU",
+   "canonical_name": "NevaMind-AI/memU",
    "type": "Repository",
    "primary_category": "AI",
-   "subcategory": "AI Research",
-   "secondary_categories": [],
-   "short_description": "iNTERCEPT, a free and open-source platform that unites the best signal intelligence tools into a single, accessible interface.",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [
+    "Open Source"
+   ],
+   "short_description": "Personal memory across agents",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
    "license": null,
    "developer": null,
    "platforms": null,
    "urls": [
-    "https://github.com/smittix/intercept",
-    "https://smittix.github.io/intercept/",
+    "https://github.com/nevamind-ai/memu",
+    "https://memu.pro",
     "github.com",
-    "github.com/smittix/intercept"
+    "github.com/nevamind-ai/memu"
    ],
-   "github_url": "https://github.com/smittix/intercept",
+   "github_url": "https://github.com/nevamind-ai/memu",
    "documentation_url": null,
    "tags": [],
    "features": [],
    "technologies": [
     "Python"
    ],
-   "source_count": 1,
+   "source_count": 2,
    "screenshots": [
-    "IMG-0001"
+    "IMG-0112",
+    "IMG-0163"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T20:06:20+00:00"
+   "updated_at": "2026-10-03T21:06:31+00:00"
   },
   {
    "entity_id": "ENT-000067",
@@ -272,12 +151,662 @@
    "technologies": [
     "TypeScript"
    ],
-   "source_count": 1,
+   "source_count": 2,
    "screenshots": [
-    "IMG-0056"
+    "IMG-0056",
+    "IMG-0065"
    ],
    "quality_level": 6,
-   "updated_at": "2026-10-03T20:43:25+00:00"
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000019",
+   "name": "skills",
+   "canonical_name": "vercel-labs/skills",
+   "type": "Repository",
+   "primary_category": "Development",
+   "subcategory": "Library",
+   "secondary_categories": [],
+   "short_description": "The open agent skills tool - npx skills",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/vercel-labs/skills",
+    "https://skills.sh",
+    "github.com",
+    "github.com/anthropics/skills",
+    "github.com/mengto/skills"
+   ],
+   "github_url": "https://github.com/vercel-labs/skills",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "Python",
+    "HTML"
+   ],
+   "source_count": 3,
+   "screenshots": [
+    "IMG-0079",
+    "IMG-0150",
+    "IMG-0164"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:06:50+00:00"
+  },
+  {
+   "entity_id": "ENT-000006",
+   "name": "supabase",
+   "canonical_name": "supabase/supabase",
+   "type": "Repository",
+   "primary_category": "Data",
+   "subcategory": "Database",
+   "secondary_categories": [
+    "Open Source"
+   ],
+   "short_description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/supabase/supabase",
+    "https://supabase.com",
+    "github.com",
+    "github.com/supabase/supabase"
+   ],
+   "github_url": "https://github.com/supabase/supabase",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 2,
+   "screenshots": [
+    "IMG-0055",
+    "IMG-0064"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000077",
+   "name": "Fire",
+   "canonical_name": "taesiri/Fire",
+   "type": "Repository",
+   "primary_category": "Development",
+   "subcategory": null,
+   "secondary_categories": [
+    "Open Source"
+   ],
+   "short_description": "Sol replicates fire simulation papers ",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "github.com/taesiri/fire"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "Repository"
+   ],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0171"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:08:50+00:00"
+  },
+  {
+   "entity_id": "ENT-000065",
+   "name": "Higgsfield",
+   "canonical_name": null,
+   "type": "Product",
+   "primary_category": "AI",
+   "subcategory": "AI Image",
+   "secondary_categories": [],
+   "short_description": "Candidate resource: name corroborated by OCR and vision model; not yet web-verified.",
+   "confidence": "LOW",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [],
+   "github_url": null,
+   "documentation_url": null,
+   "tags": [
+    "Product"
+   ],
+   "features": [],
+   "technologies": [],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0002"
+   ],
+   "quality_level": 5,
+   "updated_at": "2026-10-03T21:02:05+00:00"
+  },
+  {
+   "entity_id": "ENT-000024",
+   "name": "Pixelle-Video",
+   "canonical_name": "ATH-MaaS/Pixelle-Video",
+   "type": "Repository",
+   "primary_category": "Other",
+   "subcategory": null,
+   "secondary_categories": [
+    "AI"
+   ],
+   "short_description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/ath-maas/pixelle-video",
+    "https://aidc-ai.github.io/Pixelle-Video/zh",
+    "github.com",
+    "github.com/ath-maas/pixelle-video"
+   ],
+   "github_url": "https://github.com/ath-maas/pixelle-video",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "Python"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0157"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:02:32+00:00"
+  },
+  {
+   "entity_id": "ENT-000073",
+   "name": "PortableLM",
+   "canonical_name": "orailnoor/PortableLM",
+   "type": "Repository",
+   "primary_category": "Applications",
+   "subcategory": "Mobile App",
+   "secondary_categories": [
+    "Development",
+    "Open Source"
+   ],
+   "short_description": "A zero-dependency, air-gapped local AI environment that runs directly from a USB drive or portable SSD. Supports Windows, macOS, Linux, and Android — download your models once, carry them everywhere.",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "github.com/orailnoor/PortableLM"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "Open Source",
+    "Repository",
+    "Security"
+   ],
+   "features": [],
+   "technologies": [
+    "HTML"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0068"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000029",
+   "name": "cc-haha",
+   "canonical_name": "NanmiCoder/cc-haha",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [],
+   "short_description": "Local-first cross-platform desktop workspace for Claude Code / agents: multi-agent, Git worktrees, code diffs, skill marketplace, multi-model, Computer Use, task-aware desktop pets, with WeChat, Feishu, DingTalk, Telegram, WhatsApp and H5 access.",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/nanmicoder/cc-haha",
+    "cchaha.ai",
+    "github.com",
+    "github.com/nanmicoder/cc-haha"
+   ],
+   "github_url": "https://github.com/nanmicoder/cc-haha",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0162"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:06:14+00:00"
+  },
+  {
+   "entity_id": "ENT-000026",
+   "name": "claude-code-best-practice",
+   "canonical_name": "shanraisshan/claude-code-best-practice",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [],
+   "short_description": "from vibe coding to agentic engineering - practice makes claude perfect",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/shanraisshan/claude-code-best-practice",
+    "https://linkedin.com/in/shanraisshan",
+    "github.com",
+    "github.com/shanraisshan/claude-code-best-practice"
+   ],
+   "github_url": "https://github.com/shanraisshan/claude-code-best-practice",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "HTML"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0159"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:03:03+00:00"
+  },
+  {
+   "entity_id": "ENT-000071",
+   "name": "coolify",
+   "canonical_name": "coollabsio/coolify",
+   "type": "Repository",
+   "primary_category": "Data",
+   "subcategory": "Database",
+   "secondary_categories": [
+    "Development",
+    "Open Source"
+   ],
+   "short_description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "github.com/coollabsio/coolify"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "Open Source",
+    "Repository"
+   ],
+   "features": [],
+   "technologies": [
+    "PHP"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0062"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000072",
+   "name": "excalidraw",
+   "canonical_name": "excalidraw/excalidraw",
+   "type": "Repository",
+   "primary_category": "Development",
+   "subcategory": null,
+   "secondary_categories": [
+    "Open Source"
+   ],
+   "short_description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "github.com/excalidraw/excalidraw"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "Open Source",
+    "Repository"
+   ],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0063"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000032",
+   "name": "gbro-collage-broll",
+   "canonical_name": "pyang5166/gbro-collage-broll",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [],
+   "short_description": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/pyang5166/gbro-collage-broll",
+    "github.com",
+    "github.com/pyang5166/gbro-collage-broll"
+   ],
+   "github_url": "https://github.com/pyang5166/gbro-collage-broll",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "Python"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0166"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:07:20+00:00"
+  },
+  {
+   "entity_id": "ENT-000003",
+   "name": "graphify",
+   "canonical_name": "Graphify-Labs/graphify",
+   "type": "Repository",
+   "primary_category": "Other",
+   "subcategory": null,
+   "secondary_categories": [
+    "AI"
+   ],
+   "short_description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/graphify-labs/graphify",
+    "https://www.graphify.com"
+   ],
+   "github_url": "https://github.com/graphify-labs/graphify",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0003"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:02:05+00:00"
+  },
+  {
+   "entity_id": "ENT-000075",
+   "name": "gstack",
+   "canonical_name": "garrytan/gstack",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [
+    "Development",
+    "Open Source"
+   ],
+   "short_description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "https://github.com/garrytan/gstack"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "Open Source",
+    "Repository"
+   ],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0114"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:02:07+00:00"
+  },
+  {
+   "entity_id": "ENT-000036",
+   "name": "i-have-adhd",
+   "canonical_name": "ayghri/i-have-adhd",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [],
+   "short_description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/ayghri/i-have-adhd",
+    "github.com",
+    "github.com/ayghri/i-have-adhd"
+   ],
+   "github_url": "https://github.com/ayghri/i-have-adhd",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "Python"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0170"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:08:34+00:00"
+  },
+  {
+   "entity_id": "ENT-000001",
+   "name": "intercept",
+   "canonical_name": "smittix/intercept",
+   "type": "Repository",
+   "primary_category": "Security",
+   "subcategory": "OSINT",
+   "secondary_categories": [
+    "Documents",
+    "Open Source"
+   ],
+   "short_description": "iNTERCEPT, a free and open-source platform that unites the best signal intelligence tools into a single, accessible interface.",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/smittix/intercept",
+    "https://smittix.github.io/intercept/",
+    "github.com",
+    "github.com/smittix/intercept"
+   ],
+   "github_url": "https://github.com/smittix/intercept",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "Python"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0001"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:02:05+00:00"
+  },
+  {
+   "entity_id": "ENT-000076",
+   "name": "llm-agent-trader",
+   "canonical_name": "jason8745/llm-agent-trader",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [
+    "Development",
+    "Open Source"
+   ],
+   "short_description": "AI-powered stock trading backtesting system with LLM-based decision analysis, FastAPI backend, and Next.js frontend.",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "github.com/jason8745/llm-agent-trader",
+    "star-history.com"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "LLM",
+    "Repository"
+   ],
+   "features": [],
+   "technologies": [
+    "Python"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0169"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:08:17+00:00"
+  },
+  {
+   "entity_id": "ENT-000070",
+   "name": "nocodb",
+   "canonical_name": "nocodb/nocodb",
+   "type": "Repository",
+   "primary_category": "Data",
+   "subcategory": "Database",
+   "secondary_categories": [
+    "Development",
+    "Open Source"
+   ],
+   "short_description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "github.com",
+    "github.com/nocodb/nocodb"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "Open Source",
+    "Repository"
+   ],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0061"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000033",
+   "name": "opencodex",
+   "canonical_name": "lidge-jun/opencodex",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [],
+   "short_description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/lidge-jun/opencodex",
+    "https://opencodex.me/",
+    "github.com",
+    "github.com/lidge-jun/opencodex"
+   ],
+   "github_url": "https://github.com/lidge-jun/opencodex",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "TypeScript"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0167"
+   ],
+   "quality_level": 0,
+   "updated_at": "2026-10-03T21:07:41+00:00"
   },
   {
    "entity_id": "ENT-000069",
@@ -315,7 +844,7 @@
     "IMG-0060"
    ],
    "quality_level": 6,
-   "updated_at": "2026-10-03T20:44:09+00:00"
+   "updated_at": "2026-10-03T21:02:06+00:00"
   },
   {
    "entity_id": "ENT-000068",
@@ -353,49 +882,90 @@
     "IMG-0059"
    ],
    "quality_level": 6,
-   "updated_at": "2026-10-03T20:43:57+00:00"
+   "updated_at": "2026-10-03T21:02:06+00:00"
   },
   {
-   "entity_id": "ENT-000006",
-   "name": "supabase",
-   "canonical_name": "supabase/supabase",
+   "entity_id": "ENT-000074",
+   "name": "shannon",
+   "canonical_name": "KeygraphHQ/shannon",
    "type": "Repository",
-   "primary_category": "Data",
-   "subcategory": "Database",
-   "secondary_categories": [],
-   "short_description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-   "confidence": "HIGH",
+   "primary_category": "Documents",
+   "subcategory": "PDF",
+   "secondary_categories": [
+    "AI",
+    "Development",
+    "Open Source"
+   ],
+   "short_description": "Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.",
+   "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
    "license": null,
    "developer": null,
    "platforms": null,
    "urls": [
-    "https://github.com/supabase/supabase",
-    "https://supabase.com",
     "github.com",
-    "github.com/supabase/supabase"
+    "github.com/KeygraphHQ/shannon"
    ],
-   "github_url": "https://github.com/supabase/supabase",
+   "github_url": "github.com",
    "documentation_url": null,
-   "tags": [],
+   "tags": [
+    "AI",
+    "API",
+    "GitHub",
+    "Repository",
+    "Security"
+   ],
    "features": [],
    "technologies": [
     "TypeScript"
    ],
    "source_count": 1,
    "screenshots": [
-    "IMG-0055"
+    "IMG-0077"
+   ],
+   "quality_level": 6,
+   "updated_at": "2026-10-03T21:02:06+00:00"
+  },
+  {
+   "entity_id": "ENT-000028",
+   "name": "vox-director",
+   "canonical_name": "Alisa0808/vox-director",
+   "type": "Repository",
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [],
+   "short_description": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas Cloud + ffmpeg. An agent skill.",
+   "confidence": "HIGH",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "https://github.com/alisa0808/vox-director",
+    "github.com",
+    "github.com/alisa0808/vox-director"
+   ],
+   "github_url": "https://github.com/alisa0808/vox-director",
+   "documentation_url": null,
+   "tags": [],
+   "features": [],
+   "technologies": [
+    "Python"
+   ],
+   "source_count": 1,
+   "screenshots": [
+    "IMG-0161"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T20:43:12+00:00"
+   "updated_at": "2026-10-03T21:05:58+00:00"
   },
   {
    "entity_id": "ENT-000023",
    "name": "Accio Work",
    "canonical_name": "https://www.accio.com/work/doc",
    "type": "Product / service",
-   "primary_category": "AI business tools / sourcing",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
    "secondary_categories": [],
    "short_description": "Accio describes Accio Work as an AI agent team for business tasks, with built-in skills and connectors. Its official agent marketplace includes a Sourcing Expert assistant.",
    "confidence": "MEDIUM",
@@ -416,16 +986,18 @@
     "IMG-0156"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:52:48+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000007",
    "name": "Chatly",
    "canonical_name": "https://chatlyai.app",
    "type": "Product / service",
-   "primary_category": "AI tools / multi-model assistants",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [
+    "Documents"
+   ],
    "short_description": "Chatly is a multi-model AI workspace offering chat and tools for research and creating documents, slides, spreadsheets, images, video, and music.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -447,14 +1019,14 @@
     "IMG-0012"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:23:37+00:00"
+   "updated_at": "2026-10-03T21:02:05+00:00"
   },
   {
    "entity_id": "ENT-000018",
    "name": "Claude Code",
    "canonical_name": "https://code.claude.com/docs/en/goal",
    "type": "Product / service",
-   "primary_category": "AI coding tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Anthropic documentation describes Claude Code’s /goal command as setting a completion condition that it works toward without prompting each step, checking after turns until the condition is met or determined impossible.",
@@ -478,14 +1050,14 @@
     "IMG-0151"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:49:29+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000014",
    "name": "Claude Cowork",
    "canonical_name": "https://claude.com/product/cowork",
    "type": "Product / service",
-   "primary_category": "AI tools / productivity assistants",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Claude Cowork brings Claude Code's agentic capabilities to knowledge work beyond coding; Anthropic describes using it to produce documents, spreadsheets, and presentations.",
@@ -509,14 +1081,14 @@
     "IMG-0123"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:36:48+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000059",
    "name": "FaceAnything",
    "canonical_name": "kocasariumut/FaceAnything",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Official Implementation for \"Face Anything: 4D Face Reconstruction from Any Image Sequence\" (ECCV 2026, Oral (Spotlight))",
@@ -539,15 +1111,15 @@
     "IMG-0195"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T19:01:51+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000064",
    "name": "GPT-Image2-Skill",
    "canonical_name": "wuyoscar/GPT-Image2-Skill",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
    "secondary_categories": [],
    "short_description": "GPT Image 2/2.5 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
    "confidence": "HIGH",
@@ -568,15 +1140,15 @@
     "IMG-0200"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T19:12:09+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000025",
    "name": "Graft",
    "canonical_name": "trailhq/Graft",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
    "confidence": "HIGH",
@@ -598,16 +1170,18 @@
     "IMG-0158"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:53:48+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000002",
    "name": "Higgsfield MCP",
    "canonical_name": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-connect-higgsfield-to-ai-agent",
    "type": "Product / service",
-   "primary_category": "AI tools / MCP integrations",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [
+    "Documents"
+   ],
    "short_description": "Higgsfield documentation describes an MCP connection that lets users connect Higgsfield to Claude, ChatGPT, Cursor, and other MCP-compatible AI agents.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -627,16 +1201,19 @@
     "IMG-0002"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T11:55:54+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000016",
    "name": "Infisical",
    "canonical_name": "https://github.com/infisical/infisical",
    "type": "Repository",
-   "primary_category": "Security / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [
+    "Documents",
+    "Open Source"
+   ],
    "short_description": "An open-source security infrastructure platform for secrets, certificates, and privileged access management, with a public repository and self-hosting options.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -656,15 +1233,15 @@
     "IMG-0128"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:40:06+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000035",
    "name": "LLM Agent Trader",
    "canonical_name": "https://github.com/jason8745/llm-agent-trader",
    "type": "Repository",
-   "primary_category": "Open-source software / financial analysis",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
    "secondary_categories": [],
    "short_description": "The repository describes an AI-powered stock-trading backtesting system that integrates large language models for decision analysis.",
    "confidence": "MEDIUM",
@@ -685,14 +1262,14 @@
     "IMG-0169"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:00:12+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000005",
    "name": "MiniMax-M2.5",
    "canonical_name": "MiniMax-AI/MiniMax-M2.5",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Description not supplied by repository metadata.",
@@ -714,16 +1291,18 @@
     "IMG-0004"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T12:12:16+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000044",
    "name": "Nova3D",
    "canonical_name": "RareSense/Nova3D",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
-   "secondary_categories": [],
+   "secondary_categories": [
+    "Open Source"
+   ],
    "short_description": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
@@ -744,16 +1323,18 @@
     "IMG-0179"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:08:35+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000015",
    "name": "OmniRoute",
    "canonical_name": "https://github.com/diegosouzapw/OmniRoute",
    "type": "Repository",
-   "primary_category": "AI tools / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [
+    "Documents"
+   ],
    "short_description": "An open-source AI gateway that presents one endpoint for interacting with multiple model providers and integrates with coding tools; its repository documents quota-aware routing and provider fallback.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -773,16 +1354,18 @@
     "IMG-0126"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:37:59+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000043",
    "name": "OpenWhip",
    "canonical_name": "https://github.com/GitFrog1111/OpenWhip",
    "type": "Repository",
-   "primary_category": "Open-source software / developer utilities",
+   "primary_category": "Other",
    "subcategory": null,
-   "secondary_categories": [],
+   "secondary_categories": [
+    "Open Source"
+   ],
    "short_description": "OpenWhip is a tray application described in its public GitHub README as sending a Ctrl-C interrupt and one of several messages when clicked.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -802,45 +1385,15 @@
     "IMG-0178"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:07:44+00:00"
-  },
-  {
-   "entity_id": "ENT-000024",
-   "name": "Pixelle-Video",
-   "canonical_name": "ATH-MaaS/Pixelle-Video",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/ath-maas/pixelle-video",
-    "https://aidc-ai.github.io/Pixelle-Video/zh"
-   ],
-   "github_url": "https://github.com/ath-maas/pixelle-video",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0157"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:52:56+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000017",
    "name": "Rive",
    "canonical_name": "https://rive.app/docs/getting-started/introduction",
    "type": "Product / service",
-   "primary_category": "Design / animation tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "Rive is a design and animation platform for building interactive experiences for web, mobile apps, games, and other platforms.",
    "confidence": "MEDIUM",
@@ -861,15 +1414,15 @@
     "IMG-0134"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:51:00+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000049",
    "name": "RockyVoice",
    "canonical_name": "Lagunaswift/RockyVoice",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Voice",
    "secondary_categories": [],
    "short_description": "A Claude skill. You turn on, Claude is not Claude. Claude is Rocky. The Eridian. From Andy Weir's Project Hail Mary.",
    "confidence": "HIGH",
@@ -890,16 +1443,18 @@
     "IMG-0184"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:33:16+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000012",
    "name": "Shubhamsaboo Awesome LLM Apps",
    "canonical_name": "https://github.com/shubhamsaboo/awesome-llm-apps",
    "type": "Product / service",
-   "primary_category": "Open-source software / AI developer resources",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Voice",
+   "secondary_categories": [
+    "Open Source"
+   ],
    "short_description": "An open-source collection of AI agents, agent skills, and retrieval-augmented generation applications with tutorials and runnable examples.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -919,14 +1474,14 @@
     "IMG-0013"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:13:32+00:00"
+   "updated_at": "2026-10-03T21:02:05+00:00"
   },
   {
    "entity_id": "ENT-000063",
    "name": "Sketch2Motion",
    "canonical_name": "https://github.com/leeyeel/Sketch2Motion",
    "type": "Repository",
-   "primary_category": "Developer tools / graphics",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Converts a doodle, photo, or sketch into an SVG vector graphic and renders it into an animated MP4 using Manim; the official README describes a Gradio interface and adjustable animation parameters.",
@@ -948,15 +1503,15 @@
     "IMG-0199"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T19:10:13+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000030",
    "name": "Skills",
    "canonical_name": "MengTo/Skills",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "Agent skills for designers and builders using Codex, Claude, Cursor, and other AI coding agents",
    "confidence": "HIGH",
@@ -977,16 +1532,18 @@
     "IMG-0164"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:57:10+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000052",
    "name": "Stash",
    "canonical_name": "https://github.com/Fergana-Labs/stash",
    "type": "Repository",
-   "primary_category": "AI / agent knowledge infrastructure",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Developer Tools",
+   "secondary_categories": [
+    "Open Source"
+   ],
    "short_description": "Open-source infrastructure for agents that learn from experience; the official README describes trace collection, persistent knowledge, and reusable skills through a Python SDK, REST API, MCP, and CLI.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -1006,15 +1563,15 @@
     "IMG-0187"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:47:13+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000013",
    "name": "Stitch Agent Skills",
    "canonical_name": "https://github.com/google-labs-code/stitch-skills",
    "type": "Repository",
-   "primary_category": "AI tools / design and developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "A library of Agent Skills and plugins designed to work with the Stitch MCP server, following the Agent Skills open standard and supporting coding agents including Antigravity, Gemini CLI, Claude Code, Cursor, Codex, and OpenCode.",
    "confidence": "MEDIUM",
@@ -1035,16 +1592,18 @@
     "IMG-0120"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:32:58+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000009",
    "name": "Sunly AI",
    "canonical_name": "https://sunly.ai",
    "type": "Product / service",
-   "primary_category": "AI tools / multi-model assistants",
+   "primary_category": "Other",
    "subcategory": null,
-   "secondary_categories": [],
+   "secondary_categories": [
+    "AI"
+   ],
    "short_description": "Sunly AI presents an all-in-one AI workspace for chat, content creation, image generation, document analysis, research, and related AI tools.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -1065,14 +1624,14 @@
     "IMG-0139"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T13:48:50+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000047",
    "name": "Three.js Object Sculptor",
    "canonical_name": "https://github.com/vinhhien112/img2obj",
    "type": "Repository",
-   "primary_category": "Open-source software / 3D developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "A Codex plugin for reconstructing objects from reference images as code-only procedural Three.js models; the repository currently calls the plugin img2obj.",
@@ -1094,15 +1653,15 @@
     "IMG-0182"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:28:14+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000042",
    "name": "Threejs-Awesome-Graphics-Agent-Skills",
    "canonical_name": "scottstts/Threejs-Awesome-Graphics-Agent-Skills",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "A three.js agent skills for producing awesome graphics for scenes and games",
    "confidence": "HIGH",
@@ -1123,14 +1682,14 @@
     "IMG-0177"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:06:21+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000027",
    "name": "TurboFieldfare",
    "canonical_name": "https://github.com/drumih/turbo-fieldfare",
    "type": "Repository",
-   "primary_category": "Local AI / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "TurboFieldfare is an independent Swift and Metal runtime for Gemma 4 26B-A4B inference on Apple Silicon Macs.",
@@ -1152,16 +1711,18 @@
     "IMG-0160"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:55:11+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000051",
    "name": "agoracosmica",
    "canonical_name": "chipmates/agoracosmica",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "Development",
+   "subcategory": "Library",
+   "secondary_categories": [
+    "Open Source"
+   ],
    "short_description": "A Living Library You Can Talk To. Thirty historical figures, their lives narrated, their ideas open to conversation, in English and German. Nonprofit, open source.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
@@ -1182,15 +1743,15 @@
     "IMG-0186"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:41:25+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000041",
    "name": "alem-env",
    "canonical_name": "alem-world/alem-env",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
    "secondary_categories": [],
    "short_description": "Can LLM/MARL agents coordinate in long-horizon, open-ended tasks? NeurIPS 2026 (Evaluations and Datasets).",
    "confidence": "HIGH",
@@ -1212,16 +1773,18 @@
     "IMG-0176"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:05:22+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000056",
    "name": "autocache",
    "canonical_name": "montevive/autocache",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "Development",
+   "subcategory": "API",
+   "secondary_categories": [
+    "AI"
+   ],
    "short_description": "🚀 Autocache - Intelligent Anthropic API Cache Proxy   Automatically inject cache-control fields into Claude API requests to reduce costs by up to 90% and latency by up to 85%. Works as a transparent drop-in replacement for popular AI platforms like n8n, Flowise, Make.com, LangChain,  and LlamaIndex—no code changes required",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
@@ -1242,15 +1805,15 @@
     "IMG-0192"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:55:33+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000061",
    "name": "brain.md",
    "canonical_name": "mindmuxai/brain.md",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "Development",
+   "subcategory": "CLI",
    "secondary_categories": [],
    "short_description": "A persistent, file-based memory layer for coding agents — give Claude Code, Codex & others a project brain (durable decisions, requirements, constraints) via a zero-dependency CLI.",
    "confidence": "HIGH",
@@ -1272,14 +1835,14 @@
     "IMG-0197"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T19:04:05+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000045",
    "name": "burn-baby-burn",
    "canonical_name": "dtnewman/burn-baby-burn",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Be the most productive engineer on your team 🚀🚀🚀",
@@ -1301,74 +1864,14 @@
     "IMG-0180"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:09:36+00:00"
-  },
-  {
-   "entity_id": "ENT-000029",
-   "name": "cc-haha",
-   "canonical_name": "NanmiCoder/cc-haha",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "Local-first cross-platform desktop workspace for Claude Code / agents: multi-agent, Git worktrees, code diffs, skill marketplace, multi-model, Computer Use, task-aware desktop pets, with WeChat, Feishu, DingTalk, Telegram, WhatsApp and H5 access.",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/nanmicoder/cc-haha",
-    "cchaha.ai"
-   ],
-   "github_url": "https://github.com/nanmicoder/cc-haha",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0162"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:56:05+00:00"
-  },
-  {
-   "entity_id": "ENT-000026",
-   "name": "claude-code-best-practice",
-   "canonical_name": "shanraisshan/claude-code-best-practice",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "from vibe coding to agentic engineering - practice makes claude perfect",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/shanraisshan/claude-code-best-practice",
-    "https://linkedin.com/in/shanraisshan"
-   ],
-   "github_url": "https://github.com/shanraisshan/claude-code-best-practice",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0159"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:54:17+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000022",
    "name": "claude-handoff",
    "canonical_name": "REMvisual/claude-handoff",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Claude Code skill for session handoffs — survives context compaction, chain-links across sessions.",
@@ -1391,16 +1894,18 @@
     "IMG-0155"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:51:11+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000020",
    "name": "claude-mem",
    "canonical_name": "thedotmack/claude-mem",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "Security",
+   "subcategory": "Privacy",
+   "secondary_categories": [
+    "AI"
+   ],
    "short_description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
@@ -1421,15 +1926,15 @@
     "IMG-0152"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:49:55+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000062",
    "name": "codex-orange-book",
    "canonical_name": "alchaincyf/codex-orange-book",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
    "secondary_categories": [],
    "short_description": "OpenAI Codex: The Complete Guide · 橙皮书系列 · GPT-5.5 时代的 AI 编程实战手册",
    "confidence": "HIGH",
@@ -1451,14 +1956,14 @@
     "IMG-0198"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T19:06:16+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000046",
    "name": "colibri",
    "canonical_name": "JustVugg/colibri",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
@@ -1481,14 +1986,14 @@
     "IMG-0181"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:10:30+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000008",
    "name": "doola",
    "canonical_name": "https://www.doola.com",
    "type": "Product / service",
-   "primary_category": "Business services / company formation",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "doola is an all-in-one business platform for founders that offers U.S. company formation, bookkeeping, business tax services, banking-related support, and e-commerce analytics.",
@@ -1510,14 +2015,14 @@
     "IMG-0006"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T12:52:13+00:00"
+   "updated_at": "2026-10-03T21:02:05+00:00"
   },
   {
    "entity_id": "ENT-000038",
    "name": "film-space",
    "canonical_name": "maxprokopp/film-space",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "SwiftUI virtual film studio with AR camera and scene recording",
@@ -1539,44 +2044,15 @@
     "IMG-0173"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:03:17+00:00"
-  },
-  {
-   "entity_id": "ENT-000032",
-   "name": "gbro-collage-broll",
-   "canonical_name": "pyang5166/gbro-collage-broll",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/pyang5166/gbro-collage-broll"
-   ],
-   "github_url": "https://github.com/pyang5166/gbro-collage-broll",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0166"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:58:34+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000040",
    "name": "grok-build",
    "canonical_name": "xai-org/grok-build",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
    "confidence": "HIGH",
@@ -1597,14 +2073,14 @@
     "IMG-0175"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:04:33+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000048",
    "name": "herdr",
    "canonical_name": "herdrdev/herdr",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "the runtime your coding agents live on",
@@ -1627,15 +2103,15 @@
     "IMG-0183"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:31:33+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000055",
    "name": "hermes-agent-control-room",
    "canonical_name": "shannhk/hermes-agent-control-room",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "Control Room-first template for managing Hermes agents from one VPS agent to specialist teams and orchestrated workflows",
    "confidence": "HIGH",
@@ -1656,43 +2132,14 @@
     "IMG-0191"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:55:09+00:00"
-  },
-  {
-   "entity_id": "ENT-000036",
-   "name": "i-have-adhd",
-   "canonical_name": "ayghri/i-have-adhd",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/ayghri/i-have-adhd"
-   ],
-   "github_url": "https://github.com/ayghri/i-have-adhd",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0170"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T18:00:39+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000037",
    "name": "img2threejs",
    "canonical_name": "img2threejs/img2threejs",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
@@ -1715,14 +2162,14 @@
     "IMG-0172"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:02:37+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000021",
    "name": "impeccable",
    "canonical_name": "pbakaus/impeccable",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "The design language that makes your AI harness better at design.",
@@ -1745,14 +2192,14 @@
     "IMG-0153"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:50:21+00:00"
+   "updated_at": "2026-10-03T21:02:07+00:00"
   },
   {
    "entity_id": "ENT-000054",
    "name": "itsyhome-macos",
    "canonical_name": "nickustinov/itsyhome-macos",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "A native macOS menu bar app for controlling your smart home devices.",
@@ -1775,14 +2222,14 @@
     "IMG-0190"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:53:26+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000057",
    "name": "lavish-axi",
    "canonical_name": "kunchenguid/lavish-axi",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "HTML is the new markdown. Lavish is the new editor for your HTML artifacts.",
@@ -1804,14 +2251,14 @@
     "IMG-0193"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:57:57+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000031",
    "name": "megaphone",
    "canonical_name": "Kuberwastaken/megaphone",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Free, private, on-device dictation for Mac, powered by Apple's SpeechAnalyzer and Foundation Models.",
@@ -1834,45 +2281,14 @@
     "IMG-0165"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:57:42+00:00"
-  },
-  {
-   "entity_id": "ENT-000011",
-   "name": "memU",
-   "canonical_name": "NevaMind-AI/memU",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "Personal memory across agents",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/nevamind-ai/memu",
-    "https://memu.pro"
-   ],
-   "github_url": "https://github.com/nevamind-ai/memu",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 2,
-   "screenshots": [
-    "IMG-0112",
-    "IMG-0163"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:56:39+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000058",
    "name": "mini-vla",
    "canonical_name": "keivalya/mini-vla",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "a minimal, beginner-friendly VLA to show how robot policies can fuse images, text, and states to generate actions",
@@ -1894,16 +2310,18 @@
     "IMG-0194"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:59:42+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000034",
    "name": "motion-anything",
    "canonical_name": "nexu-io/motion-anything",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [
+    "Open Source"
+   ],
    "short_description": "✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
@@ -1923,45 +2341,15 @@
     "IMG-0168"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T17:59:25+00:00"
-  },
-  {
-   "entity_id": "ENT-000033",
-   "name": "opencodex",
-   "canonical_name": "lidge-jun/opencodex",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/lidge-jun/opencodex",
-    "https://opencodex.me/"
-   ],
-   "github_url": "https://github.com/lidge-jun/opencodex",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0167"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:59:03+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000039",
    "name": "openlive",
    "canonical_name": "katipally/openlive",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Voice",
    "secondary_categories": [],
    "short_description": "Opensource, on-device voice + vision layer for AI agents. Bring any model or coding agent; the whole speech loop (VAD, STT, TTS, barge-in) runs locally. An open alternative to ElevenLabs Agents, Gemini Live, and OpenAI Realtime.",
    "confidence": "HIGH",
@@ -1982,16 +2370,18 @@
     "IMG-0174"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:03:52+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000053",
    "name": "pxpipe",
    "canonical_name": "https://github.com/teamchong/pxpipe",
    "type": "Repository",
-   "primary_category": "Developer tools / AI context optimization",
+   "primary_category": "Other",
    "subcategory": null,
-   "secondary_categories": [],
+   "secondary_categories": [
+    "Documents"
+   ],
    "short_description": "A local proxy for Claude Code that renders selected bulky request context as compact images to reduce input-token usage; the repository documents related export and proxy workflows.",
    "confidence": "MEDIUM",
    "visibility": "REVIEW_REQUIRED",
@@ -2011,44 +2401,14 @@
     "IMG-0188"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:49:51+00:00"
-  },
-  {
-   "entity_id": "ENT-000019",
-   "name": "skills",
-   "canonical_name": "vercel-labs/skills",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "The open agent skills tool - npx skills",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/vercel-labs/skills",
-    "https://skills.sh"
-   ],
-   "github_url": "https://github.com/vercel-labs/skills",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0150"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:48:55+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000060",
    "name": "smart-ralph",
    "canonical_name": "tzachbon/smart-ralph",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
+   "primary_category": "Other",
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "Spec-driven development with smart compaction. Claude Code plugin combining Ralph Wiggum loop with structured specification workflow.",
@@ -2070,44 +2430,15 @@
     "IMG-0196"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T19:03:40+00:00"
-  },
-  {
-   "entity_id": "ENT-000028",
-   "name": "vox-director",
-   "canonical_name": "Alisa0808/vox-director",
-   "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
-   "secondary_categories": [],
-   "short_description": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas Cloud + ffmpeg. An agent skill.",
-   "confidence": "HIGH",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "https://github.com/alisa0808/vox-director"
-   ],
-   "github_url": "https://github.com/alisa0808/vox-director",
-   "documentation_url": null,
-   "tags": [],
-   "features": [],
-   "technologies": [],
-   "source_count": 1,
-   "screenshots": [
-    "IMG-0161"
-   ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T17:55:39+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   },
   {
    "entity_id": "ENT-000050",
    "name": "watch-skill",
    "canonical_name": "oxbshw/watch-skill",
    "type": "Repository",
-   "primary_category": "Software / developer tools",
-   "subcategory": null,
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "Give AI agents eyes, ears, and verifiable results. Watch Skill turns video, audio and screen activity into searchable, timestamped evidence and proves work with deterministic contracts, not model opinion. DeepWatch is the agent workspace built on DeepSeek Harness. Python + npm, MCP, CLI, REST, Web.",
    "confidence": "HIGH",
@@ -2129,7 +2460,7 @@
     "IMG-0185"
    ],
    "quality_level": 0,
-   "updated_at": "2026-10-03T18:39:31+00:00"
+   "updated_at": "2026-10-03T20:45:49+00:00"
   }
  ],
  "screenshots": [
@@ -2141,10 +2472,10 @@
    "sha256": "dd2d2c7a505fc30a85666c123a6b945df1b5d8cb4b4aee7d2728f9ee9d27c6d7",
    "perceptual_hash": "33c4f0d0ccc41be0",
    "status": "COMPLETED",
-   "ocr_status": "OCR_CONFLICTING",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 78.86,
-   "quality_level": 1,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000001",
     "name": "intercept",
@@ -2190,7 +2521,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "VIDEO_FRAME",
    "confidence": 81.39,
-   "quality_level": 5,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000065",
     "name": "Higgsfield",
@@ -2240,7 +2571,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MOBILE_UI",
    "confidence": 84.92,
-   "quality_level": 5,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000003",
     "name": "graphify",
@@ -2307,11 +2638,11 @@
    "height": 2340,
    "sha256": "313050017cc9d1581fe03adb0efec6002cf159fe26f5a5c685af0daa0186d7b7",
    "perceptual_hash": "ee0f31178e4fcca8",
-   "status": "OCR_REVIEW",
+   "status": "NEEDS_RESEARCH",
    "ocr_status": "OCR_CONFLICTING",
    "screenshot_type": "SOCIAL_MEDIA",
    "confidence": 79.61,
-   "quality_level": 3,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000007",
     "name": "Chatly",
@@ -2350,7 +2681,7 @@
    "height": 2340,
    "sha256": "b6cbfdaa1190016644aec89b2a340d0ea7f89a4ebbafd847322a9bdd7dc79518",
    "perceptual_hash": "d8d0d8d3f08db8a8",
-   "status": "COMPLETED",
+   "status": "NEEDS_RESEARCH",
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 91.93,
@@ -2390,7 +2721,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 80.48,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -2425,11 +2756,11 @@
    "height": 2340,
    "sha256": "10fa32c661c74e15373e3687c74c178371bc45f2ffbb11372001271dc58de74e",
    "perceptual_hash": "41370f0f2f331ea8",
-   "status": "COMPLETED",
+   "status": "NEEDS_RESEARCH",
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 88.49,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000009",
     "name": "Sunly AI",
@@ -2504,7 +2835,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 93.73,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "Beautiful.ai"
@@ -2545,7 +2876,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 87.79,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -2580,11 +2911,11 @@
    "height": 2340,
    "sha256": "6b29b579f2eb081e42cb000bb668019ed7404a9fbd8fa3bb6664433fff24bf21",
    "perceptual_hash": "31b68ec84cf4a8aa",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 83.03,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000007",
     "name": "Chatly",
@@ -2618,11 +2949,11 @@
    "height": 2340,
    "sha256": "dd729df89176656938e178890a0d34c1586616644d2544111490b69328f81687",
    "perceptual_hash": "690b0f6e6c61b228",
-   "status": "COMPLETED",
+   "status": "NEEDS_RESEARCH",
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 90.09,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000012",
     "name": "Shubhamsaboo Awesome LLM Apps",
@@ -2667,7 +2998,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 81.6,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "githubusercontent.com",
@@ -2709,7 +3040,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 92.54,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -2748,7 +3079,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 89.7,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -2819,7 +3150,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 86.85,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "topview.ai",
@@ -2861,7 +3192,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "BROWSER",
    "confidence": 89.87,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "cavn.ai",
@@ -2899,11 +3230,11 @@
    "height": 2340,
    "sha256": "231d8f504fd1dae9aa007fef438b2144fe9f23647b1ead6d040fffe2d489fc94",
    "perceptual_hash": "411b2e6e6c636269",
-   "status": "OCR_PROCESSING",
+   "status": "COMPLETED",
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 82.15,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "Z.ai",
@@ -2947,7 +3278,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 86.89,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -2986,7 +3317,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 92.34,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3025,7 +3356,7 @@
    "ocr_status": "OCR_CONFLICTING",
    "screenshot_type": "GITHUB",
    "confidence": 76.46,
-   "quality_level": 3,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3064,7 +3395,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 87.55,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3103,7 +3434,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "BROWSER",
    "confidence": 82.95,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "modelslab.com"
@@ -3144,7 +3475,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 87.82,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3183,7 +3514,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 87.96,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3222,7 +3553,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 90.57,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3261,7 +3592,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 90.59,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3300,7 +3631,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 91.08,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3339,7 +3670,7 @@
    "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 90.79,
-   "quality_level": 3,
+   "quality_level": 2,
    "entity": null,
    "urls": [
     "bun.sh",
@@ -3377,11 +3708,11 @@
    "height": 2340,
    "sha256": "183a746ec24765bf3bfd90db4e89472ad00c43d2254c4e421fd0a1436db6701e",
    "perceptual_hash": "b0b6f28fcea66629",
-   "status": "OCR_PROCESSING",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 97.61,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3402,11 +3733,11 @@
    "height": 2340,
    "sha256": "c0c5695e21b4e10804242b70379aae16073fa6923f9052d004245e0362133f59",
    "perceptual_hash": "c89c96666e636669",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 87.1,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3434,11 +3765,11 @@
    "height": 2340,
    "sha256": "b22099e2349b1c7f0c794e8e88ddd158509f75b8a080205308c2f2d573b7cb09",
    "perceptual_hash": "e033936f6e632629",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 88.92,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3466,11 +3797,11 @@
    "height": 2340,
    "sha256": "72f054d216113f0344e5d2e1d76a1ea96fb86166b55f3a615b237d26c75ce272",
    "perceptual_hash": "6194176b36327a29",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 76.67,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3498,11 +3829,11 @@
    "height": 2340,
    "sha256": "9236ebb1207f064e3b3acb7a918634783cc1a1189c562c7ccae29af29286bc7c",
    "perceptual_hash": "705d0d6b6e6b6629",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 87.79,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3562,11 +3893,11 @@
    "height": 2340,
    "sha256": "272f40076be93ae711f386a30adc966387e8587fe6951090c337410f68c78656",
    "perceptual_hash": "c0272733760e6328",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 84.62,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3598,7 +3929,7 @@
    "ocr_status": "OCR_CONFLICTING",
    "screenshot_type": "MIXED_UI",
    "confidence": 90.79,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3630,7 +3961,7 @@
    "ocr_status": "OCR_NEEDS_VISION",
    "screenshot_type": "MIXED_UI",
    "confidence": 72.53,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3658,11 +3989,11 @@
    "height": 2340,
    "sha256": "e0df3d2d9afb822b904bde59ac15bf3f39580e10a05d7176166f85ec3d84f433",
    "perceptual_hash": "69f181d1a1c17129",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 87.75,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3690,11 +4021,11 @@
    "height": 2340,
    "sha256": "e4e350dc218be6d1f68d74a2a2a3bf6d0f5191f38ec36da417713628064ca3e6",
    "perceptual_hash": "6996969af8712420",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 84.47,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3790,11 +4121,11 @@
    "height": 2340,
    "sha256": "adf332d2925aa35544f340ce2330b08e84fd4a62853ef1248783441d1c3bef39",
    "perceptual_hash": "69e1f30b8c167821",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 87.62,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3822,11 +4153,11 @@
    "height": 2340,
    "sha256": "041564757ffa9ea01c9df6c73ea4b69393378bd7ecdb22acf6a0c2ca2a765f56",
    "perceptual_hash": "693bb2aa9e9e6e21",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 87.91,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3926,11 +4257,11 @@
    "height": 2340,
    "sha256": "ea11cac96a3be954bbfe1a4bdf45aa9bd9d742e0058bb0e26a81b241e66acaa8",
    "perceptual_hash": "5b536d0f393fbf61",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "MIXED_UI",
    "confidence": 79.05,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3962,7 +4293,7 @@
    "ocr_status": "OCR_CONFLICTING",
    "screenshot_type": "MIXED_UI",
    "confidence": 91.91,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
    "engines": [
@@ -3990,11 +4321,11 @@
    "height": 2340,
    "sha256": "ea174f0896383ef5aee88073bdc11bdbd79bcbe9e870d2c877f5ed23002f31b4",
    "perceptual_hash": "e88984f1908e2028",
-   "status": "OCR_REVIEW",
-   "ocr_status": "OCR_CONFLICTING",
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 81.06,
-   "quality_level": 2,
+   "quality_level": 1,
    "entity": null,
    "urls": [
     "Inference.net"
@@ -4130,7 +4461,7 @@
    "sha256": "9cb13396fc95e0177a0fd68d54e0cfb86f1939e096120d2b2e5d8fa80364a91c",
    "perceptual_hash": "6000477530286e29",
    "status": "COMPLETED",
-   "ocr_status": "OCR_CONFLICTING",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 80.86,
    "quality_level": 6,
@@ -4313,7 +4644,7 @@
    "sha256": "087b5d90b8cfbbafc37ee498ae2a62d50ed3efb425924b44c3775fcdf3e3207b",
    "perceptual_hash": "680f302e272fe829",
    "status": "COMPLETED",
-   "ocr_status": "OCR_CONFLICTING",
+   "ocr_status": "OCR_GOOD",
    "screenshot_type": "GITHUB",
    "confidence": 84.0,
    "quality_level": 6,
@@ -4351,14 +4682,36 @@
    "height": 2340,
    "sha256": "d49433a875544040a53afc415cb13b323c70545500fedeb47aab0556b9bc4f6a",
    "perceptual_hash": "680b3233372ba829",
-   "status": "OCR_PROCESSING",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.66,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000070",
+    "name": "nocodb",
+    "canonical_name": "nocodb/nocodb"
+   },
+   "urls": [
+    "github.com",
+    "github.com/nocodb/nocodb"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.26,
+     "chars": 319
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.05,
+     "chars": 193
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4368,14 +4721,36 @@
    "height": 2340,
    "sha256": "37a5b64389accbd4aa54ff5051f44118f444f8841981f05485acedbf1538d921",
    "perceptual_hash": "680e362d574d2829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 84.53,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000071",
+    "name": "coolify",
+    "canonical_name": "coollabsio/coolify"
+   },
+   "urls": [
+    "github.com",
+    "github.com/coollabsio/coolify"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.21,
+     "chars": 461
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 71.84,
+     "chars": 248
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4385,14 +4760,36 @@
    "height": 2340,
    "sha256": "02c6c4d1496d852617147ed638f4b27067495462745cc08171f1816fe3c8217e",
    "perceptual_hash": "600736274f5d2829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.03,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000072",
+    "name": "excalidraw",
+    "canonical_name": "excalidraw/excalidraw"
+   },
+   "urls": [
+    "github.com",
+    "github.com/excalidraw/excalidraw"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.47,
+     "chars": 361
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 71.59,
+     "chars": 242
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4402,14 +4799,36 @@
    "height": 2340,
    "sha256": "b255d65760f5974456fb4cc5fa51ff5cd233aeebb9f36597502ba4564af682c2",
    "perceptual_hash": "690f324747712829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.95,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000006",
+    "name": "supabase",
+    "canonical_name": "supabase/supabase"
+   },
+   "urls": [
+    "github.com",
+    "github.com/supabase/supabase"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.96,
+     "chars": 430
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 73.94,
+     "chars": 233
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4419,14 +4838,36 @@
    "height": 2340,
    "sha256": "5e3b58d27de2fee3cbce2418f6b88a5358436964c8c795383ec962cfcc1e442d",
    "perceptual_hash": "680e322547592829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 88.28,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000067",
+    "name": "n8n",
+    "canonical_name": "n8n-io/n8n"
+   },
+   "urls": [
+    "github.com",
+    "github.com/n8n-io/n8n"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.59,
+     "chars": 425
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.97,
+     "chars": 222
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4436,14 +4877,36 @@
    "height": 2340,
    "sha256": "14fd6107a1bda669c2f77766c608c0823918fcfbc6c83b91ed11dbe64ec40f62",
    "perceptual_hash": "79172245475d2829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 84.82,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000066",
+    "name": "immich",
+    "canonical_name": "immich-app/immich"
+   },
+   "urls": [
+    "github.com",
+    "github.com/immich-app/immich"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.07,
+     "chars": 405
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 72.58,
+     "chars": 315
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4453,14 +4916,31 @@
    "height": 2340,
    "sha256": "7eb26f2aa1cdc63031ce94fae584e59af24072060d0131d44ad4bfe315ae297e",
    "perceptual_hash": "40ca4e8ae0a46c29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "OCR_REVIEW",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "BROWSER",
+   "confidence": 90.84,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "install.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.7,
+     "chars": 894
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 82.97,
+     "chars": 892
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4470,14 +4950,36 @@
    "height": 2340,
    "sha256": "d931307b571e062571c4a88b4e31822143084355e823ef826e703b5f8357c242",
    "perceptual_hash": "6080457111006c29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.3,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000073",
+    "name": "PortableLM",
+    "canonical_name": "orailnoor/PortableLM"
+   },
+   "urls": [
+    "github.com",
+    "github.com/orailnoor/PortableLM"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.51,
+     "chars": 455
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 73.08,
+     "chars": 338
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4487,14 +4989,29 @@
    "height": 2340,
    "sha256": "53cedf495c48806884c0ce7f3638a8d32e2fffd898a2a052ead8e64f6d4060fe",
    "perceptual_hash": "6080178a682c7c29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 83.38,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.83,
+     "chars": 219
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 68.92,
+     "chars": 182
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4504,14 +5021,31 @@
    "height": 2340,
    "sha256": "b4f5592747c045feac7baf39dbb45a43d7322af82b3edeab04609c9e7def0c4d",
    "perceptual_hash": "80034d716d2de829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 89.87,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "start.sh"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.81,
+     "chars": 875
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 81.93,
+     "chars": 835
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4521,14 +5055,32 @@
    "height": 2340,
    "sha256": "d5f7ceda1cb4286b749cca2051fcdb916f90fbd9a8e0eaf012f049820ae7eb1c",
    "perceptual_hash": "785d2d8e0c0c6e29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 82.03,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/Mozilla-Ocho/llamafile"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.88,
+     "chars": 515
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 67.17,
+     "chars": 585
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4538,14 +5090,32 @@
    "height": 2340,
    "sha256": "80c8e38306adda73699ef2da213dd75c333e6eee76f0a4ae03ebbc057bab18fa",
    "perceptual_hash": "79e26e2bd20e6e29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 80.94,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "huggingface.co",
+    "huggingface.co/models?library=gguf&sort=trending"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.23,
+     "chars": 625
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 66.66,
+     "chars": 722
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4555,14 +5125,29 @@
    "height": 2340,
    "sha256": "0dc26be4d9c8348a5f716c9898116f11c2847c1866f9bcdc54c51cc5250761d4",
    "perceptual_hash": "7806330a402c6e29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 80.69,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.66,
+     "chars": 284
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 63.71,
+     "chars": 3157
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4572,14 +5157,29 @@
    "height": 2340,
    "sha256": "8843ff50478f2c962bde0f3efb706d7760c563d01923db5b81e8a0d966f1db47",
    "perceptual_hash": "6066322a502c6e29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 81.6,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.92,
+     "chars": 301
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 67.28,
+     "chars": 3616
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4589,14 +5189,29 @@
    "height": 2340,
    "sha256": "c4d24301bc0fb7ec2ea4cffdcccc184a24954f51ec78f6a86af59d4b706aac09",
    "perceptual_hash": "796b5b2e646c7c21",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 77.12,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.62,
+     "chars": 333
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 55.62,
+     "chars": 441
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4606,14 +5221,31 @@
    "height": 2340,
    "sha256": "8e7dc1c53964336d943cf273ef1fce6e82dc9f3a1e0bc571b9a4fc0d88626392",
    "perceptual_hash": "7852f7a42c8e1f39",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 83.12,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "strix.ai"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.54,
+     "chars": 793
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 68.69,
+     "chars": 758
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4623,14 +5255,36 @@
    "height": 2340,
    "sha256": "c7c5183e5dd9043c8dc967ab569c00721e1890fdb1d618dd99aa58b3af432c2b",
    "perceptual_hash": "6d8e1b3a1b0e1e29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 81.35,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000074",
+    "name": "shannon",
+    "canonical_name": "KeygraphHQ/shannon"
+   },
+   "urls": [
+    "github.com",
+    "github.com/KeygraphHQ/shannon"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.24,
+     "chars": 640
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 68.47,
+     "chars": 718
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4640,14 +5294,32 @@
    "height": 2340,
    "sha256": "5bf32c7954f3f60fc0b7ffe4a9988b1bbbb1cf692df792a44f55be8e78b22b8a",
    "perceptual_hash": "7133664e6e666629",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 75.04,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "atxp.ai",
+    "atxp.ai/c/112048be-93aa-4786-be5a-eb795b8d9e1f"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 91.96,
+     "chars": 978
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 58.12,
+     "chars": 4282
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4657,14 +5329,36 @@
    "height": 2340,
    "sha256": "9c797fcbb9e8f6b0df0326ddf01d055918b477ad34424875bbc14b6cd34b0bd7",
    "perceptual_hash": "796991e06c2323a2",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 79.13,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000019",
+    "name": "skills",
+    "canonical_name": "vercel-labs/skills"
+   },
+   "urls": [
+    "github.com",
+    "github.com/anthropics/skills"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 99.08,
+     "chars": 254
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 59.18,
+     "chars": 79
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4674,14 +5368,29 @@
    "height": 2340,
    "sha256": "24ecc15519948dfb6bafbe29ba06d65337be775df7806f8e369f7f7f7431cf38",
    "perceptual_hash": "604130e064272326",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 79.74,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.46,
+     "chars": 170
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 62.02,
+     "chars": 779
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4691,14 +5400,29 @@
    "height": 2340,
    "sha256": "0046cb9b21983c7f4e82e501907c544dbec9a1bc68e5cd18b47e0af2ef8fb30c",
    "perceptual_hash": "618b95604e272222",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 79.6,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.98,
+     "chars": 139
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 62.22,
+     "chars": 1459
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4708,14 +5432,32 @@
    "height": 2340,
    "sha256": "d46c09713bb6b2c0b3ee4f8dd896643b7d76c29fdf2aa4f59f037ee07b436068",
    "perceptual_hash": "3321970b00f2e621",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 86.08,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/adblock"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.82,
+     "chars": 243
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 73.34,
+     "chars": 277
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4725,14 +5467,32 @@
    "height": 2340,
    "sha256": "cefcd238045d1e9df4b626c636db564aed5be54ebd85d4c59bdd49603b47fc74",
    "perceptual_hash": "6331e09899092c22",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "OCR_REVIEW",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "BROWSER",
+   "confidence": 89.09,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "Imstudio.ai",
+    "Imstudio.ai/downioad"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.96,
+     "chars": 635
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 83.22,
+     "chars": 95
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4742,14 +5502,29 @@
    "height": 2340,
    "sha256": "44ae73abcbaf92991ea908b528118c03b6be86eef7e1993029d1c47645e05273",
    "perceptual_hash": "6906078e26f27e21",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 78.38,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.88,
+     "chars": 304
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 57.89,
+     "chars": 1100
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4759,14 +5534,39 @@
    "height": 2340,
    "sha256": "757122412790f8bcc4fc45e6580ccb51b0e283764123e87772e89cfba01fa0f8",
    "perceptual_hash": "233f3c2c12260e2d",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 83.97,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/affaan-m/every",
+    "github.com/czlonkowski/n8",
+    "github.com/gsd-build",
+    "github.com/hesreallyhim",
+    "github.com/hkuds/lightrag",
+    "github.com/kepano/obsidia",
+    "github.com/obra/superpowe",
+    "github.com/thedotmack/cla"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.14,
+     "chars": 475
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 71.81,
+     "chars": 413
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4776,14 +5576,31 @@
    "height": 2340,
    "sha256": "c979eb0fe8a6347ea50721da3b367dd1e2c61a69dab263c725a3ccc5e062b156",
    "perceptual_hash": "5001c4f86d71ec0c",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.62,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "openworklabs.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.07,
+     "chars": 348
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.18,
+     "chars": 269
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4793,14 +5610,32 @@
    "height": 2340,
    "sha256": "d5cf571405caa05120f555e2c0ca878d6e4cc80033ef1b0f49b576a88d2bec1c",
    "perceptual_hash": "1d03730b021e7f29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 84.21,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/claude"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.08,
+     "chars": 240
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 70.34,
+     "chars": 176
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4810,14 +5645,32 @@
    "height": 2340,
    "sha256": "c89f8e1483faa75bcb868c8c8dc353deb3e4e4422f264353aae554d7141d9ec5",
    "perceptual_hash": "7eff23ae60ce9f21",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 85.69,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/office"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.8,
+     "chars": 252
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 73.59,
+     "chars": 184
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4827,14 +5680,32 @@
    "height": 2340,
    "sha256": "8a80f89f1838e8ff124dba2cacb14ab83ac55a947c02a15edf4fad03ec335ca5",
    "perceptual_hash": "e3ca178a48a6be29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 86.61,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/netflix"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.87,
+     "chars": 260
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 75.34,
+     "chars": 165
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4844,14 +5715,32 @@
    "height": 2340,
    "sha256": "8b421238322de58bd34daead49fa9b806a7fe746915f8b5415b2a83c8a429433",
    "perceptual_hash": "3087b7ab44b8f829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 78.84,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/winrar"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.27,
+     "chars": 248
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 63.42,
+     "chars": 300
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4861,14 +5750,32 @@
    "height": 2340,
    "sha256": "1d3c7b13c1727de5fc9e35070c03e16a3e553ebfb8a373b4e8fd185b0d7b01d7",
    "perceptual_hash": "4bdea3ab04387928",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 84.49,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/chatgpt"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.91,
+     "chars": 253
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.07,
+     "chars": 237
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4878,14 +5785,32 @@
    "height": 2340,
    "sha256": "2548177b13d4a0ad7d0b55aaa8b29691eb2a2d9fd6b79e118fc0b41839369ade",
    "perceptual_hash": "019223ab42ace829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 88.8,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "slmgr.sh",
+    "slmgr.sh/windows"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.93,
+     "chars": 238
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 80.67,
+     "chars": 124
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4895,14 +5820,31 @@
    "height": 2340,
    "sha256": "9137aea4db75f7773ba9980f0bab41a3c2f0703e11c06e18ff37cdd6a7f895b9",
    "perceptual_hash": "692b2f2f2e2e7c29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 87.88,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "The.ai"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 99.04,
+     "chars": 613
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 76.72,
+     "chars": 679
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4912,14 +5854,31 @@
    "height": 2340,
    "sha256": "9b4146de1f3383f9a91dbd30a2ee15848d35135975538e6f9a2f2bc9a650e0e4",
    "perceptual_hash": "6d30717168f0ec29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 82.88,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "The.ai"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.36,
+     "chars": 145
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 69.39,
+     "chars": 134
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4929,14 +5888,29 @@
    "height": 2340,
    "sha256": "b6bb8464e9a2f731c76a7c37fea366e0022738e8e37777d695134737b5dffc17",
    "perceptual_hash": "299c8af1d18e3021",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 88.41,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.83,
+     "chars": 1243
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.0,
+     "chars": 3236
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4946,14 +5920,29 @@
    "height": 2340,
    "sha256": "87a85fe35e4eda2f4ef2e7c60a8ad51f92da814440960db1c3b006d15b52072c",
    "perceptual_hash": "60597d0a4c6b7b29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 82.72,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.78,
+     "chars": 184
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 70.66,
+     "chars": 105
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4963,14 +5952,33 @@
    "height": 2340,
    "sha256": "0077d775e35d1be59df9243ade12a3e78127126aea88f50da636663658036ce6",
    "perceptual_hash": "69022f383d3f312d",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "SOCIAL_MEDIA",
+   "confidence": 89.59,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "https://www.skills.sh",
+    "instagram.com",
+    "skills.sh"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 99.07,
+     "chars": 432
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 80.11,
+     "chars": 493
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4980,14 +5988,31 @@
    "height": 2340,
    "sha256": "c06d4dc4f0acfd92e45b5b13777e5530ac7c0f5c1d085ff9f52f9e24edad9b5e",
    "perceptual_hash": "6d271b2ac0307ea9",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 84.97,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "arnismc.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.69,
+     "chars": 511
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 75.25,
+     "chars": 557
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -4997,14 +6022,31 @@
    "height": 2340,
    "sha256": "0599d8968a639c335e5b17678aa7705b3f13340c7f5ef2f3a879b46104ac65d9",
    "perceptual_hash": "6d271b2ec0303ea9",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 83.54,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "driveandlisten.app"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.02,
+     "chars": 529
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 73.06,
+     "chars": 579
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5014,14 +6056,29 @@
    "height": 2340,
    "sha256": "a26dc215ad75170817bca8a4a4294de102630fd3985d26ef7b74e87589e607e1",
    "perceptual_hash": "698aaad8cdb870e9",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 71.23,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.42,
+     "chars": 210
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 47.05,
+     "chars": 61
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5031,14 +6088,29 @@
    "height": 2340,
    "sha256": "b7ea0f15a73548b191c94f94a354aec3f4810dd84079dd43b3cd7fb76e2ea972",
    "perceptual_hash": "6925470f0d0c762c",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 90.44,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.99,
+     "chars": 943
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 82.88,
+     "chars": 2189
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5048,14 +6120,32 @@
    "height": 2340,
    "sha256": "220059465e39179b0ee0ff225f83f5ec43d0a55a63a65e51370ef64a546967c3",
    "perceptual_hash": "69071f9a3333362c",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 80.97,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "https://uizard.io/screenshot-scanner/",
+    "uizard.io"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.43,
+     "chars": 243
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 64.52,
+     "chars": 133
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5065,14 +6155,29 @@
    "height": 2340,
    "sha256": "21c589fd5675f3f0bf4b0bd4707b00cbd207a2b3af61e6979a10b43c388abb4f",
    "perceptual_hash": "7966655b693af224",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 85.79,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.87,
+     "chars": 622
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.71,
+     "chars": 681
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5082,14 +6187,31 @@
    "height": 2340,
    "sha256": "991f6e2cf0452b6ebceaf90aeb36d663aa47eb53406fc4183fbdbe5f521091bd",
    "perceptual_hash": "29e2595c2e233124",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 80.03,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "mrfreetools.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.03,
+     "chars": 397
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 63.03,
+     "chars": 127
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5099,14 +6221,31 @@
    "height": 2340,
    "sha256": "34a6c666d5f84c51d9abf01ffaca1b18cd35c2248a775d110eee96c8dfcdcbf6",
    "perceptual_hash": "f9df79060ecee224",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 89.03,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "nvidia.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.96,
+     "chars": 686
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 79.1,
+     "chars": 534
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5116,14 +6255,32 @@
    "height": 2340,
    "sha256": "3841fb61a8c6da8a68405a11ef43b3ef398b7bc1ef65e05f41c32d9c2e48b6ba",
    "perceptual_hash": "f9db6c4e3939786c",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 88.81,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "nvidia.com",
+    "nvidia.com/"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 99.41,
+     "chars": 539
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.21,
+     "chars": 618
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5133,14 +6290,32 @@
    "height": 2340,
    "sha256": "4fcf25679cc256678151872719aed0dd5af5e177b09c1f63819f42d763cadd7a",
    "perceptual_hash": "2cfd5c92b09af220",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 83.2,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "higgsfield.ai",
+    "higgsfield.ai/pricing/dev"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.04,
+     "chars": 481
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 69.36,
+     "chars": 277
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5150,14 +6325,33 @@
    "height": 2340,
    "sha256": "00cca439ffb7b0f520b63bf04c3342c969250780b0ccd678a6e01a7755b68500",
    "perceptual_hash": "6b2b574fcc4e3e24",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.84,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "ScrapeGraphAl.com",
+    "github.com",
+    "github.com/"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.08,
+     "chars": 799
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 73.6,
+     "chars": 691
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5167,14 +6361,32 @@
    "height": 2340,
    "sha256": "793c9fae4f46d4a931b383f11a4034408526f5d9c6a973366c1c30710281b278",
    "perceptual_hash": "793f1f3ac0647e24",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 83.66,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "RemovePaywalis.com",
+    "removepaywalls.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.14,
+     "chars": 370
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 69.19,
+     "chars": 273
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5184,14 +6396,29 @@
    "height": 2340,
    "sha256": "b99e7fef9bdb4c96d51290a0ba10272e5c619ed959d9ee9d76272d86a8d74c09",
    "perceptual_hash": "2b1b2671711b1f24",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "BROWSER",
+   "confidence": 72.34,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.6,
+     "chars": 242
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 46.08,
+     "chars": 2129
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5201,14 +6428,31 @@
    "height": 2340,
    "sha256": "2bc7396da1af77ce4c2063cab4e8536e082e5410c25bb1cd216de8feea7bf881",
    "perceptual_hash": "6910170466307824",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 83.38,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "poe.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.23,
+     "chars": 163
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 68.53,
+     "chars": 187
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5219,17 +6463,35 @@
    "sha256": "59bb1b77ea1bb0a45bfee60bc6323bf3bb90441dc383278bb8d38468da5354c7",
    "perceptual_hash": "230f717141011724",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 88.65,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000011",
     "name": "memU",
     "canonical_name": "NevaMind-AI/memU"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/nevamind-ai/memu"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.84,
+     "chars": 1171
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 81.45,
+     "chars": 1013
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5239,14 +6501,31 @@
    "height": 2340,
    "sha256": "b58f3cfb56509e5db96252a87783fdbfa6ce4fe5fa52fe8f09853575751370b9",
    "perceptual_hash": "e9d4f872576925a4",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 80.51,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "sidehustlestack.co"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 99.11,
+     "chars": 227
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 61.91,
+     "chars": 128
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5256,14 +6535,36 @@
    "height": 2340,
    "sha256": "6191a6e5c7a231756c01b850de510e7f1bc3c6cc5abfc1507095f81480510f70",
    "perceptual_hash": "69001b2b4c0e7e24",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 85.22,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000075",
+    "name": "gstack",
+    "canonical_name": "garrytan/gstack"
+   },
+   "urls": [
+    "github.com",
+    "https://github.com/garrytan/gstack"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.51,
+     "chars": 273
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 71.93,
+     "chars": 1010
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5273,14 +6574,32 @@
    "height": 2340,
    "sha256": "f5783679632acb0a73a7e5cec9dfe321016f6b5759221634440bd9b18bf24582",
    "perceptual_hash": "6990c83e32ddfced",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 85.32,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "REMIXR.IO",
+    "remixr.io/designing-witt"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.34,
+     "chars": 398
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 75.3,
+     "chars": 456
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5290,14 +6609,31 @@
    "height": 2340,
    "sha256": "2b4788f741fb9311ab6445cfe7215b36531f90b80068c75a6d04e410b3ec6677",
    "perceptual_hash": "8f936d2f2365252b",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 70.64,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "10x.app"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.57,
+     "chars": 1366
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 45.72,
+     "chars": 24
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5307,14 +6643,29 @@
    "height": 2340,
    "sha256": "6996a01ac22991826109b694aa3a321cf9ca07cb2c222525c26d32bbdd07f7b3",
    "perceptual_hash": "9b936b8f83236b26",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 68.41,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 91.1,
+     "chars": 485
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 45.72,
+     "chars": 24
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5324,14 +6675,29 @@
    "height": 2340,
    "sha256": "f899a8ffb2b614d19916b1c6b5d65adb60e94be077d7fef5248b31fd696ac81f",
    "perceptual_hash": "4fcb6d2fc3557ba6",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 67.92,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.73,
+     "chars": 339
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 41.1,
+     "chars": 74
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5341,14 +6707,29 @@
    "height": 2340,
    "sha256": "08a87248ec06f623a5b70078f28a9ddd9f656fd4d92493465f43112323e5061f",
    "perceptual_hash": "8f9b6d6f49797ba6",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 65.22,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.71,
+     "chars": 377
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 35.74,
+     "chars": 25
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5358,18 +6739,33 @@
    "height": 2340,
    "sha256": "a92248c8b0a55b87d2d1c2c8578d2cfb27f09ace3f2720ac392a3309bde60165",
    "perceptual_hash": "614c4c6e3a2cad20",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "GITHUB",
+   "confidence": 69.52,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000013",
     "name": "Stitch Agent Skills",
     "canonical_name": "https://github.com/google-labs-code/stitch-skills"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 91.04,
+     "chars": 888
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 48.0,
+     "chars": 990
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5379,14 +6775,32 @@
    "height": 2340,
    "sha256": "990cc070ffbe8c01e255bcb68a25e7af71da0b5d7e49a46aad3abd3faa1ef72a",
    "perceptual_hash": "608000ba769cac24",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 76.51,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "https://github.com/googie-labs-code/stitch-skilis"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.11,
+     "chars": 237
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 57.91,
+     "chars": 48
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5396,18 +6810,33 @@
    "height": 2340,
    "sha256": "a1099c13c1c2bca68ccfada9f08920a475c55efdc9b11779728eec991279ed56",
    "perceptual_hash": "030c103a38ecee20",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 88.61,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000014",
     "name": "Claude Cowork",
     "canonical_name": "https://claude.com/product/cowork"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.61,
+     "chars": 637
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 79.61,
+     "chars": 604
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5417,18 +6846,33 @@
    "height": 2340,
    "sha256": "7279cd0d3871d1570246553c8475c249baa424ef628da271d6cd556989f823f0",
    "perceptual_hash": "0404113078ecef2b",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 85.45,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000014",
     "name": "Claude Cowork",
     "canonical_name": "https://claude.com/product/cowork"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.41,
+     "chars": 582
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 72.5,
+     "chars": 570
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5438,14 +6882,32 @@
    "height": 2340,
    "sha256": "9f17daf877e64ae98679bf7eaa340352bb8a644c44be996dd18dad459cc76524",
    "perceptual_hash": "6b796ccc4d33362f",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 75.03,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "anara.com",
+    "aomni.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.84,
+     "chars": 288
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 55.23,
+     "chars": 28
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5455,14 +6917,29 @@
    "height": 2340,
    "sha256": "46abcaefd8abe98c2c767e484396a9b6733b3a16f2224de8dea475e22b5e014f",
    "perceptual_hash": "7b7f4c0ff194b62e",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 78.73,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.25,
+     "chars": 294
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 62.22,
+     "chars": 58
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5472,18 +6949,35 @@
    "height": 2340,
    "sha256": "54c1938490db8b8f73ce4f670e84f5a31b5474818ac44fd24ecd87ccc88692c7",
    "perceptual_hash": "6927070f0d4e7a24",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 88.33,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000015",
     "name": "OmniRoute",
     "canonical_name": "https://github.com/diegosouzapw/OmniRoute"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "history.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.89,
+     "chars": 977
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 79.77,
+     "chars": 848
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5493,14 +6987,31 @@
    "height": 2340,
    "sha256": "596278d9731d66cb420f3423e0ec921806030b74911c3e53f5903906ca9a0395",
    "perceptual_hash": "79093e73114a42a4",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 79.44,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "freetoolr.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.37,
+     "chars": 348
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 60.51,
+     "chars": 248
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5510,18 +7021,33 @@
    "height": 2340,
    "sha256": "ece572ea03973b4ef6a01585aa047dc94f91d6dad0582af79fe416f86ec2e3a2",
    "perceptual_hash": "29f8f8a3e6e6e5a4",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "GITHUB",
+   "confidence": 67.51,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000016",
     "name": "Infisical",
     "canonical_name": "https://github.com/infisical/infisical"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 92.05,
+     "chars": 854
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 42.97,
+     "chars": 880
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5531,14 +7057,29 @@
    "height": 2340,
    "sha256": "d6e0e7509a699cbd53d3e8e6203cf224601e8f2933c90fb08bb0585179a829ab",
    "perceptual_hash": "2d23c8d8393861a4",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 85.97,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.21,
+     "chars": 186
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 75.74,
+     "chars": 61
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5548,14 +7089,32 @@
    "height": 2340,
    "sha256": "e589c13de32fc81db1d0102f429634a7bdc00f70e1b2c6b373dfd7028dae140a",
    "perceptual_hash": "4d1c9359fce67729",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 80.79,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "hunyuanvideo.org",
+    "hunyuanvideo.org/er/"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.17,
+     "chars": 230
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 66.41,
+     "chars": 143
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5565,14 +7124,31 @@
    "height": 2340,
    "sha256": "ddad948ff22a06e54b6b1b9cfdeeb2a1db404405ca47747d2ed27e6160490cab",
    "perceptual_hash": "6918080204163224",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 84.17,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "framesynthesis.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.39,
+     "chars": 184
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 69.95,
+     "chars": 232
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5582,14 +7158,29 @@
    "height": 2340,
    "sha256": "8d95126591d958f5faf05d1ef543623fc030fad40f9fbd41707dee50af5d8353",
    "perceptual_hash": "93a96d8ec9212fa6",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 83.74,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.34,
+     "chars": 316
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 71.14,
+     "chars": 82
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5599,14 +7190,29 @@
    "height": 2340,
    "sha256": "92bc122195713c0f716e4b60030dcbbc0abeab440b708de8e66e471604825d3e",
    "perceptual_hash": "11db6d8fc99e8f26",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 78.99,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.39,
+     "chars": 204
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 61.59,
+     "chars": 151
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5616,18 +7222,33 @@
    "height": 2340,
    "sha256": "f63b7a70a57bd85fb0e341a38c9052bcfe4987f578bf012514a3fddbb9ab7af8",
    "perceptual_hash": "61eb6d8f8c8c8b26",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 76.82,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000017",
     "name": "Rive",
     "canonical_name": "https://rive.app/docs/getting-started/introduction"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.21,
+     "chars": 530
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 59.44,
+     "chars": 79
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5637,14 +7258,29 @@
    "height": 2340,
    "sha256": "d02d9a7c94f11d0d37a333a33f49e3d9c44b7478f3a3c8aac1aa372edb093e98",
    "perceptual_hash": "696b698fc9dabb26",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 74.11,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.92,
+     "chars": 566
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 53.29,
+     "chars": 296
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5654,14 +7290,31 @@
    "height": 2340,
    "sha256": "2da91763d67366bedc4048bac15573a6c47441c6ea77c1e849238c1220c6bb98",
    "perceptual_hash": "6980947184052329",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 86.53,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "xenriq.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.88,
+     "chars": 233
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.19,
+     "chars": 158
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5671,14 +7324,31 @@
    "height": 2340,
    "sha256": "c6b78e6e5e339d875f07241daac6f0f9df46cba5a4f446aec613fbeab43a4c40",
    "perceptual_hash": "4c4db08aa41486a6",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_VISION",
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 72.63,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "Vizard.ai"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.43,
+     "chars": 1140
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 51.83,
+     "chars": 4403
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5688,14 +7358,35 @@
    "height": 2340,
    "sha256": "9705ca05057a4872dd88fce0324fc34acfc50cfd18c95bdb3823b38ea98af883",
    "perceptual_hash": "6936373a201e7e24",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 85.9,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "google.com",
+    "google.com/search?q=metricool+mcp&rlz=1C1YTUH_en-GBIN1211IN1212&",
+    "https://help.me",
+    "https://metricool.com",
+    "metricool.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.08,
+     "chars": 1115
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.72,
+     "chars": 1122
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5705,18 +7396,33 @@
    "height": 2340,
    "sha256": "092d6f5c9f096670088446f47ea554c66534fc937d6baac9902e59d67ed4bff5",
    "perceptual_hash": "1c0f0b3127076551",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 79.62,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000009",
     "name": "Sunly AI",
     "canonical_name": "https://sunly.ai"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.75,
+     "chars": 223
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 63.49,
+     "chars": 286
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5726,14 +7432,29 @@
    "height": 2340,
    "sha256": "8c3fe38b32b12e7e76d387abed7eca32f71d35018f72387760b221b0bd61fa53",
    "perceptual_hash": "a994bab81d5c7e2f",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 86.18,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.83,
+     "chars": 511
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.53,
+     "chars": 526
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5743,14 +7464,29 @@
    "height": 2340,
    "sha256": "6aa7a40f3a0005995f5539d1f2de380a3c108d0960f54a7a8a11a0fcafcef2d9",
    "perceptual_hash": "8c17334f4e1e3e29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "SOCIAL_MEDIA",
+   "confidence": 87.4,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.58,
+     "chars": 586
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.22,
+     "chars": 545
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5760,14 +7496,29 @@
    "height": 2340,
    "sha256": "7a2222cb87da0a35358a4663f16ed6faa1447f18deeb5f2d0081d535d6e49b6d",
    "perceptual_hash": "e9cc322a4e46762f",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "OCR_REVIEW",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 93.44,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.33,
+     "chars": 791
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 89.56,
+     "chars": 797
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5777,14 +7528,29 @@
    "height": 2340,
    "sha256": "a4bdeb4217114c703086b51dde0ca7edb109fb3b720efe6b3b2567f02e0f3388",
    "perceptual_hash": "21f0cc4e32726829",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 87.34,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.28,
+     "chars": 604
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 77.41,
+     "chars": 67
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5794,14 +7560,29 @@
    "height": 2340,
    "sha256": "974d1182a63ea82e0ae614fe587a634c6e020e4cc848627df7cfcd6981efffc1",
    "perceptual_hash": "61733e13030a7a29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "OCR_REVIEW",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 92.61,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 99.38,
+     "chars": 380
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 85.84,
+     "chars": 377
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5811,14 +7592,29 @@
    "height": 2340,
    "sha256": "74df6960352bcccd54500cd2738857b6d565a48ab7a5febc68fcb01571c5169e",
    "perceptual_hash": "213795e044266268",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 77.89,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.51,
+     "chars": 247
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 62.26,
+     "chars": 156
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5828,14 +7624,31 @@
    "height": 2340,
    "sha256": "0de589faef83a4df3216eb08859168e32698cc11934c987a4e95ad71d6352c4a",
    "perceptual_hash": "e00d3f8a080a7a29",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 88.15,
+   "quality_level": 1,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.45,
+     "chars": 278
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.85,
+     "chars": 283
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5845,14 +7658,31 @@
    "height": 2340,
    "sha256": "18327d04ecfda1ec1152b8e3bf222eafc038879b3c6cb3a9d747b2e2eac35391",
    "perceptual_hash": "e00f3f336e4e7229",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 92.07,
+   "quality_level": 2,
    "entity": null,
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.84,
+     "chars": 645
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 86.3,
+     "chars": 644
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5862,14 +7692,29 @@
    "height": 2340,
    "sha256": "bd5f3cd0d5e16e972c3089b54ef3d28708032b3c0cec7edb79fa94f4d8e8e736",
    "perceptual_hash": "2c2cb1724c466228",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "OCR_REVIEW",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 90.07,
+   "quality_level": 1,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.58,
+     "chars": 684
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 83.56,
+     "chars": 605
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5879,18 +7724,33 @@
    "height": 2340,
    "sha256": "96f67c6757303990b6488a12234ece87a8e08738e7e0afd15842c9962d27036a",
    "perceptual_hash": "61a28e6a46262229",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 92.75,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000018",
     "name": "Claude Code",
     "canonical_name": "https://code.claude.com/docs/en/goal"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.12,
+     "chars": 729
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 88.39,
+     "chars": 466
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5900,18 +7760,33 @@
    "height": 2340,
    "sha256": "6cc9218ac1e0d19b496da6949b0ecfedbb20d25d6bb86206aed1cc15e27ba64d",
    "perceptual_hash": "212f8c6066666328",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 88.81,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000019",
     "name": "skills",
     "canonical_name": "vercel-labs/skills"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.83,
+     "chars": 788
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 81.79,
+     "chars": 780
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5921,18 +7796,36 @@
    "height": 2340,
    "sha256": "a030e3d2eb3ad38de53c071e85b97b380bf0cf86db5303a58e09e5fbd6590c12",
    "perceptual_hash": "78230fe84c066228",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 89.53,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000018",
     "name": "Claude Code",
     "canonical_name": "https://code.claude.com/docs/en/goal"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "claude.com",
+    "claude.com/en/articles/15424964-claude-fable-5-pr"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.84,
+     "chars": 615
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 84.23,
+     "chars": 641
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5942,18 +7835,36 @@
    "height": 2340,
    "sha256": "81f02fedb98dc7aba284f2abb8e56375a8ee737fd62117447bbda60519d769bb",
    "perceptual_hash": "6917162b0c8e7629",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "BROWSER",
+   "confidence": 87.74,
+   "quality_level": 1,
    "entity": {
     "entity_id": "ENT-000020",
     "name": "claude-mem",
     "canonical_name": "thedotmack/claude-mem"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "claude-mem.ai",
+    "claude-mem.ai/tele"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 97.09,
+     "chars": 635
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.39,
+     "chars": 347
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5963,18 +7874,33 @@
    "height": 2340,
    "sha256": "db649b30b539f9d6a39738b078675510bc000c6b697b93b806bd51b4d0db17c6",
    "perceptual_hash": "e91717e044066228",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 78.78,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000021",
     "name": "impeccable",
     "canonical_name": "pbakaus/impeccable"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.38,
+     "chars": 274
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 62.19,
+     "chars": 194
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -5984,14 +7910,29 @@
    "height": 2340,
    "sha256": "6e7270a005389df71566bfeebe8a49e15985d7ed12ae3901341bd36966bb2815",
    "perceptual_hash": "60272b8e4c967629",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 83.74,
+   "quality_level": 2,
    "entity": null,
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.55,
+     "chars": 309
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 70.93,
+     "chars": 244
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6001,18 +7942,33 @@
    "height": 2340,
    "sha256": "76530c1f6157962e3c14bb921224a33a5a8d0bfa4383854a3c12acef7f1ed754",
    "perceptual_hash": "e05b9de846272229",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "NEEDS_RESEARCH",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 80.38,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000022",
     "name": "claude-handoff",
     "canonical_name": "REMvisual/claude-handoff"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 98.34,
+     "chars": 225
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 62.42,
+     "chars": 167
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6023,17 +7979,32 @@
    "sha256": "b7e1d85321d485d55f9d36c4e01b4cc74af68a7ec73318d9c574653efc07f11a",
    "perceptual_hash": "795957684c4e3229",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "MIXED_UI",
+   "confidence": 88.03,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000023",
     "name": "Accio Work",
     "canonical_name": "https://www.accio.com/work/doc"
    },
    "urls": [],
-   "engines": [],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.08,
+     "chars": 794
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 82.99,
+     "chars": 781
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6044,17 +8015,35 @@
    "sha256": "09c6985723c17159e7b6e33d4b5200c67b51e3e189715a505a3f0dd652d26e1b",
    "perceptual_hash": "230751585c410f34",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "GITHUB",
+   "confidence": 75.12,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000024",
     "name": "Pixelle-Video",
     "canonical_name": "ATH-MaaS/Pixelle-Video"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/ath-maas/pixelle-video"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.03,
+     "chars": 568
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 54.21,
+     "chars": 506
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6064,18 +8053,37 @@
    "height": 2340,
    "sha256": "21ce4f4aa4d69514c8405e7335d16cdece37bb211dcbcbe8b8a814d81f088872",
    "perceptual_hash": "23cce87171ece471",
-   "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "status": "OCR_REVIEW",
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "GITHUB",
+   "confidence": 86.11,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000025",
     "name": "Graft",
     "canonical_name": "trailhq/Graft"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "NANONETS.AI",
+    "github.com",
+    "github.com/nanonets/graft"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.44,
+     "chars": 914
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 78.78,
+     "chars": 483
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6086,17 +8094,35 @@
    "sha256": "9d4ca06e3eb8fb8e9094ec8530f223602d0d5be5ebff618c9f414fbb2b29802a",
    "perceptual_hash": "3301717145171671",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "GITHUB",
+   "confidence": 84.07,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000026",
     "name": "claude-code-best-practice",
     "canonical_name": "shanraisshan/claude-code-best-practice"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/shanraisshan/claude-code-best-practice"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.73,
+     "chars": 1054
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 74.41,
+     "chars": 675
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6106,7 +8132,7 @@
    "height": 2340,
    "sha256": "2ac1ee0c9f54786dac7899cd91cb92dc84862edef8a7d9cc7c920228a59d53c9",
    "perceptual_hash": "25133171d4d45731",
-   "status": "COMPLETED",
+   "status": "OCR_PROCESSING",
    "ocr_status": null,
    "screenshot_type": null,
    "confidence": null,
@@ -6128,17 +8154,35 @@
    "sha256": "9ab9919de146ee71ab63a858a40eac0ef4a0bc2b9631cb416e32a0ab8ab8a755",
    "perceptual_hash": "070f8582c8541331",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 88.12,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000028",
     "name": "vox-director",
     "canonical_name": "Alisa0808/vox-director"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/alisa0808/vox-director"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.45,
+     "chars": 1030
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 80.78,
+     "chars": 699
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6149,17 +8193,35 @@
    "sha256": "f11abe0376b4b5ae7e80590a13073e51fb2ff1e0d3904a6e6ffae32b0c4e5c96",
    "perceptual_hash": "274d71314d731361",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_NEEDS_VISION",
+   "screenshot_type": "GITHUB",
+   "confidence": 70.48,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000029",
     "name": "cc-haha",
     "canonical_name": "NanmiCoder/cc-haha"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/nanmicoder/cc-haha"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 91.71,
+     "chars": 743
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 49.26,
+     "chars": 605
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6170,17 +8232,35 @@
    "sha256": "648565b73063c4d1998119973a1f1c9444dca72c35475daa4a416393350d5c39",
    "perceptual_hash": "250f71714d051371",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 90.04,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000011",
     "name": "memU",
     "canonical_name": "NevaMind-AI/memU"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/nevamind-ai/memu"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 96.86,
+     "chars": 1292
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 83.22,
+     "chars": 1138
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6191,17 +8271,35 @@
    "sha256": "ac7c36cec80fc47e3bbd8fda0440bc9431b7b9726cf5169d7e4ca02757b31465",
    "perceptual_hash": "270d82b8cd471731",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 82.4,
+   "quality_level": 6,
    "entity": {
-    "entity_id": "ENT-000030",
-    "name": "Skills",
-    "canonical_name": "MengTo/Skills"
+    "entity_id": "ENT-000019",
+    "name": "skills",
+    "canonical_name": "vercel-labs/skills"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/mengto/skills"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.54,
+     "chars": 1525
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 70.26,
+     "chars": 1243
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6212,17 +8310,35 @@
    "sha256": "5690cfd0935d82939646c8c5251a52e23e1cb6b1d7d2970ac8c0f11f965442b9",
    "perceptual_hash": "133371d4d4070f71",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 81.81,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000031",
     "name": "megaphone",
     "canonical_name": "Kuberwastaken/megaphone"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/kuberwestaker/megaphone"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.29,
+     "chars": 687
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 68.32,
+     "chars": 398
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6233,17 +8349,35 @@
    "sha256": "1b471f1f77aef97042bc4290dc33d7d2f6cc5132b510ed394cc3cb754b13dfd6",
    "perceptual_hash": "3345ccd031131f31",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 75.45,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000032",
     "name": "gbro-collage-broll",
     "canonical_name": "pyang5166/gbro-collage-broll"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/pyang5166/gbro-collage-broll"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.55,
+     "chars": 708
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 55.36,
+     "chars": 560
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6254,17 +8388,35 @@
    "sha256": "02e2bedfe3173a17619f4b3b052c74d84759b6f30c16bd13abdf3e27c4a06ce4",
    "perceptual_hash": "0771f0ccccc4fa21",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_CONFLICTING",
+   "screenshot_type": "GITHUB",
+   "confidence": 88.79,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000033",
     "name": "opencodex",
     "canonical_name": "lidge-jun/opencodex"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/lidge-jun/opencodex"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.09,
+     "chars": 1279
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 82.49,
+     "chars": 880
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6275,17 +8427,35 @@
    "sha256": "8d4ca68201293673afc0a92e43998c59b1163c4a0058e1efdba05cceff19a1f4",
    "perceptual_hash": "230d51e6c4790771",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 75.83,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000034",
     "name": "motion-anything",
     "canonical_name": "nexu-io/motion-anything"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/nexu-lo/motion-anything"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.6,
+     "chars": 1461
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 57.07,
+     "chars": 451
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6296,17 +8466,36 @@
    "sha256": "285ce8c923b1d6e0811524bf438165e80962975e874483037bea18d6d25bcd02",
    "perceptual_hash": "2307114d610f2771",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 79.88,
+   "quality_level": 6,
    "entity": {
-    "entity_id": "ENT-000035",
-    "name": "LLM Agent Trader",
-    "canonical_name": "https://github.com/jason8745/llm-agent-trader"
+    "entity_id": "ENT-000076",
+    "name": "llm-agent-trader",
+    "canonical_name": "jason8745/llm-agent-trader"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/jason8745/llm-agent-trader",
+    "star-history.com"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 91.19,
+     "chars": 555
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 68.57,
+     "chars": 389
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6317,17 +8506,35 @@
    "sha256": "426306639ae811bb0a1b7b0727c14c60ce60c95406eea00f9e6a727f42a51899",
    "perceptual_hash": "0f13310951094f71",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 79.31,
+   "quality_level": 6,
    "entity": {
     "entity_id": "ENT-000036",
     "name": "i-have-adhd",
     "canonical_name": "ayghri/i-have-adhd"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/ayghri/i-have-adhd"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.35,
+     "chars": 1042
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 64.26,
+     "chars": 510
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6337,14 +8544,36 @@
    "height": 2340,
    "sha256": "4cd4fcada6352f7111a116691fe3128d437cec0c879b5fdba6448ce16ca4f977",
    "perceptual_hash": "2507d0d869071771",
-   "status": "NEEDS_RESEARCH",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
-   "entity": null,
-   "urls": [],
-   "engines": [],
+   "status": "COMPLETED",
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 80.05,
+   "quality_level": 6,
+   "entity": {
+    "entity_id": "ENT-000077",
+    "name": "Fire",
+    "canonical_name": "taesiri/Fire"
+   },
+   "urls": [
+    "github.com",
+    "github.com/taesiri/fire"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 93.38,
+     "chars": 926
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 66.72,
+     "chars": 561
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6355,17 +8584,35 @@
    "sha256": "4f12362a4b91b7a37c25cd8da92feb600dab36811c980f086bd998198515af3a",
    "perceptual_hash": "2d1751ecec170771",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 90.86,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000037",
     "name": "img2threejs",
     "canonical_name": "img2threejs/img2threejs"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/heainhe/img2threejs"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 95.92,
+     "chars": 991
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 85.8,
+     "chars": 739
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6376,17 +8623,35 @@
    "sha256": "dcba5357aa16ea36242e0a800863f7363238d5296a660e157adb071a14096ede",
    "perceptual_hash": "234d59cec6d00371",
    "status": "COMPLETED",
-   "ocr_status": null,
-   "screenshot_type": null,
-   "confidence": null,
-   "quality_level": 0,
+   "ocr_status": "OCR_GOOD",
+   "screenshot_type": "GITHUB",
+   "confidence": 83.61,
+   "quality_level": 2,
    "entity": {
     "entity_id": "ENT-000038",
     "name": "film-space",
     "canonical_name": "maxprokopp/film-space"
    },
-   "urls": [],
-   "engines": [],
+   "urls": [
+    "github.com",
+    "github.com/maxprokopp/film"
+   ],
+   "engines": [
+    {
+     "engine": "rapidocr",
+     "version": "3.9.2",
+     "preprocessing": "original",
+     "confidence": 94.98,
+     "chars": 879
+    },
+    {
+     "engine": "tesseract",
+     "version": "5.5.0",
+     "preprocessing": "psm3",
+     "confidence": 72.23,
+     "chars": 707
+    }
+   ],
    "visibility": "REVIEW_REQUIRED"
   },
   {
@@ -6396,7 +8661,7 @@
    "height": 2340,
    "sha256": "7df401ee8a770a8b1438fc9738fb98ab3e0226456f0c5eb57b2fab39d73afac3",
    "perceptual_hash": "273371e8ccd413e8",
-   "status": "COMPLETED",
+   "status": "OCR_PROCESSING",
    "ocr_status": null,
    "screenshot_type": null,
    "confidence": null,

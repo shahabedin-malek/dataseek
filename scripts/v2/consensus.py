@@ -60,7 +60,16 @@ def reconcile(results: list[dict]) -> dict:
     elif len(ok) == 1 and mean_conf is not None and mean_conf < 55:
         status, level = "OCR_LOW_CONFIDENCE", 1
     elif agreement is not None and agreement < 0.35:
-        status, level = "OCR_CONFLICTING", 1
+        # Only a *credible* witness (confidence >= 80) may declare a conflict; a
+        # weak second engine disagreeing with a strong one is expected, not a
+        # contradiction, and is resolved in favour of the stronger engine.
+        witness_conf = witnesses[0].get("confidence") or 0
+        if witness_conf >= 80:
+            status, level = "OCR_CONFLICTING", 1
+        elif primary and (primary.get("confidence") or 0) >= 85:
+            status, level = "OCR_GOOD", 2 if vision else 1
+        else:
+            status, level = "OCR_PARTIAL", 1
     elif primary and (primary.get("confidence") or 0) < 70:
         status, level = "OCR_PARTIAL", 1
     elif vision:

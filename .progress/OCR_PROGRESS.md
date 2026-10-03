@@ -1,6 +1,6 @@
 # OCR Progress
 
-- v2 processed: 61/907
-- Status distribution: {'OCR_CONFLICTING': 19, 'OCR_GOOD': 38, 'NONE': 849, 'OCR_NEEDS_VISION': 1}
-- Quality levels: {0: 849, 1: 1, 2: 27, 3: 23, 5: 2, 6: 5}
+- v2 processed: 213/907
+- Status distribution: {'OCR_GOOD': 181, 'NONE': 697, 'OCR_CONFLICTING': 14, 'OCR_NEEDS_VISION': 15}
+- Quality levels: {0: 697, 1: 61, 2: 96, 6: 53}
 - Per-image OCR cache: `/home/chris/dataseek/data/ocr` (one directory per task, one JSON per engine)
