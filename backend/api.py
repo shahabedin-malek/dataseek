@@ -203,12 +203,17 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 if path == "/api/admin/reprocess":
                     return self._reprocess(body.get("task_id"))
-                if path.endswith("/merge"):
-                    return self._merge(path.split("/")[3], body.get("into"))
-                if path.endswith("/restore"):
-                    return self._restore(path.split("/")[3])
-                if path.endswith("/edit"):
-                    return self._edit(path.split("/")[3], body)
+                # Routes are /api/admin/resource/<entity_id>/<action>, matching
+                # the admin UI (entity_id is segment index 3).
+                parts = path.strip("/").split("/")
+                if (len(parts) == 5 and parts[:3] == ["api", "admin", "resource"]
+                        and parts[3] and parts[4] in ("merge", "restore", "edit")):
+                    entity_id, action = parts[3], parts[4]
+                    if action == "merge":
+                        return self._merge(entity_id, body.get("into"))
+                    if action == "restore":
+                        return self._restore(entity_id)
+                    return self._edit(entity_id, body)
             except Exception as exc:  # noqa: BLE001
                 return self._json({"error": f"{type(exc).__name__}: {exc}"}, 500)
         return self._json({"error": "not found"}, 404)
