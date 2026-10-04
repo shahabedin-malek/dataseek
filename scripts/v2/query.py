@@ -32,7 +32,7 @@ def resource_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
     urls += [r["url"] for r in db.execute(
         "SELECT DISTINCT url FROM urls WHERE entity_id=? AND url NOT IN (SELECT url FROM entity_urls WHERE entity_id=?)",
         (entity_id, entity_id))]
-    screenshots = [r["task_id"] for r in db.execute(
+    records = [r["task_id"] for r in db.execute(
         "SELECT task_id FROM entity_images WHERE entity_id=? ORDER BY task_id", (entity_id,))]
     tags = _j(row["tags"], [])
     for r in db.execute("SELECT t.name FROM tags t JOIN resource_tags rt ON rt.tag_id=t.tag_id "
@@ -63,8 +63,8 @@ def resource_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
         "tags": sorted(set(tags)),
         "features": features,
         "technologies": technologies,
-        "source_count": len(screenshots),
-        "screenshots": screenshots,
+        "source_count": len(records),
+        "records": records,
         "quality_level": row["quality_level"] or 0,
         "updated_at": row["updated_at"],
     }
@@ -77,7 +77,12 @@ def all_resources(db: sqlite3.Connection) -> list[dict]:
     return [resource_record(db, r) for r in rows]
 
 
-def screenshot_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
+def record_detail(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
+    """Public shape for one evidence record.
+
+    The raw source filename is deliberately not exposed: it is an internal
+    provenance artefact and may itself carry the source format in its name.
+    """
     task_id = row["task_id"]
     cons = db.execute("SELECT * FROM ocr_consensus WHERE task_id=?", (task_id,)).fetchone()
     entity = None
@@ -96,12 +101,11 @@ def screenshot_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
                    "FROM ocr_runs WHERE task_id=? ORDER BY ocr_run_id", (task_id,))]
     return {
         "task_id": task_id,
-        "filename": row["source_filename"],
         "width": row["width"], "height": row["height"],
         "sha256": row["sha256"], "perceptual_hash": row["perceptual_hash"],
         "status": row["v2_status"] or row["status"],
         "ocr_status": cons["status"] if cons else None,
-        "screenshot_type": cons["screenshot_type"] if cons else None,
+        "record_type": cons["screenshot_type"] if cons else None,
         "confidence": cons["confidence"] if cons else None,
         "quality_level": cons["quality_level"] if cons else 0,
         "final_text": (cons["final_text"] if cons else "") or "",
@@ -113,9 +117,9 @@ def screenshot_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
     }
 
 
-def all_screenshots(db: sqlite3.Connection) -> list[dict]:
+def all_records(db: sqlite3.Connection) -> list[dict]:
     rows = db.execute("SELECT * FROM tasks ORDER BY task_id").fetchall()
-    return [screenshot_record(db, r) for r in rows]
+    return [record_detail(db, r) for r in rows]
 
 
 def statistics(db: sqlite3.Connection) -> dict:
@@ -125,7 +129,7 @@ def statistics(db: sqlite3.Connection) -> dict:
         "SELECT COALESCE(primary_category,category,'Other') primary_category, COUNT(*) n "
         "FROM entities WHERE is_invalid=0 AND deleted_at IS NULL GROUP BY 1 ORDER BY n DESC")]
     return {
-        "screenshots": one("SELECT COUNT(*) FROM tasks"),
+        "records": one("SELECT COUNT(*) FROM tasks"),
         "v2_processed": one("SELECT COUNT(*) FROM tasks WHERE processing_version=?", config.PROCESSING_VERSION),
         "resources": one("SELECT COUNT(*) FROM entities WHERE is_invalid=0 AND deleted_at IS NULL"),
         "categories": len([c for c in cats if c["count"]]),

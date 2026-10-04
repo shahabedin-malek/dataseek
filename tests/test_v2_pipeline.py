@@ -31,11 +31,49 @@ class ConsensusTests(unittest.TestCase):
 
     def test_two_credible_engines_that_disagree_are_conflicting(self):
         rec = consensus.reconcile([
-            engine("rapidocr", "alpha beta gamma delta epsilon", 90.0),
-            engine("tesseract", "zzz yyy xxx www vvv uuu", 88.0),
+            engine("rapidocr", "alpha beta gamma delta epsilon zeta", 90.0),
+            engine("tesseract", "zzz yyy xxx www vvv uuu ttt", 88.0),
         ])
         self.assertEqual(rec["status"], "OCR_CONFLICTING")
-        self.assertLess(rec["agreement"], 0.35)
+        self.assertLess(rec["agreement"], consensus.CONFLICT_AGREEMENT)
+
+    def test_low_confidence_short_witness_is_not_a_conflict(self):
+        # A confident primary engine plus a truncated, low-confidence second
+        # engine must resolve as good, not as a contradiction.
+        rec = consensus.reconcile([
+            engine("rapidocr", "Launch Comfy Cloud Hasan Toor you don't need to pay "
+                   "for AI tools anymore instead use these three tools to run any "
+                   "open source model", 98.9),
+            engine("tesseract", "First is Pinokig", 45.7),
+        ])
+        self.assertEqual(rec["status"], "OCR_GOOD")
+        self.assertIsNone(rec["agreement"])
+
+    def test_confident_but_truncated_witness_is_not_a_conflict(self):
+        # Tesseract often reads the same page but far less of it. Reading less
+        # is not disagreeing.
+        rec = consensus.reconcile([
+            engine("rapidocr", "the open agent skills ecosystem called arshman khalid "
+                   "follow original audio get free ai employees from this website", 94.8),
+            engine("tesseract", "the open agent skills ecosystem original audio", 76.0),
+        ])
+        self.assertEqual(rec["status"], "OCR_GOOD")
+        self.assertIsNone(rec["agreement"])
+
+    def test_agreement_is_order_independent(self):
+        words = ["alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta"]
+        forward = " ".join(words)
+        shuffled = " ".join([words[3], words[0], words[6], words[1], words[5], words[2], words[4]])
+        self.assertGreaterEqual(consensus.similarity(forward, shuffled), 0.99)
+
+    def test_single_strong_engine_is_good_without_vision(self):
+        rec = consensus.reconcile([engine("rapidocr", "a clean readable screenshot", 96.0)])
+        self.assertEqual(rec["status"], "OCR_GOOD")
+        self.assertEqual(rec["quality_level"], 1)
+
+    def test_single_weak_engine_is_low_confidence(self):
+        rec = consensus.reconcile([engine("tesseract", "faint smudged text here", 41.0)])
+        self.assertEqual(rec["status"], "OCR_LOW_CONFIDENCE")
 
     def test_no_text_is_unreadable(self):
         rec = consensus.reconcile([engine("rapidocr", "", None)])

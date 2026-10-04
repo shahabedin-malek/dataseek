@@ -29,9 +29,12 @@ def cmd_process(args: argparse.Namespace) -> int:
 
 def cmd_batch(args: argparse.Namespace) -> int:
     db = connect()
+    # A task left in OCR_PROCESSING was interrupted before its artifacts were
+    # written, so it must be retried even though its version stamp is set.
     rows = db.execute(
-        "SELECT task_id FROM tasks WHERE (processing_version IS NULL OR processing_version<>?) "
-        "ORDER BY task_id", (config.PROCESSING_VERSION,)).fetchall()
+        "SELECT task_id FROM tasks WHERE (processing_version IS NULL OR processing_version<>? "
+        "OR v2_status='OCR_PROCESSING') ORDER BY task_id",
+        (config.PROCESSING_VERSION,)).fetchall()
     db.close()
     ids = [r[0] for r in rows]
     if args.start:

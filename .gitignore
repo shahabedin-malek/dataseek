@@ -19,7 +19,8 @@ backend/.admin_token
 prompt1.md
 prompt2.md
 RESUME-PROMPT.md
-DATASEEK FULL REBUILD.md
+DATASEEK*.md
+*.prompt.md
 
 # Legacy low-confidence processing outputs (retained locally, not in the repo)
 legacy/

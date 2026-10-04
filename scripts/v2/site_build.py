@@ -7,8 +7,12 @@ from __future__ import annotations
 
 import json
 import shutil
+import sys
+from pathlib import Path
 
-from . import config
+# Allow both `python -m v2.site_build` and `python scripts/v2/site_build.py`.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from v2 import config  # noqa: E402
 
 
 def build_site() -> dict:
@@ -23,7 +27,7 @@ def build_site() -> dict:
     # Copy the site data bundle produced by export.py.
     src = config.ROOT / "web" / "data" / "dataseek.json"
     if not src.is_file():
-        from . import export
+        from v2 import export
         export.write_exports()
     shutil.copy2(src, data_dir / "dataseek.json")
     (site / "vercel.json").write_text(json.dumps({

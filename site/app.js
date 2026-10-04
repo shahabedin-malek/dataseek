@@ -44,7 +44,7 @@ function route() {
   const parts = hash.split("/").filter(Boolean);
   state.page = parts[0] || "home";
   state.entityId = parts[0] === "resource" ? parts[1] : null;
-  state.taskId = parts[0] === "screenshot" ? parts[1] : null;
+  state.taskId = parts[0] === "record" ? parts[1] : null;
   if (state.page === "home") { state.q = ""; const q = $("#q"); if (q) q.value = ""; }
   renderPage();
   window.scrollTo(0, 0);
@@ -80,7 +80,7 @@ function filteredResources() {
 function renderPage() {
   const main = $("main");
   if (state.page === "resource") return renderResource(main);
-  if (state.page === "screenshot") return renderScreenshot(main);
+  if (state.page === "record") return renderRecord(main);
   if (state.page === "categories") return renderCategories(main);
   return renderHome(main);
 }
@@ -99,7 +99,7 @@ function resourceCard(r) {
     <h3>${esc(r.name)}</h3>
     <div class="desc">${esc(r.short_description || "No verified description yet.")}</div>
     <div class="meta">${(r.tags || []).slice(0, 4).map((t) => `<span class="pill">${esc(t)}</span>`).join("")}</div>
-    <div class="foot"><span>${esc(r.type || "resource")}</span><span>${r.source_count || 0} screenshot${(r.source_count || 0) === 1 ? "" : "s"}</span></div>
+    <div class="foot"><span>${esc(r.type || "resource")}</span><span>${r.source_count || 0} source${(r.source_count || 0) === 1 ? "" : "s"}</span></div>
   </a>`;
 }
 
@@ -115,11 +115,11 @@ function renderHome(main) {
   main.innerHTML = `
     <section class="hero">
       <h1>DataSeek</h1>
-      <p>Search everything discovered from the screenshot collection — resources, tools, repositories,
-      websites and apps, each traceable to its source screenshots with OCR and research provenance.</p>
+      <p>Search a curated knowledge base of resources, tools, repositories, websites and apps —
+      each one traced back to its source evidence, with extraction and research provenance.</p>
     </section>
     <div class="stats">
-      ${stat(s.screenshots, "Screenshots")}
+      ${stat(s.records, "Records")}
       ${stat(s.resources, "Resources")}
       ${stat(s.categories, "Categories")}
       ${stat(s.technologies, "Technologies")}
@@ -180,10 +180,29 @@ function stat(n, label) {
   return `<div class="stat"><div class="n">${(n ?? 0).toLocaleString()}</div><div class="l">${esc(label)}</div></div>`;
 }
 
+function relatedResources(r, limit = 8) {
+  // Evidence-based relationships only: same subcategory, or shared technologies.
+  const tech = new Set(r.technologies || []);
+  return state.data.resources
+    .filter((x) => x.entity_id !== r.entity_id)
+    .map((x) => {
+      let score = 0;
+      if (x.primary_category === r.primary_category) score += 1;
+      if (r.subcategory && x.subcategory === r.subcategory) score += 2;
+      for (const t of x.technologies || []) if (tech.has(t)) score += 1;
+      return { x, score };
+    })
+    .filter((e) => e.score > 0)
+    .sort((a, b) => b.score - a.score || (b.x.source_count || 0) - (a.x.source_count || 0))
+    .slice(0, limit)
+    .map((e) => e.x);
+}
+
 function renderResource(main) {
   const r = state.data.resources.find((x) => x.entity_id === state.entityId);
   if (!r) { main.innerHTML = `<div class="empty">Resource not found.</div>`; return; }
-  const shots = state.data.screenshots.filter((s) => s.entity && s.entity.entity_id === r.entity_id);
+  const shots = state.data.records.filter((s) => s.entity && s.entity.entity_id === r.entity_id);
+  const related = relatedResources(r);
   main.innerHTML = `
     <p><a href="#/">← Back to search</a></p>
     <div class="detail">
@@ -215,34 +234,36 @@ function renderResource(main) {
       </div>
       ${(r.features || []).length ? `<div class="section-title">Features (official source)</div>
         <ul>${r.features.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
-      <div class="section-title">Source screenshots (${shots.length})</div>
-      <div class="shots">${shots.map((s) => `<a class="card" href="#screenshot/${esc(s.task_id)}">
+      ${related.length ? `<div class="section-title">Related resources</div>
+        <div class="cards">${related.map(resourceCard).join("")}</div>` : ""}
+      <div class="section-title">Source records (${shots.length})</div>
+      <div class="shots">${shots.map((s) => `<a class="card" href="#record/${esc(s.task_id)}">
         <div class="thumb">${esc(s.task_id)}</div>
-        <div class="foot"><span>${esc(s.screenshot_type || "—")}</span><span>L${s.quality_level}</span></div></a>`).join("")}</div>
+        <div class="foot"><span>${esc(s.record_type || "—")}</span><span>L${s.quality_level}</span></div></a>`).join("")}</div>
       <div class="section-title">Evidence</div>
-      <table class="data"><tr><th>Screenshot</th><th>OCR status</th><th>Confidence</th><th>Type</th></tr>
-        ${shots.map((s) => `<tr><td><a href="#screenshot/${esc(s.task_id)}">${esc(s.task_id)}</a></td>
+      <table class="data"><tr><th>Record</th><th>OCR status</th><th>Confidence</th><th>Type</th></tr>
+        ${shots.map((s) => `<tr><td><a href="#record/${esc(s.task_id)}">${esc(s.task_id)}</a></td>
           <td>${esc(s.ocr_status || "—")}</td><td>${s.confidence ?? "—"}</td>
-          <td>${esc(s.screenshot_type || "—")}</td></tr>`).join("")}</table>
+          <td>${esc(s.record_type || "—")}</td></tr>`).join("")}</table>
     </div>`;
 }
 
-function renderScreenshot(main) {
-  const s = state.data.screenshots.find((x) => x.task_id === state.taskId);
-  if (!s) { main.innerHTML = `<div class="empty">Screenshot not found.</div>`; return; }
+function renderRecord(main) {
+  const s = state.data.records.find((x) => x.task_id === state.taskId);
+  if (!s) { main.innerHTML = `<div class="empty">Record not found.</div>`; return; }
   main.innerHTML = `
     <p><a href="#/">← Back to search</a></p>
     <div class="detail">
       <h1>${esc(s.task_id)}</h1>
-      <div class="sub">${esc(s.filename)} · ${s.width}×${s.height} · ${esc(s.status)}</div>
+      <div class="sub">${s.width}×${s.height} · ${esc(s.status)}</div>
       <div class="grid2">
         <dl class="kv">
           <dt>OCR status</dt><dd>${esc(s.ocr_status || "—")}</dd>
-          <dt>Screenshot type</dt><dd>${esc(s.screenshot_type || "—")}</dd>
+          <dt>Record type</dt><dd>${esc(s.record_type || "—")}</dd>
           <dt>Confidence</dt><dd>${s.confidence ?? "—"}</dd>
           <dt>Quality level</dt><dd>${s.quality_level} / 6</dd>
           <dt>Resource</dt><dd>${s.entity ? `<a href="#resource/${esc(s.entity.entity_id)}">${esc(s.entity.name)}</a>` : "UNCONFIRMED"}</dd>
-          <dt>SHA-256</dt><dd><code>${esc((s.sha256 || "").slice(0, 24))}…</code></dd>
+          <dt>Provenance ID</dt><dd><code>${esc((s.sha256 || "").slice(0, 24))}…</code></dd>
           <dt>Visibility</dt><dd>${esc(s.visibility || "REVIEW_REQUIRED")}</dd>
         </dl>
         <div>
@@ -256,7 +277,7 @@ function renderScreenshot(main) {
       </div>
       <div class="section-title">OCR / visual text (unverified evidence)</div>
       <pre class="ocr">${esc(s.text || "[no text captured]")}</pre>
-      <p style="color:var(--text-dim);font-size:12.5px">Original screenshots are private source evidence and are
+      <p style="color:var(--text-dim);font-size:12.5px">Underlying source media is private evidence and is
       not published. This page shows the extracted knowledge and provenance only.</p>
     </div>`;
 }
@@ -268,6 +289,8 @@ function renderCategories(main) {
       <h3>${esc(c.category)}</h3><div class="desc">${c.count} resource${c.count === 1 ? "" : "s"}</div></a>`).join("")}</div>`;
   main.querySelectorAll("[data-jump]").forEach((a) => a.addEventListener("click", () => {
     state.category = a.dataset.jump;
+    state.subcategory = state.type = "";
+    location.hash = "#/";
   }));
 }
 

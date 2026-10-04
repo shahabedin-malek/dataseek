@@ -14,6 +14,7 @@ import json
 import sqlite3
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 from . import config, consensus, engines, preprocess, research, taxonomy, vision
 from .schema import ensure_v2_schema
@@ -152,6 +153,41 @@ def _record_vision(db: sqlite3.Connection, task_id: str, v: dict) -> None:
     db.commit()
 
 
+def _host_of(raw: str) -> str:
+    candidate = raw if "//" in raw else "//" + raw
+    host = (urlsplit(candidate).hostname or "").casefold()
+    return host[4:] if host.startswith("www.") else host
+
+
+def _resolve_site_from_urls(urls: list[dict], generic: set[str], name_hint: str | None,
+                            max_tries: int = 3) -> tuple[dict | None, str]:
+    """Try the screenshot's own visible URLs, preferring paths over bare domains.
+
+    Returns (research_metadata, matched_entry_url). Only a page that responds and
+    confirms identity (via the supplied name, or its own metadata) is accepted.
+    """
+    def rank(entry: dict) -> tuple:
+        raw = entry["url"].strip()
+        host = _host_of(raw)
+        bare = "//" not in raw
+        return (host in generic, bare)
+
+    tried = 0
+    for entry in sorted(urls, key=rank):
+        raw = entry["url"].strip()
+        host = _host_of(raw)
+        if not host or host in generic:
+            continue
+        candidate = raw if raw.startswith(("http://", "https://")) else f"https://{raw}"
+        meta = research.official_site_research(candidate, name_hint or None)
+        if meta:
+            return meta, raw
+        tried += 1
+        if tried >= max_tries:
+            break
+    return None, ""
+
+
 def resolve_entity(db: sqlite3.Connection, task: dict, ocr: dict, github_meta: dict | None,
                    site_meta: dict | None) -> tuple[str | None, dict | None]:
     """Find or create the resource (entity) for this screenshot."""
@@ -247,9 +283,14 @@ def store_urls(db: sqlite3.Connection, task_id: str, entity_id: str | None,
     now = config.now()
     for entry in urls:
         url = entry["url"]
+        # Upsert: a URL first seen before the resource was resolved must still be
+        # linked once an entity exists, without clobbering earlier verification.
         db.execute(
-            """INSERT OR IGNORE INTO urls(task_id,entity_id,url,url_type,evidence,verified,created_at)
-               VALUES(?,?,?,?,?,?,?)""",
+            """INSERT INTO urls(task_id,entity_id,url,url_type,evidence,verified,created_at)
+                   VALUES(?,?,?,?,?,?,?)
+               ON CONFLICT(task_id,url) DO UPDATE SET
+                   entity_id=COALESCE(urls.entity_id, excluded.entity_id),
+                   verified=MAX(urls.verified, excluded.verified)""",
             (task_id, entity_id, url, "candidate", json.dumps(entry.get("sources", [])),
              1 if url.lower() in verified else 0, now))
 
@@ -471,23 +512,18 @@ def process_task(task_id: str, use_vision: bool = True) -> dict[str, Any]:
                 verified.add(github_meta["url"].lower())
                 level = max(level, 6)
         if github_meta is None:
-            # Try an official domain that is not a generic aggregator.
-            generic = {"github.com", "youtube.com", "instagram.com", "facebook.com",
-                       "twitter.com", "x.com", "reddit.com", "tiktok.com"}
-            name_hint = next((t for t in (ocr.get("vision_text") or "").split("\n")
-                              if "PRODUCT_NAME" in t.upper()), "")
-            for u in urls:
-                dom = u["url"].lower()
-                if dom in generic or "github.com" in dom:
-                    continue
-                candidate = u["url"] if u["url"].startswith("http") else f"https://{u['url']}"
-                hint = name_hint.split(":")[-1].strip() if name_hint else ""
-                if hint and hint.lower() not in ("unclear", "none"):
-                    site_meta = research.official_site_research(candidate, hint)
-                    if site_meta:
-                        verified.add(u["url"].lower())
-                        level = max(level, 4)
-                        break
+            # Resolve the resource from a URL that is actually visible in the
+            # screenshot. The page is fetched and its own metadata confirms the
+            # identity, so this is a cited-source fact rather than an inference.
+            generic = {"github.com", "gitlab.com", "youtube.com", "youtu.be", "instagram.com",
+                       "facebook.com", "twitter.com", "x.com", "reddit.com", "tiktok.com",
+                       "google.com", "linkedin.com", "medium.com", "wikipedia.org"}
+            name_hint = consensus.vision_product_name(ocr.get("vision_text") or "")
+            site_meta, matched = _resolve_site_from_urls(urls, generic, name_hint)
+            if site_meta:
+                verified.add(matched.lower())
+                verified.add(site_meta["url"].lower())
+                level = max(level, 4)
 
         ocr["quality_level"] = max(ocr.get("quality_level", 0), level)
         entity_id, entity_info = resolve_entity(db, task, ocr, github_meta, site_meta)

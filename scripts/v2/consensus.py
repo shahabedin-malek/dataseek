@@ -6,7 +6,6 @@ every engine's raw output, and confidence/agreement drive an escalation level.
 from __future__ import annotations
 
 import re
-from difflib import SequenceMatcher
 
 URL_RE = re.compile(
     r"(?i)\b(?:(?:https?://)?(?:www\.)?"
@@ -18,17 +17,63 @@ URL_RE = re.compile(
 )
 GITHUB_RE = re.compile(r"(?i)github\.com\s*/\s*([A-Za-z0-9_.-]+)\s*/\s*([A-Za-z0-9_.-]+)")
 DOMAIN_RE = re.compile(r"(?i)\b([a-z0-9][a-z0-9-]*\.(?:com|org|net|io|ai|dev|app|co|sh|me))\b")
+TOKEN_RE = re.compile(r"[a-z0-9]{3,}")
+
+# A second engine only counts as a witness when it is confident and has
+# produced a transcription of comparable substance to the primary. A truncated
+# second engine (typical for Tesseract on stylised UI text) read *less*; that is
+# not evidence of a disagreement and must not manufacture a false "conflict".
+WITNESS_MIN_CONFIDENCE = 70.0
+WITNESS_MIN_TOKEN_RATIO = 0.6
+
+# Below this coverage of the primary engine's words, the two engines are
+# reading different words: a genuine conflict needing review.
+CONFLICT_AGREEMENT = 0.35
+# A strong primary needs no witness; this is the confidence at which a single
+# engine's reading is accepted as good rather than merely partial.
+GOOD_CONFIDENCE = 70.0
+LOW_CONFIDENCE = 55.0
 
 
 def normalize(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "").strip())
 
 
-def similarity(a: str, b: str) -> float:
-    a, b = normalize(a).lower(), normalize(b).lower()
-    if not a or not b:
+def tokens(text: str) -> list[str]:
+    return TOKEN_RE.findall((text or "").casefold())
+
+
+def _coverage(inner: list[str], outer: list[str]) -> float:
+    """Fraction of inner tokens present (exactly or near) in outer. O(n)."""
+    if not inner or not outer:
         return 0.0
-    return SequenceMatcher(None, a, b).ratio()
+    exact = set(outer)
+    buckets: dict[str, list[str]] = {}
+    for tok in outer:
+        if len(tok) >= 4:
+            buckets.setdefault(tok[:4], []).append(tok)
+    hits = 0
+    for tok in inner:
+        if tok in exact:
+            hits += 1
+        elif len(tok) >= 4 and any(abs(len(tok) - len(u)) <= 2
+                                   for u in buckets.get(tok[:4], ())):
+            hits += 1
+    return hits / len(inner)
+
+
+def similarity(a: str, b: str) -> float:
+    """Order-independent agreement between two transcriptions.
+
+    Reading order differs between engines, so a sequence-based ratio
+    understates real agreement badly. Token coverage (fuzzy, order-free) is
+    symmetric here and correlates with whether the engines read the same words.
+    """
+    ta, tb = tokens(a), tokens(b)
+    if not ta or not tb:
+        return 0.0
+    x, y = _coverage(ta, tb), _coverage(tb, ta)
+    return round(2 * x * y / (x + y), 3) if (x + y) else 0.0
 
 
 def reconcile(results: list[dict]) -> dict:
@@ -37,47 +82,54 @@ def reconcile(results: list[dict]) -> dict:
     engines_used = list(dict.fromkeys(r["engine"] for r in ok))
     confidences = [r["confidence"] for r in ok if r.get("confidence") is not None]
 
-    # Agreement between the strongest engine and any *credible* second witness.
-    # A weak engine's garbage must not manufacture a false "conflict".
     ocr_only = [r for r in ok if r["engine"] != "vision"]
     ranked = sorted(ocr_only, key=lambda r: (r.get("confidence") or 0), reverse=True)
     primary = ranked[0] if ranked else None
-    witnesses = [r for r in ranked[1:] if (r.get("confidence") or 0) >= 55]
-    agreement = round(similarity(primary["text"], witnesses[0]["text"]), 3) \
+    vision = next((r for r in ok if r["engine"] == "vision"), None)
+
+    primary_tokens = tokens(primary["text"]) if primary else []
+
+    def substantive(r: dict) -> bool:
+        """Confident *and* not merely a truncated fragment of the page."""
+        if (r.get("confidence") or 0) < WITNESS_MIN_CONFIDENCE:
+            return False
+        if not primary_tokens:
+            return True
+        return len(tokens(r["text"])) >= WITNESS_MIN_TOKEN_RATIO * len(primary_tokens)
+
+    witnesses = [r for r in ranked[1:] if substantive(r)]
+    # Agreement = how much of the primary engine's reading the witness confirms.
+    # Directional on purpose: a witness that simply read less is not a conflict,
+    # and that case is already excluded by the substantiveness gate.
+    agreement = round(_coverage(primary_tokens, tokens(witnesses[0]["text"])), 3) \
         if primary and witnesses else None
-    independent_confirm = bool(primary and witnesses)
+    independent_confirm = bool(witnesses and agreement is not None
+                               and agreement >= CONFLICT_AGREEMENT)
 
     # Final text: prefer the highest-confidence OCR engine; fall back to the richest.
     def rank(r: dict) -> tuple:
         return (r.get("confidence") or 0, len(normalize(r.get("text"))))
     ordered = sorted(ocr_only or ok, key=rank, reverse=True)
     final_text = ordered[0]["text"] if ordered else ""
-    vision = next((r for r in ok if r["engine"] == "vision"), None)
 
     mean_conf = round(sum(confidences) / len(confidences), 2) if confidences else None
+    primary_conf = (primary.get("confidence") or 0) if primary else 0.0
+
     if not ok:
         status, level = "OCR_UNREADABLE", 0
-    elif len(ok) == 1 and mean_conf is not None and mean_conf < 55:
-        status, level = "OCR_LOW_CONFIDENCE", 1
-    elif agreement is not None and agreement < 0.35:
-        # Only a *credible* witness (confidence >= 80) may declare a conflict; a
-        # weak second engine disagreeing with a strong one is expected, not a
-        # contradiction, and is resolved in favour of the stronger engine.
-        witness_conf = witnesses[0].get("confidence") or 0
-        if witness_conf >= 80:
-            status, level = "OCR_CONFLICTING", 1
-        elif primary and (primary.get("confidence") or 0) >= 85:
-            status, level = "OCR_GOOD", 2 if vision else 1
-        else:
-            status, level = "OCR_PARTIAL", 1
-    elif primary and (primary.get("confidence") or 0) < 70:
+    elif primary is None:
+        # Only a vision reading exists.
         status, level = "OCR_PARTIAL", 1
-    elif vision:
-        status, level = "OCR_GOOD", 2
+    elif witnesses and agreement is not None and agreement < CONFLICT_AGREEMENT:
+        # Two substantive engines read different words: a genuine conflict that
+        # needs human/vision review, not a silent pick.
+        status, level = "OCR_CONFLICTING", 1
+    elif primary_conf >= GOOD_CONFIDENCE:
+        status, level = "OCR_GOOD", 2 if (vision or independent_confirm) else 1
+    elif primary_conf >= LOW_CONFIDENCE:
+        status, level = "OCR_PARTIAL", 1
     else:
-        status, level = "OCR_NEEDS_VISION", 1
-    if independent_confirm and status in ("OCR_PARTIAL", "OCR_NEEDS_VISION"):
-        status, level = "OCR_GOOD", 2
+        status, level = "OCR_LOW_CONFIDENCE", 1
 
     return {
         "final_text": final_text,

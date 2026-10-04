@@ -62,6 +62,8 @@ header.top {
   padding: 8px 11px; color: var(--text-dim);
 }
 .icon-btn:hover { color: var(--text); border-color: var(--accent); }
+a.icon-btn { text-decoration: none; display: inline-flex; align-items: center; }
+a.icon-btn:hover { text-decoration: none; }
 
 main { max-width: 1280px; margin: 0 auto; padding: 26px 20px 80px; }
 .hero { padding: 26px 0 8px; }

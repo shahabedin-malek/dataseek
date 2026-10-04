@@ -147,14 +147,14 @@ class Handler(BaseHTTPRequestHandler):
                     db.close()
             if path.startswith("/api/resources/"):
                 return self._resource(path.rsplit("/", 1)[-1])
-            if path == "/api/screenshots":
+            if path == "/api/records":
                 db = query.connect()
                 try:
-                    return self._json(query.all_screenshots(db))
+                    return self._json(query.all_records(db))
                 finally:
                     db.close()
-            if path.startswith("/api/screenshots/"):
-                return self._screenshot(path.rsplit("/", 1)[-1])
+            if path.startswith("/api/records/"):
+                return self._record(path.rsplit("/", 1)[-1])
             if path == "/api/audit":
                 if not self._require_admin():
                     return
@@ -183,13 +183,13 @@ class Handler(BaseHTTPRequestHandler):
         finally:
             db.close()
 
-    def _screenshot(self, task_id: str):
+    def _record(self, task_id: str):
         db = query.connect()
         try:
             row = db.execute("SELECT * FROM tasks WHERE task_id=?", (task_id,)).fetchone()
             if not row:
-                return self._json({"error": "screenshot not found"}, 404)
-            return self._json(query.screenshot_record(db, row))
+                return self._json({"error": "record not found"}, 404)
+            return self._json(query.record_detail(db, row))
         finally:
             db.close()
 
