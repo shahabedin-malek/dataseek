@@ -256,6 +256,10 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
         "SPDX id exists.",
         "- The Vercel project `dataseek` deploys from Root Directory `site`, so Git pushes publish the "
         "built static bundle rather than the repository root.",
+        "- Resource connections shown on the site use only verified metadata (the repository owner and "
+        "recorded technologies), never AI category similarity.",
+        "- A GitHub link is only recorded when it is a real `github.com/owner/repo` URL; the bare "
+        "`github.com` domain is not treated as an organisation or repository.",
     ]), encoding="utf-8")
 
     (config.PROGRESS / "CATEGORY_TAXONOMY.md").write_text("\n".join([

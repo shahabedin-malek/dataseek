@@ -17,3 +17,5 @@
 - Records flagged NEEDS_VISION when vision was still wired up were reclassified to OCR_REVIEW (held for review) rather than left permanently blocked.
 - GitHub-canonical candidates are corroborated with repository metadata + README via the authenticated gh CLI; README features and the license fall back to the human name when no SPDX id exists.
 - The Vercel project `dataseek` deploys from Root Directory `site`, so Git pushes publish the built static bundle rather than the repository root.
+- Resource connections shown on the site use only verified metadata (the repository owner and recorded technologies), never AI category similarity.
+- A GitHub link is only recorded when it is a real `github.com/owner/repo` URL; the bare `github.com` domain is not treated as an organisation or repository.

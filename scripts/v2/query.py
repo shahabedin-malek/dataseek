@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 
 from . import config
@@ -42,7 +43,11 @@ def resource_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
         "SELECT name FROM features WHERE entity_id=? ORDER BY feature_id LIMIT 25", (entity_id,))]
     technologies = [r["name"] for r in db.execute(
         "SELECT name FROM technologies WHERE entity_id=? ORDER BY technology_id", (entity_id,))]
-    github = next((u for u in urls if "github.com" in u), None)
+    # Only a real repository URL counts; the bare "github.com" domain is not an
+    # organisation/repo and must not become a broken relative link.
+    github = next((u for u in urls if re.search(r"github\.com/[^/\s]+/[^/\s?#]+", u)), None)
+    if github and not github.startswith(("http://", "https://")):
+        github = "https://" + github
     return {
         "entity_id": entity_id,
         "name": row["name"],

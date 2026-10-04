@@ -15,6 +15,11 @@ const state = {
 };
 
 const $ = (sel, root = document) => root.querySelector(sel);
+// URLs extracted from evidence may lack a scheme; never emit a relative href.
+const href = (u) => {
+  const s = String(u ?? "").trim();
+  return /^https?:\/\//i.test(s) ? s : "https://" + s;
+};
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => (
   { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -180,20 +185,31 @@ function stat(n, label) {
   return `<div class="stat"><div class="n">${(n ?? 0).toLocaleString()}</div><div class="l">${esc(label)}</div></div>`;
 }
 
-function relatedResources(r, limit = 8) {
-  // Evidence-based relationships only: same subcategory, or shared technologies.
-  const tech = new Set(r.technologies || []);
+// Related resources are derived ONLY from verified metadata — the developer /
+// organisation and the technologies recorded from official repository data.
+// No relationship is inferred from AI classifications or descriptions.
+function sameOrganization(r, limit = 6) {
+  const org = (r.developer || "").trim().toLowerCase();
+  if (!org) return [];
+  return state.data.resources
+    .filter((x) => x.entity_id !== r.entity_id &&
+                   (x.developer || "").trim().toLowerCase() === org)
+    .sort((a, b) => (b.source_count || 0) - (a.source_count || 0))
+    .slice(0, limit);
+}
+
+function sharedTechnologies(r, limit = 8) {
+  const tech = new Set((r.technologies || []).map((t) => t.toLowerCase()));
+  if (!tech.size) return [];
   return state.data.resources
     .filter((x) => x.entity_id !== r.entity_id)
     .map((x) => {
-      let score = 0;
-      if (x.primary_category === r.primary_category) score += 1;
-      if (r.subcategory && x.subcategory === r.subcategory) score += 2;
-      for (const t of x.technologies || []) if (tech.has(t)) score += 1;
-      return { x, score };
+      const shared = (x.technologies || []).filter((t) => tech.has(t.toLowerCase()));
+      return { x, shared };
     })
-    .filter((e) => e.score > 0)
-    .sort((a, b) => b.score - a.score || (b.x.source_count || 0) - (a.x.source_count || 0))
+    .filter((e) => e.shared.length > 0)
+    .sort((a, b) => b.shared.length - a.shared.length ||
+                    (b.x.source_count || 0) - (a.x.source_count || 0))
     .slice(0, limit)
     .map((e) => e.x);
 }
@@ -202,22 +218,23 @@ function renderResource(main) {
   const r = state.data.resources.find((x) => x.entity_id === state.entityId);
   if (!r) { main.innerHTML = `<div class="empty">Resource not found.</div>`; return; }
   const shots = state.data.records.filter((s) => s.entity && s.entity.entity_id === r.entity_id);
-  const related = relatedResources(r);
+  const orgRelated = sameOrganization(r);
+  const techRelated = sharedTechnologies(r);
   main.innerHTML = `
     <p><a href="#/">← Back to search</a></p>
     <div class="detail">
       <h1>${esc(r.name)}</h1>
       <div class="sub">${esc(r.primary_category)}${r.subcategory ? " › " + esc(r.subcategory) : ""}
         · ${esc(r.type || "resource")} · ${confidencePill(r.confidence)}</div>
-      ${r.confidence === "LOW" ? `<div class="banner">Candidate resource — identity corroborated by OCR and
-        vision only. Not yet verified against an official source.</div>` : ""}
+      ${r.confidence === "LOW" ? `<div class="banner">Candidate resource — identity corroborated by OCR
+        evidence only. Not yet verified against an official source.</div>` : ""}
       <p>${esc(r.short_description || "No verified description.")}</p>
       <div class="section-title">Details</div>
       <div class="grid2">
         <dl class="kv">
           <dt>Resource ID</dt><dd>${esc(r.entity_id)}</dd>
-          <dt>Canonical URL</dt><dd>${r.canonical_name ? `<a href="${esc(r.canonical_name)}" rel="noopener">${esc(r.canonical_name)}</a>` : "—"}</dd>
-          <dt>GitHub</dt><dd>${r.github_url ? `<a href="${esc(r.github_url)}" rel="noopener">${esc(r.github_url)}</a>` : "—"}</dd>
+          <dt>Canonical URL</dt><dd>${r.canonical_name ? `<a href="${esc(href(r.canonical_name))}" rel="noopener">${esc(r.canonical_name)}</a>` : "—"}</dd>
+          <dt>GitHub</dt><dd>${r.github_url ? `<a href="${esc(href(r.github_url))}" rel="noopener">${esc(r.github_url)}</a>` : "—"}</dd>
           <dt>License</dt><dd>${esc(r.license || "—")}</dd>
           <dt>Developer</dt><dd>${esc(r.developer || "—")}</dd>
           <dt>Platforms</dt><dd>${esc(r.platforms || "—")}</dd>
@@ -229,13 +246,15 @@ function renderResource(main) {
           <div class="section-title">Tags</div>
           <div class="meta">${(r.tags || []).map((t) => `<span class="pill">${esc(t)}</span>`).join("") || "—"}</div>
           <div class="section-title">URLs</div>
-          ${(r.urls || []).map((u) => `<div><a href="${esc(u)}" rel="noopener">${esc(u)}</a></div>`).join("") || "—"}
+          ${(r.urls || []).map((u) => `<div><a href="${esc(href(u))}" rel="noopener">${esc(u)}</a></div>`).join("") || "—"}
         </div>
       </div>
       ${(r.features || []).length ? `<div class="section-title">Features (official source)</div>
         <ul>${r.features.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
-      ${related.length ? `<div class="section-title">Related resources</div>
-        <div class="cards">${related.map(resourceCard).join("")}</div>` : ""}
+      ${orgRelated.length ? `<div class="section-title">Same organization — ${esc(r.developer)}</div>
+        <div class="cards">${orgRelated.map(resourceCard).join("")}</div>` : ""}
+      ${techRelated.length ? `<div class="section-title">Shared technologies</div>
+        <div class="cards">${techRelated.map(resourceCard).join("")}</div>` : ""}
       <div class="section-title">Source records (${shots.length})</div>
       <div class="shots">${shots.map((s) => `<a class="card" href="#record/${esc(s.task_id)}">
         <div class="thumb">${esc(s.task_id)}</div>
@@ -268,7 +287,7 @@ function renderRecord(main) {
         </dl>
         <div>
           <div class="section-title">URLs</div>
-          ${(s.urls || []).map((u) => `<div><a href="${esc(u)}" rel="noopener">${esc(u)}</a></div>`).join("") || "—"}
+          ${(s.urls || []).map((u) => `<div><a href="${esc(href(u))}" rel="noopener">${esc(u)}</a></div>`).join("") || "—"}
           <div class="section-title">OCR engines</div>
           <table class="data"><tr><th>Engine</th><th>Version</th><th>Confidence</th><th>Chars</th></tr>
             ${(s.engines || []).map((e) => `<tr><td>${esc(e.engine)}</td><td>${esc(e.version || "—")}</td>

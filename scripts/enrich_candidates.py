@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from v2 import config, research  # noqa: E402
 from v2 import pipeline  # noqa: E402
 
-GH_RE = re.compile(r"https?://github\.com/([^/]+)/([^/?#]+)", re.I)
+GH_RE = re.compile(r"github\.com/([^/\s]+)/([^/\s?#]+)", re.I)
 PLACEHOLDERS = ("", "not yet described.", "candidate resource",
                 "no verified description.")
 
@@ -43,8 +43,10 @@ def enrich(db) -> int:
     rows = db.execute(
         "SELECT DISTINCT e.entity_id,e.name,e.canonical_name,e.short_description "
         "FROM entities e WHERE e.is_invalid=0 AND e.deleted_at IS NULL AND ("
-        "e.canonical_name LIKE '%github.com/%/%' OR e.entity_id IN "
-        "(SELECT entity_id FROM entity_urls WHERE url LIKE '%github.com/%/%'))"
+        "e.canonical_name LIKE '%github.com/%/%' "
+        "OR e.entity_id IN (SELECT entity_id FROM entity_urls WHERE url LIKE '%github.com/%/%') "
+        "OR e.entity_id IN (SELECT entity_id FROM urls WHERE url LIKE '%github.com/%/%' "
+        "AND entity_id IS NOT NULL))"
     ).fetchall()
     done = 0
     for row in rows:
@@ -53,6 +55,10 @@ def enrich(db) -> int:
             link = db.execute(
                 "SELECT url FROM entity_urls WHERE entity_id=? AND url LIKE '%github.com/%/%' "
                 "LIMIT 1", (row["entity_id"],)).fetchone()
+            if not link:
+                link = db.execute(
+                    "SELECT url FROM urls WHERE entity_id=? AND url LIKE '%github.com/%/%' "
+                    "LIMIT 1", (row["entity_id"],)).fetchone()
             m = GH_RE.search(link[0]) if link else None
         if not m:
             continue
@@ -96,11 +102,44 @@ def enrich(db) -> int:
     return done
 
 
+def backfill_developers(db) -> int:
+    """Set developer from a repository URL already present in evidence.
+
+    The owner is read verbatim from a github.com/owner/repo URL linked to the
+    resource; nothing is guessed. This lets same-organization relationships
+    form even for resources whose repository was not re-fetched.
+    """
+    rows = db.execute(
+        "SELECT entity_id, canonical_name FROM entities WHERE is_invalid=0 "
+        "AND deleted_at IS NULL AND (developer IS NULL OR TRIM(developer)='')").fetchall()
+    changed = 0
+    for row in rows:
+        eid = row["entity_id"]
+        candidates = [row["canonical_name"]]
+        candidates += [x[0] for x in db.execute(
+            "SELECT url FROM entity_urls WHERE entity_id=?", (eid,))]
+        candidates += [x[0] for x in db.execute(
+            "SELECT DISTINCT url FROM urls WHERE entity_id=?", (eid,))]
+        owner = None
+        for candidate in candidates:
+            m = GH_RE.search(candidate or "")
+            if m:
+                owner = m.group(1)
+                break
+        if owner:
+            db.execute("UPDATE entities SET developer=?, updated_at=? WHERE entity_id=?",
+                       (owner, config.now(), eid))
+            changed += 1
+    db.commit()
+    return changed
+
+
 def main() -> int:
     db = pipeline.connect()
     try:
         n = enrich(db)
-        print(f"enrich-candidates done: {n} enriched")
+        d = backfill_developers(db)
+        print(f"enrich-candidates done: {n} enriched, {d} developers backfilled")
     finally:
         db.close()
     return 0
