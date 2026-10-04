@@ -35,3 +35,18 @@ Before deploying, confirm the pipeline is stable:
 
 Do not deploy while the data pipeline is inconsistent, and never publish private
 source screenshots unless explicitly configured to do so.
+
+## Current deployment status
+
+- GitHub: pushed and current (`main`).
+- Vercel: `https://dataseek-gules.vercel.app` currently returns `NOT_FOUND`.
+  The static bundle in `site/` is built and ready; the Vercel project needs to
+  be relinked/redeployed from a machine with Vercel credentials:
+
+  ```bash
+  cd site && npx vercel --prod
+  ```
+
+  A Vercel project whose **Root Directory** points at the repository root will
+  404 on this bundle, because the deployable files live under `site/`. Set the
+  project's Root Directory to `site`, or deploy with `--cwd site`.
