@@ -195,9 +195,9 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
         "", "## Known environment issues",
         "- The source directory path ends with a literal space (`/mnt/private-ai-data/Screenshot `).",
         "- The vision layer is disabled by project policy (Ollama is not permitted); the pipeline is OCR-only.",
-        "- Vercel production (`https://dataseek-gules.vercel.app`) returns NOT_FOUND; the project must be "
-        "relinked/redeployed (`npx vercel --cwd site --prod`) with credentials. The static bundle in "
-        "`site/` is built and ready, and the GitHub repository is up to date.",
+        "- Vercel production is live at `https://dataseek-gules.vercel.app`. The project Root Directory "
+        "must stay set to `site`; if it is reset to the repository root the alias returns NOT_FOUND "
+        "while `/site/index.html` still resolves.",
     ]), encoding="utf-8")
 
     dups = query.connect().execute(
@@ -254,6 +254,8 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
         "- GitHub-canonical candidates are corroborated with repository metadata + README via the "
         "authenticated gh CLI; README features and the license fall back to the human name when no "
         "SPDX id exists.",
+        "- The Vercel project `dataseek` deploys from Root Directory `site`, so Git pushes publish the "
+        "built static bundle rather than the repository root.",
     ]), encoding="utf-8")
 
     (config.PROGRESS / "CATEGORY_TAXONOMY.md").write_text("\n".join([

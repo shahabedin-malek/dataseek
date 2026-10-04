@@ -39,14 +39,10 @@ source screenshots unless explicitly configured to do so.
 ## Current deployment status
 
 - GitHub: pushed and current (`main`).
-- Vercel: `https://dataseek-gules.vercel.app` currently returns `NOT_FOUND`.
-  The static bundle in `site/` is built and ready; the Vercel project needs to
-  be relinked/redeployed from a machine with Vercel credentials:
-
-  ```bash
-  cd site && npx vercel --prod
-  ```
-
-  A Vercel project whose **Root Directory** points at the repository root will
-  404 on this bundle, because the deployable files live under `site/`. Set the
-  project's Root Directory to `site`, or deploy with `--cwd site`.
+- Vercel: **live** at https://dataseek-gules.vercel.app (project `dataseek`).
+- The project's **Root Directory is `site`**, so every Git push to `main`
+  publishes the built static bundle. If the Root Directory is ever reset to the
+  repository root, the production alias returns `NOT_FOUND` even though
+  `/site/index.html` still resolves — set it back to `site` and redeploy.
+- `site/.vercel` (CLI link) and `site/.env.local` (OIDC token) are ignored and
+  never published.
