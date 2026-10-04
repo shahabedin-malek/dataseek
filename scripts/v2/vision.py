@@ -1,7 +1,9 @@
-"""Vision-model reading via the local Ollama server.
+"""Vision-model reading (DISABLED BY PROJECT POLICY).
 
-The model is asked to separate VISIBLE text from INFERRED interpretation and to
-classify the screenshot type. Responses are stored verbatim for auditability.
+The project owner has ruled out Ollama; no image is sent to any local or remote
+vision service. The pipeline is OCR-only. This module is retained so the on-disk
+shape of a vision run stays documented, but `vision_enabled()` is always False
+and `run_vision` is never invoked by the pipeline.
 """
 from __future__ import annotations
 
@@ -34,7 +36,9 @@ _AVAIL_TTL = 60.0
 
 
 def vision_enabled() -> bool:
-    return os.environ.get("DATASEEK_VISION", "1") not in ("0", "false", "no")
+    # Policy: Ollama is not permitted, so the vision layer is permanently off.
+    # `DATASEEK_VISION` can no longer re-enable it.
+    return False
 
 
 def vision_available() -> bool:

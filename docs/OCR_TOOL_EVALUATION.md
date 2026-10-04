@@ -13,7 +13,7 @@ was therefore validated by actually running each candidate, not by GitHub stars.
 | GPU | none (`nvidia-smi` absent) |
 | Disk | 36 GB free on `/` |
 | Python | 3.14 system; isolated `.venv` on **3.12** for ML wheels |
-| Vision service | Ollama `qwen3.5:4b` on a **LAN host** (`OLLAMA_HOST`), not local |
+| Vision service | **Disabled by project policy** — Ollama is not permitted; pipeline is OCR-only |
 
 ## Benchmark method
 
@@ -53,7 +53,7 @@ RapidOCR's focused 323 chars.
 | IMG-0030 1080×2340 | 12.3 s / 99.0 / 1022 | 10.6 s / 97.3 / 1010 | 12.0 s / 97.4 / 942 |
 
 **Decision:** OCR runs at **full resolution** (text capture matters more than speed).
-Only the vision layer downscales, because it contributes semantics, not fine text.
+Since the vision layer is disabled by policy, every run is at full resolution.
 
 ## Tool assessment
 
@@ -61,7 +61,7 @@ Only the vision layer downscales, because it contributes semantics, not fine tex
 |---|---|---|---|---|---|---|
 | **RapidOCR** | RapidAI/RapidOCR | `pip install rapidocr onnxruntime` | ✅ | optional | ✅ best in benchmark | **Selected — primary** |
 | **Tesseract 5.5** | tesseract-ocr/tesseract | apt (installed) | ✅ | — | ⚠️ weak on dark UI | **Selected — second witness** |
-| qwen3.5:4b (vision) | Ollama | LAN service | n/a | n/a | ✅ strong semantics | **Selected — optional vision** |
+| qwen3.5:4b (vision) | Ollama | LAN service | n/a | n/a | ✅ strong semantics | **Disabled — Ollama not permitted by project policy** |
 | PaddleOCR | PaddlePaddle/PaddleOCR | heavy (paddlepaddle) | ⚠️ | ✅ | ✅ | Not needed — RapidOCR uses the same PP-OCR models via ONNX |
 | EasyOCR | JaidedAI/EasyOCR | needs PyTorch | ⚠️ no-AVX2 risk | ✅ | ✅ | Rejected — heavy Torch install, slower CPU |
 | Surya | datalab-to/surya | needs PyTorch | ❌ | ✅ | ✅ | Rejected — GPU-oriented |
@@ -71,8 +71,8 @@ Only the vision layer downscales, because it contributes semantics, not fine tex
 | GOT-OCR2.0 / GLM-OCR / DeepSeek-OCR | various | large VLM | ❌ | ✅ | ✅ | Rejected — needs GPU / very large VRAM |
 | MinerU / Unstructured | opendatalab, Unstructured-IO | heavy | ⚠️ | ✅ | ⚠️ PDF-focused | Rejected — PDF pipeline, overkill for screenshots |
 
-Chosen subset: **RapidOCR (primary) + Tesseract (independent witness) + optional
-vision model**. Accuracy over tool count.
+Chosen subset: **RapidOCR (primary) + Tesseract (independent witness)**. Accuracy
+over tool count; the vision layer is disabled by project policy.
 
 ## Confidence notes
 

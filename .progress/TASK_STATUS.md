@@ -4,7 +4,6 @@ Total: 907
 
 | Status | Count |
 |---|---:|
-| COMPLETED | 817 |
-| NEEDS_RESEARCH | 70 |
-| NEEDS_VISION | 16 |
-| OCR_REVIEW | 4 |
+| COMPLETED | 842 |
+| NEEDS_RESEARCH | 45 |
+| OCR_REVIEW | 20 |

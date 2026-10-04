@@ -42,6 +42,9 @@ for round in 1 2 3; do
   fi
 done
 
+echo "$(date -Is) enriching candidate resources (official repo metadata)" >> "$LOG"
+"$PY" -u scripts/enrich_candidates.py >> "$LOG" 2>&1
+
 echo "$(date -Is) rebuilding exports" >> "$LOG"
 "$PY" -u scripts/v2/export.py >> "$LOG" 2>&1
 echo "$(date -Is) building site bundle" >> "$LOG"

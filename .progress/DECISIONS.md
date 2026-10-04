@@ -13,3 +13,6 @@
 - A GitHub owner rename is never accepted silently: the returned canonical URL must match the visible one, so truncated OCR cannot resolve to an unrelated repository.
 - resolve_cached also treats a github.com/owner/repo URL already extracted from the media as candidate evidence (a cited link, not an inference).
 - Rows with no verifiable identity stay unresolved (level 1-2) rather than guessed.
+- The vision layer is disabled by project policy (Ollama is not permitted); OCR-only is terminal.
+- Records flagged NEEDS_VISION when vision was still wired up were reclassified to OCR_REVIEW (held for review) rather than left permanently blocked.
+- GitHub-canonical candidates are corroborated with repository metadata + README via the authenticated gh CLI; README features and the license fall back to the human name when no SPDX id exists.

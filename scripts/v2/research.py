@@ -69,8 +69,11 @@ def github_research(owner: str, repo: str) -> dict | None:
         if readme.returncode == 0 and readme.stdout.strip():
             import base64
             try:
+                # GitHub returns the README base64 with embedded newlines; strip
+                # all whitespace before decoding or validate=True rejects it.
+                blob = "".join(readme.stdout.split())
                 meta["readme_text"] = base64.b64decode(
-                    readme.stdout.strip(), validate=True).decode("utf-8", errors="replace")
+                    blob, validate=True).decode("utf-8", errors="replace")
             except (ValueError, UnicodeError):
                 meta["readme_text"] = ""
         meta["owner"] = owner

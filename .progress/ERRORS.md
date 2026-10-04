@@ -5,5 +5,5 @@
 
 ## Known environment issues
 - The source directory path ends with a literal space (`/mnt/private-ai-data/Screenshot `).
-- The Ollama vision host is a LAN service and can be unavailable; the pipeline degrades to OCR-only.
+- The vision layer is disabled by project policy (Ollama is not permitted); the pipeline is OCR-only.
 - Vercel production (`https://dataseek-gules.vercel.app`) returns NOT_FOUND; the project must be relinked/redeployed (`npx vercel --cwd site --prod`) with credentials. The static bundle in `site/` is built and ready, and the GitHub repository is up to date.

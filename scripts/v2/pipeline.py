@@ -305,7 +305,10 @@ def store_resource_details(db: sqlite3.Connection, entity_id: str, github_meta: 
     if lang:
         db.execute("INSERT OR IGNORE INTO technologies(entity_id,name,evidence) VALUES(?,?,?)",
                    (entity_id, lang, github_meta["url"]))
-    lic = (github_meta.get("licenseInfo") or {}).get("spdxId") if github_meta.get("licenseInfo") else None
+    lic_info = github_meta.get("licenseInfo") or {}
+    # GitHub only supplies spdxId for recognised SPDX licenses; fall back to the
+    # human name (e.g. "Other") so the field is never silently dropped.
+    lic = lic_info.get("spdxId") or lic_info.get("name") or lic_info.get("key") or None
     db.execute("UPDATE entities SET license=COALESCE(?,license), platforms=platforms, updated_at=? WHERE entity_id=?",
                (lic, config.now(), entity_id))
     db.commit()

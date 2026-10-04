@@ -153,14 +153,15 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
         "", "## Engines",
         "- RapidOCR (PP-OCRv6 ONNX, CPU) — primary, high confidence",
         "- Tesseract 5.5 (TSV confidences) — secondary witness",
-        "- Vision (qwen3.5:4b via Ollama) — optional, LAN service, used when reachable",
+        "- Vision layer — disabled by project policy (OCR-only; no image leaves the host)",
         "", "## Remaining",
         ("- Finish the v2 OCR pass over all source records." if pending > 0
          else f"- OCR pass complete ({done}/{total}); no pending records."),
         (f"- {needs_research} record(s) NEEDS_RESEARCH (candidate identity, not yet web-verified)."
          if needs_research else "- No records awaiting research."),
-        (f"- {needs_vision} record(s) NEEDS_VISION; apply the vision layer when the Ollama host is reachable."
-         if needs_vision else "- Vision layer not required for any record."),
+        (f"- {needs_vision} record(s) were flagged NEEDS_VISION but the vision layer is disabled by "
+         "policy; they are held for review rather than guessed."
+         if needs_vision else "- Vision layer disabled by policy; no record depends on it."),
     ]), encoding="utf-8")
 
     (config.PROGRESS / "OCR_PROGRESS.md").write_text("\n".join([
@@ -193,7 +194,7 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
            f"({e['created_at']})" for e in errors] or ["- none"]),
         "", "## Known environment issues",
         "- The source directory path ends with a literal space (`/mnt/private-ai-data/Screenshot `).",
-        "- The Ollama vision host is a LAN service and can be unavailable; the pipeline degrades to OCR-only.",
+        "- The vision layer is disabled by project policy (Ollama is not permitted); the pipeline is OCR-only.",
         "- Vercel production (`https://dataseek-gules.vercel.app`) returns NOT_FOUND; the project must be "
         "relinked/redeployed (`npx vercel --cwd site --prod`) with credentials. The static bundle in "
         "`site/` is built and ready, and the GitHub repository is up to date.",
@@ -247,6 +248,12 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
         "- resolve_cached also treats a github.com/owner/repo URL already extracted from the media as "
         "candidate evidence (a cited link, not an inference).",
         "- Rows with no verifiable identity stay unresolved (level 1-2) rather than guessed.",
+        "- The vision layer is disabled by project policy (Ollama is not permitted); OCR-only is terminal.",
+        "- Records flagged NEEDS_VISION when vision was still wired up were reclassified to OCR_REVIEW "
+        "(held for review) rather than left permanently blocked.",
+        "- GitHub-canonical candidates are corroborated with repository metadata + README via the "
+        "authenticated gh CLI; README features and the license fall back to the human name when no "
+        "SPDX id exists.",
     ]), encoding="utf-8")
 
     (config.PROGRESS / "CATEGORY_TAXONOMY.md").write_text("\n".join([
@@ -291,7 +298,7 @@ def _write_progress(stats: dict, resources: list[dict], screenshots: list[dict],
         "- Refresh exports/progress/site: `.venv/bin/python scripts/v2/export.py` "
         "then `.venv/bin/python scripts/v2/site_build.py`.",
         "- Verify everything: `.venv/bin/python scripts/audit.py` (must report 0 hard errors).",
-        "- When the Ollama vision host is reachable, set DATASEEK_VISION=1 to re-enable the vision layer.",
+        "- Vision layer is disabled by project policy (Ollama not permitted); OCR-only is the terminal design.",
         "", "## How to resume after a crash/restart",
         "1. Read this file plus .progress/MASTER_PROGRESS.md and .progress/ERRORS.md.",
         "2. Inspect the database with Python (the `sqlite3` CLI is not installed): "

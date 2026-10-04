@@ -77,7 +77,7 @@ def cmd_status(args: argparse.Namespace) -> int:
     print(f"open errors:      {errors}")
     print(f"rapidocr:         {engines.rapidocr_available()}")
     print(f"tesseract:        {engines.TESSERACT_VERSION}")
-    print(f"vision available: {vision.vision_available()} ({config.VISION_MODEL} @ {config.OLLAMA_HOST})")
+    print(f"vision available: {vision.vision_available()} (disabled by project policy)")
     db.close()
     return 0
 

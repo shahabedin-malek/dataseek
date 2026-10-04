@@ -10,7 +10,7 @@ IMAGE (read-only, immutable)
   ↓ quality analysis            preprocess.analyze_quality
   ↓ multi-OCR (escalation)      engines.run_rapidocr + engines.run_tesseract
   ↓ preprocessing variant       preprocess.variants (only when primary is weak)
-  ↓ vision reading              vision.run_vision (optional, LAN Ollama)
+  ↓ (vision layer disabled by policy; OCR-only)
   ↓ consensus reconciliation    consensus.reconcile
   ↓ URL / entity extraction     consensus.extract_urls, github_candidates, vision_product_name
   ↓ web research                research.github_research / official_site_research
@@ -27,11 +27,11 @@ IMAGE (read-only, immutable)
 | 1 | RapidOCR on original | always |
 | 2 | Tesseract on original (independent witness) | always |
 | 3 | RapidOCR on CLAHE/grayscale variant | primary confidence < 72 **or** < 80 chars, and image is dark/low-contrast/blurry |
-| 5 | Vision model reading | Ollama reachable |
+| 5 | Vision model reading | **disabled by project policy** (Ollama not permitted) |
 | 6 | GitHub repository corroboration | a `owner/repo` candidate is found |
 
 Level 4 (official-site verification) is applied for non-GitHub resources when a
-non-aggregator domain is present and the vision model names the product.
+non-aggregator domain is present and the page's own metadata confirms the name.
 
 ## Consensus rules
 
@@ -63,5 +63,6 @@ multiple evidence sources.
   producing wrong knowledge.
 - Failures are recorded in `processing_errors` and `.progress/ERRORS.md`; a task left
   in `OCR_PROCESSING` is simply re-processed on the next batch run.
-- The vision layer degrades to OCR-only when the Ollama host is unreachable.
+- The vision layer is disabled by project policy (Ollama is not permitted); the
+  pipeline is OCR-only, so no image is sent to any model.
 - Every task commits its own row set, so a crash loses at most one image.

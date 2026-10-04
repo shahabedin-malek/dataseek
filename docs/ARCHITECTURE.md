@@ -12,7 +12,7 @@ source image (read-only, /mnt/private-ai-data/Screenshot )
   -> preprocessing variants on demand  (CLAHE / grayscale, data/preprocess/)
   -> OCR engine A: RapidOCR (PP-OCRv6 ONNX, CPU)      \
   -> OCR engine B: Tesseract 5.5 (TSV + confidences)   } v2/engines.py
-  -> OCR engine C: vision model (optional, Ollama)    /
+  -> (vision layer disabled by policy; OCR-only)      /
   -> reconciliation + confidence + agreement   (v2/consensus.py)
   -> URL + GitHub candidate extraction
   -> entity resolution:
@@ -35,10 +35,11 @@ lets majority voting decide alone; raw engine text is retained as evidence.
   and auto-resumes until no tasks remain.
 - `scripts/resolve_cached.py` — upgrades unresolved screenshots from cached OCR
   (URL fetch + research only, no re-OCR).
+- `scripts/enrich_candidates.py` — corroborates GitHub-canonical candidate
+  resources with repository metadata + README (features, license, language).
 - `scripts/recompute_consensus.py` — re-reconciles from cached OCR after logic
   changes.
 - `scripts/dedupe.py` — exact (SHA-256) and near (dHash) duplicate detection.
-- `scripts/run_batch_supervisor.sh` — OCR batch supervisor (auto-restarts until done).
 - `scripts/run_finalize.sh` — waits for the batch, then runs resolve_cached, export,
   site_build and audit in order (stages that must not run concurrently with the batch).
 - `scripts/v2/export.py` — regenerates ALL_SCREENSHOTS.md, ALL_RESOURCES.md,

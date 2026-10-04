@@ -1,6 +1,6 @@
 # DataSeek Progress
 
-- Updated: 2026-10-04T01:32:56+00:00
+- Updated: 2026-10-04T01:54:12+00:00
 - Processing version: `v2_multi_ocr`
 - Source: `/mnt/private-ai-data/Screenshot ` (immutable, trailing-space path)
 - Records: 907 · v2 processed: 907 · pending: 0
@@ -16,9 +16,9 @@
 ## Engines
 - RapidOCR (PP-OCRv6 ONNX, CPU) — primary, high confidence
 - Tesseract 5.5 (TSV confidences) — secondary witness
-- Vision (qwen3.5:4b via Ollama) — optional, LAN service, used when reachable
+- Vision layer — disabled by project policy (OCR-only; no image leaves the host)
 
 ## Remaining
 - OCR pass complete (907/907); no pending records.
-- 70 record(s) NEEDS_RESEARCH (candidate identity, not yet web-verified).
-- 16 record(s) NEEDS_VISION; apply the vision layer when the Ollama host is reachable.
+- 45 record(s) NEEDS_RESEARCH (candidate identity, not yet web-verified).
+- Vision layer disabled by policy; no record depends on it.

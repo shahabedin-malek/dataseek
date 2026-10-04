@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T01:32:56+00:00",
+ "generated_at": "2026-10-04T01:54:11+00:00",
  "statistics": {
   "records": 907,
   "v2_processed": 907,
@@ -56,8 +56,8 @@
    "short_description": "The open agent skills tool - npx skills",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "vercel-labs",
    "platforms": null,
    "urls": [
     "https://github.com/vercel-labs/skills",
@@ -77,7 +77,33 @@
    "github_url": "https://github.com/vercel-labs/skills",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "Generating release notes from git history",
+    "Creating PRs following your team's conventions",
+    "Integrating with external tools (Linear, Notion, etc.)",
+    "`name`: Unique identifier (lowercase, hyphens allowed)",
+    "`description`: Brief explanation of what the skill does",
+    "`metadata.internal`: Set to `true` to hide the skill from normal discovery. Internal skills are only visible and",
+    "Root directory (if it contains `SKILL.md`)",
+    "`skills/`",
+    "`skills/.curated/`",
+    "`skills/.experimental/`",
+    "`skills/.system/`",
+    "`.aider-desk/skills/`",
+    "`.agents/skills/`",
+    "`data/skills/`",
+    "`.autohand/skills/`",
+    "`.augment/skills/`",
+    "`.bob/skills/`",
+    "`.claude/skills/`",
+    "`.codeartsdoer/skills/`",
+    "`.codebuddy/skills/`",
+    "`.codemaker/skills/`",
+    "`.codestudio/skills/`",
+    "`.commandcode/skills/`",
+    "`.continue/skills/`",
+    "`.cortex/skills/`"
+   ],
    "technologies": [
     "Python",
     "HTML",
@@ -94,8 +120,8 @@
     "IMG-0776",
     "IMG-0839"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-04T00:53:29+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:43+00:00"
   },
   {
    "entity_id": "ENT-000188",
@@ -507,8 +533,8 @@
    "short_description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "supabase",
    "platforms": null,
    "urls": [
     "https://github.com/supabase/supabase",
@@ -521,7 +547,33 @@
    "github_url": "https://github.com/supabase/supabase",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "[x] Hosted Postgres Database. [Docs](https://supabase.com/docs/guides/database)",
+    "[x] Authentication and Authorization. [Docs](https://supabase.com/docs/guides/auth)",
+    "[x] Auto-generated APIs.",
+    "[x] REST. [Docs](https://supabase.com/docs/guides/api)",
+    "[x] GraphQL. [Docs](https://supabase.com/docs/guides/graphql)",
+    "[x] Realtime subscriptions. [Docs](https://supabase.com/docs/guides/realtime)",
+    "[x] Functions.",
+    "[x] Database Functions. [Docs](https://supabase.com/docs/guides/database/functions)",
+    "[x] Edge Functions [Docs](https://supabase.com/docs/guides/functions)",
+    "[x] File Storage. [Docs](https://supabase.com/docs/guides/storage)",
+    "[x] AI + Vector/Embeddings Toolkit. [Docs](https://supabase.com/docs/guides/ai)",
+    "[x] Dashboard",
+    "[Community Forum](https://github.com/supabase/supabase/discussions). Best for: help with building, discussion about database best practices.",
+    "[GitHub Issues](https://github.com/supabase/supabase/issues). Best for: bugs and errors you encounter using Supabase.",
+    "[Email Support](https://supabase.com/docs/support#business-support). Best for: problems with your database or infrastructure.",
+    "[Discord](https://discord.supabase.com). Best for: sharing your applications and hanging out with the community.",
+    "[PostgREST](http://postgrest.org/) is a web server that turns your PostgreSQL database directly into a RESTful API.",
+    "[GoTrue](https://github.com/supabase/gotrue) is a JWT-based authentication API that simplifies user sign-ups, logins, and session management in your applications.",
+    "[Storage](https://github.com/supabase/storage-api) a RESTful API for managing files in S3, with Postgres handling permissions.",
+    "[pg_graphql](http://github.com/supabase/pg_graphql/) a PostgreSQL extension that exposes a GraphQL API.",
+    "[postgres-meta](https://github.com/supabase/postgres-meta) is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries, etc.",
+    "[Envoy](https://github.com/envoyproxy/envoy) is a cloud-native, high-performance edge and service proxy.",
+    "[Arabic | العربية](/i18n/README.ar.md)",
+    "[Albanian / Shqip](/i18n/README.sq.md)",
+    "[Bangla / বাংলা](/i18n/README.bn.md)"
+   ],
    "technologies": [
     "TypeScript"
    ],
@@ -531,8 +583,8 @@
     "IMG-0064",
     "IMG-0546"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:04+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:31+00:00"
   },
   {
    "entity_id": "ENT-000277",
@@ -1382,8 +1434,8 @@
    "short_description": "Personal memory across agents",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Other",
+   "developer": "nevamind-ai",
    "platforms": null,
    "urls": [
     "https://github.com/nevamind-ai/memu",
@@ -1394,7 +1446,12 @@
    "github_url": "https://github.com/nevamind-ai/memu",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Memorize** — capture useful session knowledge through a scheduled background task and turn it into reusable memory.",
+    "**Retrieve** — bring relevant memory into a future task.",
+    "**⚠️** — supported with an important limitation; see the user note.",
+    "**inject** — a standing instruction in the host's instruction file tells the agent to run `<binary> retrieve` (→ `progressive_retrieve`) before answering."
+   ],
    "technologies": [
     "Python"
    ],
@@ -1403,8 +1460,8 @@
     "IMG-0112",
     "IMG-0163"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:33+00:00"
   },
   {
    "entity_id": "ENT-000160",
@@ -3293,8 +3350,8 @@
    "short_description": "GPT Image 2/2.5 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "wuyoscar",
    "platforms": null,
    "urls": [
     "https://github.com/wuyoscar/gpt-image2-skill",
@@ -3304,7 +3361,33 @@
    "github_url": "https://github.com/wuyoscar/gpt-image2-skill",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "`low` = cheap draft / collect / many variants",
+    "`medium` = normal exploration / style probing",
+    "`high` = final posters, Chinese text, diagrams, paper figures, banners",
+    "Top-left: close-up of the protagonist's intense eyes, sweat beading, headband tied tight",
+    "Top-centre: wide shot of a packed high-school gymnasium, scoreboard reading \"42 — 40 · 4Q 0:03\"",
+    "Top-right: rival team captain's shocked face, mouth agape",
+    "Centre-left: protagonist leaping skyward with both hands gripping a basketball",
+    "Centre-right-small: sound-effect katakana \"バッ\" in thick black letters",
+    "Large diagonal bottom-right (half of both pages): protagonist slamming the ball through the hoop, rim bending, massive ink-brushed kanji \"決\" (decide) filling the negative space",
+    "Includes three-view drawings: front view, side view, and back view",
+    "Add variations of the character's facial expressions",
+    "Break down and display detailed parts of the clothing and equipment",
+    "Add a color palette",
+    "Include a brief explanation of the worldview setting",
+    "Overall, use an organized layout (white background, illustration style)",
+    "Masthead, huge uppercase serif, white: \"VOGUE\"",
+    "Date strip top-left, tiny caps: \"NOVEMBER 2026 · PARIS EDITION · €9.00\"",
+    "Main cover line, bold sans-serif centered: \"THE QUIET POWER ISSUE\"",
+    "Right-edge cover lines, stacked:",
+    "Bottom-left barcode with catalog code \"VG1126\"",
+    "Masthead, huge yellow retro display serif arched across the top: \"ASTOUNDING STORIES\"",
+    "Volume banner, red, under masthead: \"VOL. XXXVII · NO. 5 · MARCH 1957 · 25¢\"",
+    "Featured story callout, bold red sans-serif bottom-left: \"THE MEN FROM RIGEL — a novelette by E. A. KLEIN\"",
+    "Make the result feel like a natural photo of a clearly adult woman in her 20s that could plausibly appear on a real SNS feed.",
+    "Suppress CG-like texture, aggressive beauty filtering, plastic skin, and unnatural shine."
+   ],
    "technologies": [
     "Python"
    ],
@@ -3312,8 +3395,8 @@
    "records": [
     "IMG-0200"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:53:05+00:00"
   },
   {
    "entity_id": "ENT-000292",
@@ -4730,8 +4813,8 @@
    "short_description": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "raresense",
    "platforms": null,
    "urls": [
     "https://github.com/raresense/nova3d",
@@ -4750,8 +4833,8 @@
    "records": [
     "IMG-0179"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:28+00:00"
   },
   {
    "entity_id": "ENT-000199",
@@ -4839,13 +4922,14 @@
     "Open Source"
    ],
    "short_description": "An open-source AI gateway that presents one endpoint for interacting with multiple model providers and integrates with coding tools; its repository documents quota-aware routing and provider fallback.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "diegosouzapw",
    "platforms": null,
    "urls": [
     "https://github.com/diegosouzapw/OmniRoute",
+    "https://github.com/diegosouzapw/omniroute",
     "codDIFFERENT.AI",
     "github.com",
     "github.com/diegosouzapw/omniroute",
@@ -4854,7 +4938,24 @@
    "github_url": "https://github.com/diegosouzapw/OmniRoute",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**🗜️ Compression hardening** — default-on inflation guard, Caveman packs for DE / FR / JA + Chinese (wényán), RTK filters for Gradle & .NET. → [Compression](docs/compression/COMPRESSION_ENGINES.md)",
+    "**💸 Honest flat-rate cost** — subscription / coding-plan providers read **$0** in cost analytics; budget, quota & routing keep estimating. → [API Reference](docs/reference/API_REFERENCE.md)",
+    "**⚖️ Quota-Share routing** — split a shared account's quota fairly across pooled keys, work-conserving so idle slices are lent out. → [Resilience Guide](docs/architecture/RESILIENCE_GUIDE.md)",
+    "**🛰️ Remote mode** — drive a remote OmniRoute with scoped tokens (`connect` / `contexts` / `tokens`) + an `antigravity` OAuth helper for VPS installs. → [Remote Mode](docs/guides/REMOTE-MODE.md)",
+    "**🕵️ Transparent MITM decrypt (TPROXY)** — capture CLIs that ignore proxy env vars, with a per-SNI CA + trust-store installer. → [MITM/TPROXY](docs/security/MITM-TPROXY-DECRYPT.md)",
+    "**💸 Cost telemetry everywhere** — `X-OmniRoute-*` cost/usage headers on every endpoint, cache-HIT savings header, per-key USD spend quotas. → [API Reference](docs/reference/API_REFERENCE.md)",
+    "**🧠 Memory you control** — off by default, opt-in int8 vector quantization + typed decay, per-request `x-omniroute-no-memory`. → [Memory](docs/frameworks/MEMORY.md)",
+    "**🖼️ New endpoints** — `/v1/ocr` (Mistral OCR) and `/v1/audio/translations` (Whisper-style) round out the media surface. → [API Reference](docs/reference/API_REFERENCE.md)",
+    "**🌍 Deployment & ops** — reverse-proxy `basePath`, browser-language auto-detect, per-key device tracking, root-less MITM trust, zh-TW localization. → [Environment](docs/reference/ENVIRONMENT.md)",
+    "**Terse prose** — drop filler / articles / hedging; keep technical substance exact.",
+    "**Less code** — \"lazy senior dev\" YAGNI: smallest working change, no unrequested scaffolding.",
+    "**Ponytail (lazy senior dev)** — climb the YAGNI ladder, fix the root cause, smallest working diff.",
+    "**I have ADHD (action-first)** — next action leads, steps numbered, one concrete next step, no preamble.",
+    "**Terse CJK (文言)** — classical-Chinese ultra-terse style (locale-gated to `zh`).",
+    "**Built-in `bun:sqlite`**: OmniRoute uses Bun's built-in `bun:sqlite` driver when running under Bun, falling back to `better-sqlite3` on Node.js or `sql.js`.",
+    "**Dedicated Bun Dockerfile**: Multi-stage `Dockerfile.bun` for native Bun production deployments (`docker build -f Dockerfile.bun -t omniroute:bun .`)."
+   ],
    "technologies": [
     "TypeScript"
    ],
@@ -4863,8 +4964,8 @@
     "IMG-0126",
     "IMG-0242"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:39+00:00"
   },
   {
    "entity_id": "ENT-000200",
@@ -5117,20 +5218,31 @@
     "Open Source"
    ],
    "short_description": "OpenWhip is a tray application described in its public GitHub README as sending a Ctrl-C interrupt and one of several messages when clicked.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
    "license": null,
-   "developer": null,
+   "developer": "GitFrog1111",
    "platforms": null,
    "urls": [
     "https://github.com/GitFrog1111/OpenWhip",
+    "https://github.com/gitfrog1111/openwhip",
     "github.com",
     "github.com/gitfrog1111/openwhip"
    ],
    "github_url": "https://github.com/GitFrog1111/OpenWhip",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "Click tray icon: spawn whip.",
+    "Click: drop whip.",
+    "Whip him 😩💢",
+    "It sends an interrupt (Ctrl-C) and one of 5 encouraging messages!",
+    "[x] Initial release! 🥳",
+    "[x] Cease and desist letter from Anthropic",
+    "[ ] Crypto miner",
+    "[ ] Logs of how many times you whipped claude so when the robots come we can order people nicely for them",
+    "[ ] Updated whip physics"
+   ],
    "technologies": [
     "HTML"
    ],
@@ -5138,8 +5250,8 @@
    "records": [
     "IMG-0178"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:26+00:00"
   },
   {
    "entity_id": "ENT-000140",
@@ -5339,8 +5451,8 @@
    "short_description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "ath-maas",
    "platforms": null,
    "urls": [
     "https://github.com/ath-maas/pixelle-video",
@@ -5351,7 +5463,33 @@
    "github_url": "https://github.com/ath-maas/pixelle-video",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "✍️ 撰写视频文案",
+    "🎨 生成 AI 配图/视频",
+    "🗣️ 合成语音解说",
+    "🎵 添加背景音乐",
+    "🎬 一键合成视频",
+    "✅ **2026-06-01**: 新增直连 API 媒体模型配置，支持在 WebUI 中配置图像/视频模型供应商、Base URL 与代理开关",
+    "✅ **2026-01-26**: 新增「动作迁移」模块，上传参考视频和图片进行动作迁移",
+    "✅ **2026-01-14**: 新增「数字人口播」和「图生视频」流水线，新增多语言 TTS 音色支持",
+    "✅ **2026-01-06**: 新增 RunningHub 48G 显存机器调用支持",
+    "✅ **2025-12-28**: 支持 RunningHub 并发限制可配置，优化 LLM 返回结构化数据的逻辑",
+    "✅ **2025-12-17**: 支持 ComfyUI API Key 配置，支持 Nano Banana 模型调用，API 接口支持模板自定义参数",
+    "✅ **2025-12-10**: 侧边栏内置 FAQ，锁定 edge-tts 版本修复 TTS 服务不稳定问题",
+    "✅ **2025-12-08**: 支持固定脚本多种分割方式(段落/行/句子)，优化模板选择交互逻辑支持直接预览选择",
+    "✅ **2025-12-06**: 修复视频生成 API 返回 URL 路径处理，支持跨平台兼容",
+    "✅ **2025-12-05**: 新增 Windows 整合包下载，优化图片与视频反推工作流",
+    "✅ **2025-12-04**: 新增「自定义素材」功能，支持用户上传自己的照片和视频，AI 智能分析生成脚本",
+    "✅ **2025-11-18**: 优化 RunningHub 服务调用支持并行处理，新增历史记录页面，支持批量创建视频任务",
+    "✅ **全自动生成** - 输入主题，自动生成完整视频",
+    "✅ **AI 智能文案** - 根据主题智能创作解说词，无需自己写脚本",
+    "✅ **AI 生成配图** - 每句话都配上精美的 AI 插图",
+    "✅ **AI 生成视频** - 支持使用 AI 视频生成模型（如 WAN 2.1）创建动态视频内容",
+    "✅ **直连模型 API** - 可直接调用 DashScope、OpenAI、Seedream、Seedance、Kling 等图像/视频生成服务",
+    "✅ **AI 生成语音** - 支持 Edge-TTS、Index-TTS 等众多主流 TTS 方案",
+    "✅ **背景音乐** - 支持添加 BGM，让视频更有氛围",
+    "✅ **视觉风格** - 多种模板可选，打造独特视频风格"
+   ],
    "technologies": [
     "Python"
    ],
@@ -5359,8 +5497,8 @@
    "records": [
     "IMG-0157"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:50+00:00"
   },
   {
    "entity_id": "ENT-000073",
@@ -5641,8 +5779,8 @@
    "short_description": "A Claude skill. You turn on, Claude is not Claude. Claude is Rocky. The Eridian. From Andy Weir's Project Hail Mary.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "lagunaswift",
    "platforms": null,
    "urls": [
     "https://github.com/lagunaswift/rockyvoice",
@@ -5654,7 +5792,12 @@
    "github_url": "https://github.com/lagunaswift/rockyvoice",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Double audio.** Both tabs play slightly out of sync. Mute one with the volume slider, or just don't open the desktop tab.",
+    "**Do not use `tailscale funnel`.** That exposes the server to the public internet. `serve` keeps it inside your tailnet.",
+    "**`MAX_UTTERANCE_CHARS`** (`4500`) — long replies are split into pieces under this limit so nothing gets cut off (Hume's hard cap is 5000 chars per utterance).",
+    "**`MAX_SPEAK_CHARS`** (`6000`) — overall ceiling on how much of a single reply is spoken, so a runaway response can't generate endless audio. Raise it to read even longer replies in full."
+   ],
    "technologies": [
     "HTML"
    ],
@@ -5662,8 +5805,8 @@
    "records": [
     "IMG-0184"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:37+00:00"
   },
   {
    "entity_id": "ENT-000317",
@@ -5918,20 +6061,42 @@
     "Open Source"
    ],
    "short_description": "Converts a doodle, photo, or sketch into an SVG vector graphic and renders it into an animated MP4 using Manim; the official README describes a Gradio interface and adjustable animation parameters.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
    "license": null,
-   "developer": null,
+   "developer": "leeyeel",
    "platforms": null,
    "urls": [
     "https://github.com/leeyeel/Sketch2Motion",
+    "https://github.com/leeyeel/sketch2motion",
     "github.com",
     "github.com/leeyeel/sketch2motion"
    ],
    "github_url": "https://github.com/leeyeel/Sketch2Motion",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Image → Sketch → SVG → Animated MP4**",
+    "Adjustable animation parameters:",
+    "**Animation duration** (seconds)",
+    "**Subpath delay ratio** (fractional delay between subpaths)",
+    "**Scale factor** (zoom in/out)",
+    "**Drawing style** (`linear`, `smooth`, `there_and_back`, `wiggle`)",
+    "**Video format**: landscape 16:9 (`1920x1080`) or portrait 9:16 (`1080x1920`)",
+    "High-quality vector rendering powered by Manim",
+    "Optional color-preserving SVG and video generation",
+    "Automatic last-frame prepend for a smooth intro",
+    "Simple bilingual [Gradio](https://www.gradio.app/) web interface (English / Chinese)",
+    "[Gradio](https://www.gradio.app/)",
+    "[Manim](https://docs.manim.community/)",
+    "[ffmpeg](https://ffmpeg.org/) (must be installed and in your PATH)",
+    "[Potrace](https://potrace.sourceforge.net/) (must be installed and in your PATH)",
+    "**Windows**: [Download from official site](https://ffmpeg.org/download.html) and add `bin` folder to PATH",
+    "**macOS**: `brew install ffmpeg`",
+    "**Linux**: `sudo apt install ffmpeg` or use your package manager",
+    "**macOS**: `brew install potrace`",
+    "**Linux**: `sudo apt install potrace` or use your package manager"
+   ],
    "technologies": [
     "Python"
    ],
@@ -5939,8 +6104,8 @@
    "records": [
     "IMG-0199"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:53:03+00:00"
   },
   {
    "entity_id": "ENT-000127",
@@ -6032,13 +6197,14 @@
     "Open Source"
    ],
    "short_description": "Open-source infrastructure for agents that learn from experience; the official README describes trace collection, persistent knowledge, and reusable skills through a Python SDK, REST API, MCP, and CLI.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "Fergana-Labs",
    "platforms": null,
    "urls": [
     "https://github.com/Fergana-Labs/stash",
+    "https://github.com/fergana-labs/stash",
     "github.com",
     "github.com/fergana-labs/stash",
     "joinstash.ai"
@@ -6054,8 +6220,8 @@
    "records": [
     "IMG-0187"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:43+00:00"
   },
   {
    "entity_id": "ENT-000228",
@@ -6978,8 +7144,8 @@
    "short_description": "Can LLM/MARL agents coordinate in long-horizon, open-ended tasks? NeurIPS 2026 (Evaluations and Datasets).",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "alem-world",
    "platforms": null,
    "urls": [
     "https://github.com/alem-world/alem-env",
@@ -6990,7 +7156,21 @@
    "github_url": "https://github.com/alem-world/alem-env",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Plans ahead.** Each agent commits to a turn-indexed plan (`Step 5 Move · Step 6–7 Noop · Step 8 DO`) and waits in position.",
+    "**Coordinates out loud.** All three line up and DO the 3-agent tree on the same step.",
+    "{object} {relative_position} (x={x}, y={y})",
+    "{object} (x={x}, y={y}): {how_this_object_must_be_coordinated}",
+    "stone 5 steps east (x=29, y=24)",
+    "tree 1 step north and 2 steps west (x=22, y=23)",
+    "construction_site 2 steps north (x=24, y=22)",
+    "iron 3 steps south and 5 steps east (x=29, y=27)",
+    "construction_site (x=24, y=22): requires 3 agents to Build simultaneously (fails alone).",
+    "tree (x=26, y=23): one agent begins, another completes it within 6 steps (handover).",
+    "stone (x=20, y=21): works solo, but a bonus when 3 agents Do simultaneously.",
+    "**Linux:** grant the container access to your X server first (this is the step that's usually missing when the window never appears), then run it:",
+    "**macOS / Windows:** start XQuartz (macOS) or VcXsrv (Windows), enable \"allow connections from network clients\", then set `DISPLAY` accordingly."
+   ],
    "technologies": [
     "Python"
    ],
@@ -6998,8 +7178,8 @@
    "records": [
     "IMG-0176"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:22+00:00"
   },
   {
    "entity_id": "ENT-000151",
@@ -7084,8 +7264,8 @@
    "short_description": "🚀 Autocache - Intelligent Anthropic API Cache Proxy   Automatically inject cache-control fields into Claude API requests to reduce costs by up to 90% and latency by up to 85%. Works as a transparent drop-in replacement for popular AI platforms like n8n, Flowise, Make.com, LangChain,  and LlamaIndex—no code changes required",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "montevive",
    "platforms": null,
    "urls": [
     "https://github.com/montevive/autocache",
@@ -7097,7 +7277,33 @@
    "github_url": "https://github.com/montevive/autocache",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "📝 **Large system prompts** (1,000-5,000+ tokens)",
+    "🛠️ **10+ tool definitions** (5,000-15,000+ tokens)",
+    "🔄 **Repeated agent interactions** (same context, different queries)",
+    "**Without caching**: 15,000 token agent → $0.045 per request",
+    "**With caching**: Same agent → $0.0045 per request after first call (90% savings)",
+    "🔗 [n8n GitHub Issue #13231](https://github.com/n8n-io/n8n/issues/13231) - \"Anthropic model not caching system prompt\"",
+    "🔗 [Flowise Issue #4289](https://github.com/FlowiseAI/Flowise/issues/4289) - \"Support for Anthropic Prompt Caching\"",
+    "🔗 [n8n Community Request](https://community.n8n.io/t/request-prompt-caching-support-for-claude/101941) - Multiple requests for caching support",
+    "🔗 [LangChain Issue #26701](https://github.com/langchain-ai/langchain/issues/26701) - Implementation difficulties",
+    "`latest` - Latest stable release (recommended)",
+    "`v1.0.1` - Specific version tag",
+    "`1.0.1`, `1.0`, `1` - Semantic version aliases",
+    "**Registry**: `ghcr.io/montevive/autocache`",
+    "**Architectures**: `linux/amd64`, `linux/arm64`",
+    "**Size**: ~29 MB (optimized Alpine-based image)",
+    "**Source**: https://github.com/montevive/autocache",
+    "For **production deployments** with docker-compose, see the [Quick Start](#quick-start) section below",
+    "For **configuration options**, see [Configuration](#configuration)",
+    "For **n8n integration**, see our [n8n setup guide](N8N_TESTING.md)",
+    "**Focus**: System prompts and tools only",
+    "**Breakpoints**: Maximum 2",
+    "**Best For**: Cost-sensitive applications with predictable content",
+    "**Focus**: System, tools, and large content blocks",
+    "**Breakpoints**: Maximum 3",
+    "**Best For**: Most applications balancing savings and efficiency"
+   ],
    "technologies": [
     "Go"
    ],
@@ -7105,8 +7311,8 @@
    "records": [
     "IMG-0192"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:50+00:00"
   },
   {
    "entity_id": "ENT-000264",
@@ -7355,8 +7561,8 @@
    "short_description": "A persistent, file-based memory layer for coding agents — give Claude Code, Codex & others a project brain (durable decisions, requirements, constraints) via a zero-dependency CLI.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "mindmuxai",
    "platforms": null,
    "urls": [
     "https://github.com/mindmuxai/brain.md",
@@ -7367,7 +7573,14 @@
    "github_url": "https://github.com/mindmuxai/brain.md",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Repo-native** — Markdown that lives in your project and travels in git, with or without a runtime on top.",
+    "**Agent-agnostic** — the contract is a file (`BRAIN.md`). Any agent that can read it can use the brain.",
+    "**Correct by construction** — every write goes through the `brain` CLI, so the brain's",
+    "**Correct by construction, no validator.** The CLI is the only writer. Frontmatter is always",
+    "**Exactly one brain, location-independent.** It defaults to `./brain`, but a project can",
+    "**Pure files, portable.** The brain is Markdown plus one Node script — it lives in your repo"
+   ],
    "technologies": [
     "JavaScript"
    ],
@@ -7375,8 +7588,8 @@
    "records": [
     "IMG-0197"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:59+00:00"
   },
   {
    "entity_id": "ENT-000045",
@@ -7391,8 +7604,8 @@
    "short_description": "Be the most productive engineer on your team 🚀🚀🚀",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "dtnewman",
    "platforms": null,
    "urls": [
     "https://github.com/dtnewman/burn-baby-burn",
@@ -7404,7 +7617,16 @@
    "github_url": "https://github.com/dtnewman/burn-baby-burn",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "📈 **Make the CEO see how productive you are.**",
+    "💸 **Investors will see how AI-innovative your company is.**",
+    "🏆 **Top the internal Claude Code leaderboard.**",
+    "📊 **Pad your OKRs.**",
+    "🦄 **Justify next year's bigger AI budget.**",
+    "4x burn rate",
+    "SSO/SAML Support",
+    "Role-Based Burn Access"
+   ],
    "technologies": [
     "Shell"
    ],
@@ -7412,8 +7634,8 @@
    "records": [
     "IMG-0180"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:30+00:00"
   },
   {
    "entity_id": "ENT-000029",
@@ -7428,8 +7650,8 @@
    "short_description": "Local-first cross-platform desktop workspace for Claude Code / agents: multi-agent, Git worktrees, code diffs, skill marketplace, multi-model, Computer Use, task-aware desktop pets, with WeChat, Feishu, DingTalk, Telegram, WhatsApp and H5 access.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "nanmicoder",
    "platforms": null,
    "urls": [
     "https://github.com/nanmicoder/cc-haha",
@@ -7440,7 +7662,33 @@
    "github_url": "https://github.com/nanmicoder/cc-haha",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**多会话工作台**：标签页、项目切换、终端入口和会话历史集中管理，侧边栏宽度可拖拽。",
+    "**全局搜索**：按 Cmd+K 跨所有会话全文搜索，一键跳到命中位置。",
+    "**分支 / Worktree 启动**：新会话可以选择仓库分支，并决定用当前工作树还是隔离 Worktree。",
+    "**改动逐个文件审阅**：右侧工作区列出本轮改动，点开就是带语法高亮的 Diff，整轮可撤销。",
+    "**内置浏览器预览**：Agent 刚改完的页面直接在应用内渲染，登录态和 Cookie 真实可用。",
+    "**五档权限模式**：从「询问权限」到「跳过权限」，危险命令、工具调用和 AI 反问都在桌面端审批。",
+    "**模型自选**：Claude / ChatGPT / Grok 官方账号可直接登录；DeepSeek、Kimi、智谱 GLM 等第三方 API 有现成预设；LM Studio、Ollama 的本地模型也接得上。",
+    "**图片生成**：聊天中直接生成和编辑图片——ChatGPT / Grok 授权登录即可使用，也支持接入任意 OpenAI 兼容的 Images API。",
+    "**MCP 图形化管理**：界面化增删改 MCP Server，支持 STDIO / Streamable HTTP / SSE 三种传输方式与项目私有、共享、全局三种作用域。",
+    "**六套配色主题**：纯白、纸墨、经典暖色、青瓷、墨夜、墨夜蓝，可跟随系统深浅色自动切换。",
+    "**技能市场**：发现、预览、安装 ClawHub / SkillHub 的第三方技能，来源和安全状态摆在明处。",
+    "**会话活动面板**：集中查看任务进度、后台任务、SubAgent 与来源。",
+    "**可视化 SubAgent 管理**：图形界面创建和调校子代理，选择模型、工具与权限模式。",
+    "**Agent Teams 协作工作台**：桌面端可视化多 Agent 协作团队——成员、任务、通信流和依赖泳道一目了然。",
+    "**动态 Workflow 编排**：模型当场编写并运行编排脚本，并发或流水线调度多个子代理，支持阶段视图、中断与断点续跑。",
+    "**模型请求追踪**：本地记录每轮模型请求的状态与耗时，可搜索筛选，快速定位卡死或失败调用。",
+    "**Computer Use**：让 Agent 在授权后截图、点击、输入并控制桌面应用；macOS 原生运行时不占用你的真实鼠标和键盘。",
+    "**桌面宠物**：搭搭、弧弧、补补、回回随任务状态换动作，也能自己做一只（默认关闭）。",
+    "**H5 远程访问**：扫码用手机浏览器接入当前会话，锁屏切后台都不打断正在跑的任务。",
+    "**IM 接入**：通过 Telegram / 飞书 / 微信 / 钉钉 / WhatsApp / 企业微信 / QQ / Slack 远程对话、切换项目和审批权限。",
+    "**定时任务与用量统计**：创建计划任务在独立会话执行，并查看本机 Token 使用趋势。",
+    "[React](https://github.com/facebook/react)：前端工程与组件化 UI 生态。",
+    "[Electron](https://github.com/electron/electron)：跨端桌面应用能力与工程实践。",
+    "[cc-switch](https://github.com/farion1231/cc-switch)：模型供应商配置能力参考。",
+    "[LINUX DO](https://linux.do/)：新的理想型开发者社区。"
+   ],
    "technologies": [
     "TypeScript"
    ],
@@ -7448,8 +7696,8 @@
    "records": [
     "IMG-0162"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:00+00:00"
   },
   {
    "entity_id": "ENT-000310",
@@ -7539,8 +7787,8 @@
    "short_description": "from vibe coding to agentic engineering - practice makes claude perfect",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "shanraisshan",
    "platforms": null,
    "urls": [
     "https://github.com/shanraisshan/claude-code-best-practice",
@@ -7551,7 +7799,16 @@
    "github_url": "https://github.com/shanraisshan/claude-code-best-practice",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "[RPI](development-workflows/rpi/rpi-workflow.md) [![Implemented](!/tags/implemented.svg)](development-workflows/rpi/rpi-workflow.md)",
+    "[Ralph Wiggum Loop](https://www.youtube.com/watch?v=eAtvoGlpeRU) [![Implemented](!/tags/implemented.svg)](https://github.com/shanraisshan/ralph-wiggum-self-evolving-loop)",
+    "[Andrej Karpathy (Founding Member, OpenAI) Workflow](https://x.com/karpathy/status/2015883857489522876)",
+    "[Peter Steinberger (Creator of OpenClaw) Workflow](https://youtu.be/8lF7HmQ_RgY?t=2582)",
+    "Thariq (Anthropic) Workflow — [Skills](tips/claude-thariq-tips-17-mar-26.md) · [Session Management](tips/claude-thariq-tips-16-apr-26.md) [![Thariq](!/tags/thariq.svg)](https://x.com/trq212)",
+    "**Plugin** — another model's CLI runs inside Claude Code (slash commands like `/codex:review`)",
+    "**MCP** — Claude Code calls another model as a tool through Model Context Protocol",
+    "**Router** — Claude Code's API endpoint is swapped to a different provider"
+   ],
    "technologies": [
     "HTML"
    ],
@@ -7559,8 +7816,8 @@
    "records": [
     "IMG-0159"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:54+00:00"
   },
   {
    "entity_id": "ENT-000249",
@@ -7654,7 +7911,7 @@
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
    "license": null,
-   "developer": null,
+   "developer": "alchaincyf",
    "platforms": null,
    "urls": [
     "https://github.com/alchaincyf/codex-orange-book",
@@ -7665,7 +7922,33 @@
    "github_url": "https://github.com/alchaincyf/codex-orange-book",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "Added a coda on **Codex on mobile** (shipped May 14, 2026): Codex inside the ChatGPT mobile app, a remote control surface for your desktop Codex App. Covered in §01, §06, and the FAQ.",
+    "**English edition now available** alongside the Chinese edition — native-prose translation, not a literal one.",
+    "**GPT-5.5** landed as the default model (SWE-bench Verified 82.6%, Terminal-Bench 2.0 82.7%, 40% fewer output tokens)",
+    "**Five forms, not four**: Codex for Chrome shipped on May 7; Desktop App got Computer Use, In-App Browser, Memory, Image Generation, and multi-day Automations",
+    "**Auto-review** changed the approval model: ~99% of low-risk actions now flow through without interrupting you",
+    "**Three Pro tiers** ($20 / $100 / $200) replaced the old two-tier pricing — the new $100 Pro is the sweet spot for indie developers",
+    "**Persistent `/goal` system** lets a single objective survive across `/clear`, compaction, and sessions",
+    "**Engineers** who want 10x productivity with agentic coding — let Codex handle implementation while you focus on architecture",
+    "**Claude Code users** evaluating Codex — §10 gives an honest, data-backed comparison of when to use which",
+    "**Product Managers and Entrepreneurs** shipping MVPs solo — Codex's Cloud and Automations let one person run multiple tasks in parallel",
+    "SWE-Bench Pro: GPT-5.5 still loses to Claude Opus 4.7 (58.6% vs 64.3%)",
+    "1M context in Codex is actually ~258K usable",
+    "Full Access mode on Windows has deleted user files (370 GB, 700 GB, 240 GB reports) — never enable it",
+    "MultiAgentV2 has three unfixed GitHub issues (#16657, #17523, #14233) as of v2 release",
+    "Codex on mobile (May 14) is the Desktop App's remote companion, not a standalone phone agent — don't confuse them",
+    "Claude Code: The Complete Guide",
+    "Claude Code Source Code Analysis",
+    "Harness Engineering",
+    "Agent Skills",
+    "OpenClaw: Build Your Own AI",
+    "Hermes Agent",
+    "Polymarket Guide",
+    "**OpenAI Codex: The Complete Guide** ← you are here",
+    "X/Twitter: [@AlchainHust](https://x.com/AlchainHust)",
+    "YouTube: [@Alchain](https://www.youtube.com/@Alchain)"
+   ],
    "technologies": [
     "HTML"
    ],
@@ -7673,8 +7956,8 @@
    "records": [
     "IMG-0198"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:53:01+00:00"
   },
   {
    "entity_id": "ENT-000046",
@@ -7689,8 +7972,8 @@
    "short_description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "justvugg",
    "platforms": null,
    "urls": [
     "https://github.com/justvugg/colibri",
@@ -7701,7 +7984,33 @@
    "github_url": "https://github.com/justvugg/colibri",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**One hierarchy, not limited by tier capacity.** VRAM, RAM, and NVMe are placement",
+    "**A JIT for weights.** Measured routing heat drives a per-layer LRU, a learned",
+    "**I/O is part of the engine.** Batched expert unions, overlapped reads and",
+    "**Heterogeneous execution.** CPU, CUDA, Metal, NUMA memory, and partial or full",
+    "**Compressed state without a different model.** Token-exact forward validation,",
+    "**Speculation that must earn its keep.** Native MTP and grammar-forced drafts",
+    "the **dense part** (attention, shared experts, embeddings — ~17B params) stays",
+    "the **19,456 routed experts** (75 MoE layers × 256 + the MTP head, ~19 MB each",
+    "the mirror is **never written**: `.coli_usage`, `.coli_kv` and all sidecars stay on the primary;",
+    "a read error on the mirror falls back to the primary (one warning, no crash), so unplugging the second drive mid-run degrades instead of killing the server;",
+    "routing never changes tokens — both copies are byte-identical; enable `PROF=1` for the `MIRROR:` profile counters showing GB served per drive.",
+    "**6× RTX 5090, full residency:** 5.8–6.8 tok/s decode, TTFT ~13 s",
+    "**128 GB CPU-only desktop:** ~1.8 tok/s warm ([#200](https://github.com/JustVugg/colibri/issues/200));",
+    "**single RTX 5070 Ti laptop-class box:** 1.07 tok/s via the GPU-resident",
+    "**25 GB dev box:** 0.05–0.1 tok/s cold — the proven floor where this project",
+    "**Inkling on a RAM-tight host** needs the int4 dense container and a small",
+    "**Kimi K3** streams its MXFP4 experts from the original checkpoint, so there",
+    "**Inference-systems research is the product.** The current hierarchy is LRU +",
+    "**More open models.** The tiering algorithm is model-agnostic: any MoE with",
+    "⭐ star the repo and share it;",
+    "🐛 open issues with benchmark numbers from your hardware — datapoints move",
+    "💬 join the [Discord community](https://discord.gg/RXV83nSZdk) to discuss",
+    "💬 reach out via GitHub issues to sponsor development or donate hardware.",
+    "[REAP](https://github.com/CerebrasResearch/reap) and",
+    "[SERE](https://github.com/JL-Cheng/SERE) for similarity-based expert"
+   ],
    "technologies": [
     "C"
    ],
@@ -7709,8 +8018,8 @@
    "records": [
     "IMG-0181"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:32+00:00"
   },
   {
    "entity_id": "ENT-000071",
@@ -8406,8 +8715,8 @@
    "short_description": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "pyang5166",
    "platforms": null,
    "urls": [
     "https://github.com/pyang5166/gbro-collage-broll",
@@ -8417,7 +8726,11 @@
    "github_url": "https://github.com/pyang5166/gbro-collage-broll",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "强烈平坦的纯色纸面色场 + 黑白 halftone 照片剪贴 + 彩色卡纸点缀",
+    "元素从空场逐件滑入、卡位、组装（stop-motion 质感），不是淡入或慢 zoom",
+    "默认交付 9:16、5 秒、720×1280、24fps、无声 MP4，可直接垫在口播下面"
+   ],
    "technologies": [
     "Python"
    ],
@@ -8425,8 +8738,8 @@
    "records": [
     "IMG-0166"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:06+00:00"
   },
   {
    "entity_id": "ENT-000141",
@@ -8480,8 +8793,8 @@
    "short_description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "graphify-labs",
    "platforms": null,
    "urls": [
     "https://github.com/graphify-labs/graphify",
@@ -8490,14 +8803,33 @@
    "github_url": "https://github.com/graphify-labs/graphify",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**Every edge is explained.** Each connection is tagged `EXTRACTED` (explicit in the source) or `INFERRED` (resolved by graphify), so you can tell what was read directly from what was inferred.",
+    "**Not a vector index.** No embeddings, no vector store: a real graph you traverse. Ask a question, trace the path between two things, or explain one concept.",
+    "**Instruction-file platforms** (Codex, OpenCode, Cursor, etc.): persistent instruction files (`AGENTS.md`, `.cursor/rules/`, etc.) provide the same query-first guidance.",
+    "**God nodes** — the most-connected concepts in your project. Everything flows through these.",
+    "**Surprising connections** — links between things that live in different files or modules. Ranked by how unexpected they are.",
+    "**The \"why\"** — inline comments (`# NOTE:`, `# WHY:`, `# HACK:`), docstrings, and design rationale from docs are extracted as separate nodes linked to the code they explain.",
+    "**Suggested questions** — 4–5 questions the graph is uniquely positioned to answer.",
+    "**Confidence tags** — every inferred relationship is marked `EXTRACTED`, `INFERRED`, or `AMBIGUOUS`. You always know what was found vs guessed.",
+    "**Video / audio** — transcribed locally with faster-whisper. Nothing leaves your machine.",
+    "**No telemetry**, no usage tracking, no analytics.",
+    "**pipx** (`pipx install graphifyy`): run `pipx ensurepath`, then open a new terminal.",
+    "[docs.graphify.com](https://docs.graphify.com) — full documentation: guides, command reference, and integrations",
+    "[How it works](docs/how-it-works.md) — the extraction pipeline, community detection, confidence scoring, benchmarks",
+    "[ARCHITECTURE.md](ARCHITECTURE.md) — module breakdown, how to add a language",
+    "[Optional integrations](docs/docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite",
+    "[The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — the book on the ideas behind graphify, the architecture end to end"
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0003"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:27+00:00"
   },
   {
    "entity_id": "ENT-000040",
@@ -8513,8 +8845,8 @@
    "short_description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "xai-org",
    "platforms": null,
    "urls": [
     "https://github.com/xai-org/grok-build",
@@ -8528,7 +8860,15 @@
    "github_url": "https://github.com/xai-org/grok-build",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Rust** — the toolchain is pinned by [`rust-toolchain.toml`](rust-toolchain.toml);",
+    "**[DotSlash](https://dotslash-cli.com)** — required so hermetic tools under",
+    "**protoc** — proto codegen resolves [`bin/protoc`](bin/protoc) via DotSlash,",
+    "macOS and Linux are supported build hosts; Windows builds are best-effort",
+    "[`THIRD-PARTY-NOTICES`](THIRD-PARTY-NOTICES) — crates.io / git dependencies,",
+    "[`crates/codegen/xai-grok-tools/THIRD_PARTY_NOTICES.md`](crates/codegen/xai-grok-tools/THIRD_PARTY_NOTICES.md)",
+    "[`third_party/NOTICE`](third_party/NOTICE) — vendored Mermaid-stack index"
+   ],
    "technologies": [
     "Rust"
    ],
@@ -8536,8 +8876,8 @@
    "records": [
     "IMG-0175"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:20+00:00"
   },
   {
    "entity_id": "ENT-000075",
@@ -8777,8 +9117,8 @@
    "short_description": "the runtime your coding agents live on",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "herdrdev",
    "platforms": null,
    "urls": [
     "https://github.com/herdrdev/herdr",
@@ -8790,15 +9130,22 @@
    "github_url": "https://github.com/herdrdev/herdr",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**never hunt for the stuck one** — every pane is marked working, blocked, or idle. when an agent stops and needs an answer, herdr says so.",
+    "**keyboard and mouse, both first-class** — tmux-style prefix keys *and* click, drag, split. pick per moment, not per tool.",
+    "**plugins** — extend panes and workflows. [browse the marketplace →](https://herdr.dev/plugins/)",
+    "**one rust binary, no electron** — runs in whatever terminal you already use."
+   ],
+   "technologies": [
+    "Rust"
+   ],
    "source_count": 2,
    "records": [
     "IMG-0183",
     "IMG-0557"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:04+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:35+00:00"
   },
   {
    "entity_id": "ENT-000274",
@@ -8940,8 +9287,8 @@
    "short_description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "ayghri",
    "platforms": null,
    "urls": [
     "https://github.com/ayghri/i-have-adhd",
@@ -8959,8 +9306,8 @@
    "records": [
     "IMG-0170"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:13+00:00"
   },
   {
    "entity_id": "ENT-000247",
@@ -9095,8 +9442,8 @@
    "short_description": "iNTERCEPT, a free and open-source platform that unites the best signal intelligence tools into a single, accessible interface.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "smittix",
    "platforms": null,
    "urls": [
     "https://github.com/smittix/intercept",
@@ -9107,7 +9454,33 @@
    "github_url": "https://github.com/smittix/intercept",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Pager Decoding** - POCSAG/FLEX via rtl_fm + multimon-ng",
+    "**433MHz Sensors** - Weather stations, TPMS, IoT devices via rtl_433",
+    "**Sub-GHz Analyzer** - RF capture and protocol decoding for 300-928 MHz ISM bands via HackRF",
+    "**Aircraft Tracking** - ADS-B via dump1090 with real-time map and radar",
+    "**Vessel Tracking** - AIS ship tracking with VHF DSC distress monitoring",
+    "**ACARS Messaging** - Aircraft datalink messages via acarsdec",
+    "**VDL2** - VHF Data Link Mode 2 aircraft datalink decoding via dumpvdl2",
+    "**Listening Post** - Wideband frequency scanner with real-time audio monitoring",
+    "**Weather Satellites** - NOAA APT and Meteor LRPT image decoding via SatDump with auto-scheduler",
+    "**WebSDR** - Remote HF/shortwave listening via KiwiSDR network",
+    "**ISS SSTV** - Slow-scan TV image reception from the International Space Station",
+    "**HF SSTV** - Terrestrial SSTV on shortwave frequencies (80m-10m, VHF, UHF)",
+    "**APRS** - Amateur packet radio position reports and telemetry via direwolf",
+    "**Satellite Tracking** - Pass prediction with polar plot and ground track map",
+    "**Utility Meters** - Electric, gas, and water meter reading via rtlamr",
+    "**ADS-B History** - Persistent aircraft history with reporting dashboard (Postgres optional)",
+    "**WiFi Scanning** - Monitor mode reconnaissance via aircrack-ng",
+    "**Bluetooth Scanning** - Device discovery and tracker detection (with Ubertooth support)",
+    "**BT Locate** - SAR Bluetooth device location with GPS-tagged signal trail mapping and proximity alerts",
+    "**WiFi Locate** - Locate WiFi access points by BSSID with real-time signal meter, distance estimation, and proximity audio",
+    "**GPS** - Real-time GPS position tracking with live map, speed, altitude, and satellite info",
+    "**TSCM** - Counter-surveillance with RF baseline comparison and threat detection",
+    "**Meshtastic** - LoRa mesh network integration",
+    "**Space Weather** - Real-time solar and geomagnetic data from NOAA SWPC, NASA SDO, and HamQSL (no SDR required)",
+    "**Spy Stations** - Number stations and diplomatic HF network database"
+   ],
    "technologies": [
     "Python"
    ],
@@ -9115,8 +9488,8 @@
    "records": [
     "IMG-0001"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:25+00:00"
   },
   {
    "entity_id": "ENT-000241",
@@ -9173,8 +9546,8 @@
    "short_description": "A native macOS menu bar app for controlling your smart home devices.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "nickustinov",
    "platforms": null,
    "urls": [
     "https://github.com/nickustinov/itsyhome-macos",
@@ -9186,7 +9559,33 @@
    "github_url": "https://github.com/nickustinov/itsyhome-macos",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Menu bar access** - Control your smart home from the macOS menu bar",
+    "**HomeKit support** - Full integration with Apple HomeKit devices and scenes",
+    "**Home Assistant support** - Connect to your Home Assistant server via WebSocket API",
+    "**Device groups** - Create custom groups to control multiple devices at once",
+    "**Scenes** - Execute and toggle scenes with automatic state tracking",
+    "**Favourites** - Pin frequently used devices, scenes, and groups to the top of the menu",
+    "**Multi-home support** - Switch between multiple HomeKit homes (HomeKit only)",
+    "**Native experience** - Built with AppKit for a true macOS look and feel",
+    "**Menu bar pinning** - Pin rooms, devices, scenes, groups, or auto groups as separate menu bar items with optional keyboard shortcuts",
+    "**Localized** - Available in 12 languages: English, German, Spanish, French, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Russian, Chinese (Simplified and Traditional)",
+    "**iCloud sync** - Sync favourites, groups, and settings across your Macs *(Pro)*",
+    "**Deeplinks** - Control devices from Shortcuts, Alfred, Raycast, Stream Deck *(Pro)*",
+    "**Cameras** - Live multi-stream camera grid with custom layouts and overlay action buttons to control nearby accessories *(Pro)*",
+    "**Doorbell notifications** - Automatic camera view with live stream when a doorbell rings *(Pro)*",
+    "**Sensors** - Contact, motion, occupancy, leak, smoke, CO and CO2 sensors as read-only rows, with battery indicators and pinnable menu bar readings",
+    "**Webhooks/CLI** - Built-in HTTP server with a dedicated CLI tool *(Pro)*",
+    "**Event stream (SSE)** - Real-time device state changes via Server-Sent Events for external automation *(Pro)*",
+    "**Virtual HomeKit sensors** - Publish Itsyhome's own bridge to Apple Home with virtual sensors, driven by webhooks or built-in automations *(Pro)*",
+    "**Sensor history** - 30-day charts for temperature, humidity and binary sensors, right in the menu *(Pro)*",
+    "**[Itsytv](https://itsytv.app)** - Free companion app for controlling Apple TV from your menu bar",
+    "Entities are automatically grouped by device and area",
+    "Cameras require the `stream` integration for live video",
+    "Scene state tracking requires scenes created in the Home Assistant UI (not YAML)",
+    "`Room/Device` - Device in specific room (e.g., `Office/Spotlights`)",
+    "`Room/group.Name` - Group scoped to a room (e.g., `Office/group.All%20Lights`)"
+   ],
    "technologies": [
     "Swift"
    ],
@@ -9194,8 +9593,8 @@
    "records": [
     "IMG-0190"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:47+00:00"
   },
   {
    "entity_id": "ENT-000294",
@@ -9369,8 +9768,8 @@
    "short_description": "HTML is the new markdown. Lavish is the new editor for your HTML artifacts.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "kunchenguid",
    "platforms": null,
    "urls": [
     "https://github.com/kunchenguid/lavish-axi",
@@ -9380,7 +9779,24 @@
    "github_url": "https://github.com/kunchenguid/lavish-axi",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Local-first** - Review local HTML artifacts with a local CLI and no cloud dependency in the core feedback loop; hosted sharing through third-party ht-ml.app is explicit and opt-in.",
+    "**Human-AI collaboration** - Annotate elements and selected text ranges, edit Mermaid whiteboard diagrams, and send messages to the agent without leaving Lavish Editor.",
+    "**Battery included** - Lavish Editor teaches your agent good visualization for common use cases such as product or technical plans, design explorations and more out of the box.",
+    "It's just a CLI any capable agent can run without setup.",
+    "It's optimized for agent ergonomics. TOON output, long polling, and contextual disclosure making it highly token efficient.",
+    "The skill and hooks below only handle discovery; agents learn to use the AXI by using it.",
+    "**File-path identity** - Sessions are keyed by the canonical HTML file path, so agents do not need opaque IDs.",
+    "**Portable artifacts** - The artifact runs in a sandboxed iframe while Lavish injects a small SDK for annotations, snapshots, feedback controls, and render-time layout checks.",
+    "**Self-paint warning** - `lavish-axi <html-file>`, `export`, and `share` run a render-free check for artifacts missing an explicit page background and return a one-line `self_paint_warning`.",
+    "**Open-time layout gate** - The browser chrome masks an artifact only while the real in-iframe audit waits for fonts and final geometry.",
+    "**Keyboard shortcuts** - In the chrome composer, Enter sends queued prompts and Shift+Enter inserts a newline.",
+    "**Precise targets** - Text annotations include selected text plus range anchors, and text selections carry those anchors only.",
+    "**Server cleanup** - The detached server stops after the last session ends when nothing is connected, or after `LAVISH_AXI_IDLE_TIMEOUT_MS` (default 30 minutes) with no browser or poll connections.",
+    "**Local-first state** - Session state stays under `~/.lavish-axi/` by default, or `LAVISH_AXI_STATE_DIR` when set.",
+    "**Server port** - Set `LAVISH_AXI_PORT` to choose the server port; it defaults to `4387`.",
+    "**Browser opening** - Set `LAVISH_AXI_NO_OPEN=1`, equivalent to `--no-open`, to create or resume a session without launching a browser window."
+   ],
    "technologies": [
     "JavaScript"
    ],
@@ -9388,8 +9804,8 @@
    "records": [
     "IMG-0193"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:52+00:00"
   },
   {
    "entity_id": "ENT-000076",
@@ -9914,8 +10330,8 @@
    "short_description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "lidge-jun",
    "platforms": null,
    "urls": [
     "https://github.com/lidge-jun/opencodex",
@@ -9926,7 +10342,23 @@
    "github_url": "https://github.com/lidge-jun/opencodex",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**Use any LLM with Codex, Claude Code, Claude Desktop, and Grok Build** — 40+ providers out of",
+    "**Pool ChatGPT accounts** — thread affinity, quota-aware auto-switching, cooldown and",
+    "**Combos** — one virtual model id with failover or weighted round-robin across providers. See",
+    "**Sub-agents on any model** — feature routed models in Codex's sub-agent picker, with v1/v2",
+    "**Log in once, skip the API key** — OAuth for xAI, Anthropic, and Kimi; or forward",
+    "**Web search & vision sidecars** — non-OpenAI models get real web search and image understanding",
+    "**See what's happening** — the dashboard shows providers, OAuth status, model selection, and a",
+    "**Clean exit, zero residue** — `ocx stop` restores Codex to its original configuration.",
+    "**Bounded memory ownership** — every long-lived cache, ring buffer, and protocol-translation",
+    "**14 retained stores** (request log, debug rings, image cache, model cache, vision",
+    "**4 observed buffers** (translator accumulators, image/OAuth/Grok tails) are",
+    "**28 state-store registrations** handle expiry sweeps (60 s interval) and",
+    "**Path and fingerprint memos** (workspace metadata, hardened identities, installation",
+    "**Model-cache generation tombstones** are deleted after reconciliation; a global",
+    "**Lab event-id deduplication** runs under a ledger lock from disk, with no"
+   ],
    "technologies": [
     "TypeScript"
    ],
@@ -9934,8 +10366,8 @@
    "records": [
     "IMG-0167"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:08+00:00"
   },
   {
    "entity_id": "ENT-000090",
@@ -10270,10 +10702,10 @@
     "Open Source"
    ],
    "short_description": "A local proxy for Claude Code that renders selected bulky request context as compact images to reduce input-token usage; the repository documents related export and proxy workflows.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "teamchong",
    "platforms": null,
    "urls": [
     "https://github.com/teamchong/pxpipe",
@@ -10283,7 +10715,23 @@
    "github_url": "https://github.com/teamchong/pxpipe",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "**It is lossy.** Exact 12-char hex strings in dense imaged content:",
+    "**Escape hatch:** subagents on non-allowlisted models pass through as",
+    "**Real work:** SWE-bench Lite pilot **10/10 both arms** at −65% request",
+    "**Workload-dependent.** Wins on token-dense content (~1 char/token),",
+    "**Client-dependent.** Savings track uncached bulk the client still",
+    "**`claude-opus-5`:** weaker recall than Fable 5 (verbatim **2/15 vs 13/15**), good",
+    "**`claude-opus-5-5`:** on by default. Uses 5×8 with 2px extra row height",
+    "**Model scope:** default `PXPIPE_MODELS=claude-fable-5,claude-opus-5-5,gemini`. The `gemini`",
+    "**Per-model rendering:** opt-in `gpt-5.6-sol` and Grok use native 14px",
+    "**Grok 4.5 / 4.6 (opt-in):** native 14px / 84 cols / maxH 512 (100/100 arith, 97/98 gist).",
+    "PNG encoding adds latency to large requests before they leave.",
+    "ASCII/Latin-1 well tested; CJK works but conservatively.",
+    "[pxpipe-windows](https://github.com/DivyeshPatro/pxpipe-windows) — Windows support for `pxpipe mitm` (node-forge CA in place of openssl, Task Scheduler autostart).",
+    "[OmniGlyph](https://github.com/diegosouzapw/OmniGlyph) — A community-maintained project derived from pxpipe and used by [OmniRoute](https://github.com/diegosouzapw/OmniRoute).",
+    "[pxpipe-go](https://github.com/evan-choi/pxpipe-go) — A Go port of pxpipe's core with a CLI wrapper, standalone proxy, and embeddable library for Anthropic Messages and OpenAI Chat/Responses."
+   ],
    "technologies": [
     "TypeScript"
    ],
@@ -10291,8 +10739,8 @@
    "records": [
     "IMG-0188"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:45+00:00"
   },
   {
    "entity_id": "ENT-000227",
@@ -10736,8 +11184,8 @@
    "short_description": "Spec-driven development with smart compaction. Claude Code plugin combining Ralph Wiggum loop with structured specification workflow.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "tzachbon",
    "platforms": null,
    "urls": [
     "https://github.com/tzachbon/smart-ralph",
@@ -10747,7 +11195,21 @@
    "github_url": "https://github.com/tzachbon/smart-ralph",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "`--tasks-size fine|coarse` for task granularity",
+    "`[P]` for low-conflict parallel tasks",
+    "`[VERIFY]` and VE tasks for explicit verification",
+    "approval checkpoints between spec phases outside quick mode",
+    "In normal mode, Smart Ralph may suggest a prototype after research or requirements. You can also run `/ralph-specum:prototype` or `$ralph-specum-prototype` at a safe phase boundary.",
+    "In quick mode, Smart Ralph asks no prototype questions, owns the decisions, and always continues to design after the prototype outcome.",
+    "Prototype source stays in a sibling worktree or eligible scratch directory. Quick mode transfers no source into the current checkout; normal mode transfers only paths you approve.",
+    "Reviewed terminal records are immutable. Local evidence does not authorize a push, remote branch, PR update, issue write, or record deletion.",
+    "Repeated task failure: read `.progress.md`, fix the reported problem, then run `/ralph-specum:implement`.",
+    "Start over: run `/ralph-specum:cancel`, then start a new spec.",
+    "Resume work: run `/ralph-specum:start`. Ralph finds the active spec.",
+    "Built for [Claude Code](https://claude.ai/code) and [OpenAI Codex](https://github.com/openai/codex)",
+    "Inspired by developers who wanted their coding agent to handle the whole feature"
+   ],
    "technologies": [
     "Shell"
    ],
@@ -10755,8 +11217,8 @@
    "records": [
     "IMG-0196"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:58+00:00"
   },
   {
    "entity_id": "ENT-000104",
@@ -11130,8 +11592,8 @@
    "short_description": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas Cloud + ffmpeg. An agent skill.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "alisa0808",
    "platforms": null,
    "urls": [
     "https://github.com/alisa0808/vox-director",
@@ -11141,7 +11603,12 @@
    "github_url": "https://github.com/alisa0808/vox-director",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "A **coding agent** — Claude Code, Codex, or similar",
+    "**Atlas Cloud** API key",
+    "**ffmpeg** + **ffprobe** (`brew install ffmpeg`)",
+    "**Python 3** with **Pillow** (`pip install pillow`) — for caption/watermark overlays"
+   ],
    "technologies": [
     "Python"
    ],
@@ -11149,8 +11616,8 @@
    "records": [
     "IMG-0161"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:58+00:00"
   },
   {
    "entity_id": "ENT-000257",
@@ -11377,8 +11844,8 @@
    "short_description": "Official Implementation for \"Face Anything: 4D Face Reconstruction from Any Image Sequence\" (ECCV 2026, Oral (Spotlight))",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Other",
+   "developer": "kocasariumut",
    "platforms": null,
    "urls": [
     "https://github.com/kocasariumut/faceanything",
@@ -11389,14 +11856,28 @@
    "github_url": "https://github.com/kocasariumut/faceanything",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "[Overview](#overview)",
+    "[What It Produces](#what-it-produces)",
+    "[Installation](#installation)",
+    "[Checkpoint](#checkpoint)",
+    "[Usage](#usage)",
+    "[Dataset](#dataset)",
+    "[Acknowledgments](#acknowledgments)",
+    "[Citation](#citation)",
+    "[License](#license)",
+    "`all-at-once` (default): all frames are processed jointly, giving **more",
+    "`one-by-one`: each frame is processed independently, giving **more detailed"
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0195"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:56+00:00"
   },
   {
    "entity_id": "ENT-000025",
@@ -11411,8 +11892,8 @@
    "short_description": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "trailhq",
    "platforms": null,
    "urls": [
     "https://github.com/trailhq/graft",
@@ -11424,14 +11905,42 @@
    "github_url": "https://github.com/trailhq/graft",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "[Quick start](#quick-start)",
+    "[The problem](#the-problem)",
+    "[What Graft does](#what-graft-does)",
+    "[Benchmark](#benchmark)",
+    "[SWE-bench Verified](#swe-bench-verified)",
+    "[How the graph gets built](#how-the-graph-gets-built)",
+    "[Supported languages](#supported-languages)",
+    "[What's in a node](#whats-in-a-node)",
+    "[What runs where](#what-runs-where)",
+    "[Agent integration](#agent-integration) — [MCP server](#mcp-server) · [Claude Code (deep integration)](#claude-code-deep-integration)",
+    "[CLI](#cli)",
+    "[Search & orient](#search--orient-graft-grep--graft-map) (`graft grep` / `graft map`)",
+    "[Monorepos & multi-repo folders](#monorepos--multi-repo-folders)",
+    "[Visualize it](#visualize-it-graft-viz) (`graft viz`)",
+    "[Tested on your popular repos](#tested-on-your-popular-repos)",
+    "[Development](#development)",
+    "[License](#license)",
+    "**Repeated.** Every task pays the exploration cost again, from zero.",
+    "**Discarded.** Whatever the agent figured out dies with the session.",
+    "**Unshared.** The next teammate, and their agent, start from scratch too.",
+    "**Full-fidelity** — hand-written extractors with scope-aware, cross-file call",
+    "**Broad** — symbols (functions, classes, methods, types, …) plus name-resolved",
+    "**Compiler-grade edges (opt-in)** — `graft build --lsp` adds precise",
+    "**a live statusline** — graph size, % enriched, and a `⚠ N stale` warning when the code has moved ahead of the graph",
+    "**context on tap** — each prompt pulls the matching nodes into the session; editing a file surfaces what depends on it (\"blast radius\"); new sessions start with the repo map"
+   ],
+   "technologies": [
+    "TypeScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0158"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:52+00:00"
   },
   {
    "entity_id": "ENT-000002",
@@ -11476,10 +11985,10 @@
     "Open Source"
    ],
    "short_description": "An open-source security infrastructure platform for secrets, certificates, and privileged access management, with a public repository and self-hosting options.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Other",
+   "developer": "infisical",
    "platforms": null,
    "urls": [
     "https://github.com/infisical/infisical"
@@ -11487,14 +11996,31 @@
    "github_url": "https://github.com/infisical/infisical",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**[Dashboard](https://infisical.com/docs/documentation/platform/project)**: Manage secrets across projects and environments (e.g. development, production, etc.) through a user-friendly interface.",
+    "**[Secret Scanning and Leak Prevention](https://infisical.com/docs/cli/scanning-overview)**: Prevent secrets from leaking to git.",
+    "**[Infisical Kubernetes Operator](https://infisical.com/docs/documentation/guides/kubernetes-operator)**: Deliver secrets to your Kubernetes workloads and automatically reload deployments.",
+    "**[Infisical Agent](https://infisical.com/docs/integrations/platforms/infisical-agent)**: Inject secrets into applications without modifying any code logic.",
+    "**[Internal CA](https://infisical.com/docs/documentation/platform/pki/ca/private-ca)**: Create and manage a private",
+    "**[Alerting](https://infisical.com/docs/documentation/platform/pki/applications/alerting/overview)**: Configure alerting for expiring CA and end-entity certificates.",
+    "**[Cryptographic Keys](https://infisical.com/docs/documentation/platform/kms)**: Centrally manage keys across projects through a user-friendly interface or via the API.",
+    "**[Encrypt and Decrypt Data](https://infisical.com/docs/documentation/platform/kms#guide-to-encrypting-data)**: Use symmetric keys to encrypt and decrypt data.",
+    "**[Web Access](https://infisical.com/docs/documentation/platform/pam/accounts/overview)**: Connect to SSH, PostgreSQL, Redis, and Windows RDP resources directly from the browser.",
+    "**[Gateway](https://infisical.com/docs/documentation/platform/gateways/overview)**: Securely reach private network resources from Infisical without opening inbound connections to your environment.",
+    "**[Self-hosting](https://infisical.com/docs/self-hosting/overview)**: Deploy Infisical on-prem or cloud with ease; keep data on your own infrastructure.",
+    "**[Infisical CLI](https://infisical.com/docs/cli/overview)**: Interact with Infisical via CLI; useful for injecting secrets into local development and CI/CD pipelines.",
+    "**[Infisical API](https://infisical.com/docs/api-reference/overview/introduction)**: Interact with Infisical via API.",
+    "Join our <a href=\"https://community.infisical.com/\">community</a>, and ask us any questions there."
+   ],
+   "technologies": [
+    "TypeScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0128"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:41+00:00"
   },
   {
    "entity_id": "ENT-000035",
@@ -11505,10 +12031,10 @@
    "subcategory": "AI Assistants",
    "secondary_categories": [],
    "short_description": "The repository describes an AI-powered stock-trading backtesting system that integrates large language models for decision analysis.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "jason8745",
    "platforms": null,
    "urls": [
     "https://github.com/jason8745/llm-agent-trader"
@@ -11516,14 +12042,22 @@
    "github_url": "https://github.com/jason8745/llm-agent-trader",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**macOS/Linux**: Native support for `make` commands",
+    "**Windows**: May require additional setup (WSL, Git Bash, or make utility installation)",
+    "**WSL (Windows Subsystem for Linux)**: Recommended approach",
+    "**Git Bash**: Included with Git for Windows",
+    "**Make for Windows**: Install GNU Make utility"
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0169"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T20:45:49+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:11+00:00"
   },
   {
    "entity_id": "ENT-000005",
@@ -11536,8 +12070,8 @@
    "short_description": "Description not supplied by repository metadata.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Other",
+   "developer": "minimax-ai",
    "platforms": null,
    "urls": [
     "https://github.com/minimax-ai/minimax-m2.5"
@@ -11545,14 +12079,17 @@
    "github_url": "https://github.com/minimax-ai/minimax-m2.5",
    "documentation_url": null,
    "tags": [],
-   "features": [],
+   "features": [
+    "On Droid: 79.7(M2.5) > 78.9(Opus 4.6)",
+    "On OpenCode: 76.1(M2.5) >  75.9(Opus 4.6)"
+   ],
    "technologies": [],
    "source_count": 1,
    "records": [
     "IMG-0004"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:29+00:00"
   },
   {
    "entity_id": "ENT-000017",
@@ -11594,10 +12131,10 @@
     "Open Source"
    ],
    "short_description": "An open-source collection of AI agents, agent skills, and retrieval-augmented generation applications with tutorials and runnable examples.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "shubhamsaboo",
    "platforms": null,
    "urls": [
     "https://github.com/shubhamsaboo/awesome-llm-apps",
@@ -11606,14 +12143,42 @@
    "github_url": "https://github.com/shubhamsaboo/awesome-llm-apps",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "[⚰️ Project Graveyard](agent_skills/project-graveyard/) - Finds every side project you abandoned, tells you why each one died, and helps you finish the one worth going back to",
+    "[🔭 Scope Creep Detector](agent_skills/scope-creep-detector/) - Checks whether a diff grew beyond its stated intent and recommends what to keep, split, or justify",
+    "[🏺 Commit Archaeologist](agent_skills/commit-archaeologist/) - Reconstructs why a file or code region exists from its introducing commit, later edits, co-changes, and intent clues",
+    "[🩺 Dependency Doctor](agent_skills/dependency-doctor/) - Checks a dependency manifest for standard-library pins, obsolete backports, unpinned entries, duplicate constraints, and yanked releases",
+    "[🧠 Advisor Orchestrator Worker](agent_skills/advisor-orchestrator-worker/) - Meta Loop with Claude Fable 5.1 as advisor, GPT-6 Astra as orchestrator, and Gemini 3.8 Flash as worker",
+    "[🎙️ Thinking Out Loud](agent_skills/thinking-out-loud/) - Echoes a voice ramble back as a scannable brief, with the model's guesses quarantined and your reversals flagged",
+    "[♾️ Self-Improving Agent Skills](agent_skills/self-improving-agent-skills/) - Automatically optimize agent skills using Gemini and ADK",
+    "[🎙️ AI Blog to Podcast Agent](starter_ai_agents/ai_blog_to_podcast_agent/) - Turn any blog URL into a narrated podcast episode",
+    "[❤️‍🩹 AI Breakup Recovery Agent](starter_ai_agents/ai_breakup_recovery_agent/) - An agent team that talks you through the post-breakup spiral",
+    "[📊 AI Data Analysis Agent](starter_ai_agents/ai_data_analysis_agent/) - Ask questions of any CSV or Excel file in plain English",
+    "[🩻 AI Medical Imaging Agent](starter_ai_agents/ai_medical_imaging_agent/) - Diagnostic analysis of X-rays and scans with Gemini",
+    "[😂 AI Meme Generator Agent (Browser)](starter_ai_agents/ai_meme_generator_agent_browseruse/) - Makes memes by driving a real browser, not an image API",
+    "[🎵 AI Music Generator Agent](starter_ai_agents/ai_music_generator_agent/) - Prompt in, MP3 track out",
+    "[🛫 AI Travel Agent (Local & Cloud)](starter_ai_agents/ai_travel_agent/) - Personalized day-by-day travel itineraries",
+    "[💸 AI x402 Paying Agent](starter_ai_agents/ai_x402_paying_agent/) - An agent with a wallet that pays per-call for the data it needs — no API keys",
+    "[✨ Gemini Multimodal Agent](starter_ai_agents/multimodal_ai_agent/) - Video analysis plus web search in one agent",
+    "[🔄 Mixture of Agents](starter_ai_agents/mixture_of_agents/) - Multiple LLMs answer, one aggregates the best response",
+    "[📊 xAI Finance Agent](starter_ai_agents/xai_finance_agent/) - Real-time stock analysis powered by Grok",
+    "[🔍 OpenAI Research Agent](starter_ai_agents/openai_research_agent/) - Multi-agent topic research with the OpenAI Agents SDK",
+    "[🕸️ Web Scraping AI Agent](starter_ai_agents/web_scraping_ai_agent/) - Describe what to extract and the agent scrapes it",
+    "[🏚️ 🍌 AI Home Renovation Agent with Nano Banana Pro](advanced_ai_agents/multi_agent_apps/ai_home_renovation_agent) - Photos of your space in, renovation plan and photorealistic renders out",
+    "[🧠 DevPulse AI - Multi-Agent Signal Intelligence](advanced_ai_agents/multi_agent_apps/devpulse_ai/) - Aggregates and scores technical signals into a daily intelligence digest",
+    "[🔍 AI Deep Research Agent](advanced_ai_agents/single_agent_apps/ai_deep_research_agent/) - Comprehensive web research with the OpenAI Agents SDK and Firecrawl",
+    "[📊 AI VC Due Diligence Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_vc_due_diligence_agent_team) - Multi-agent startup investment analysis with Gemini 3",
+    "[🤝 AI Consultant Agent](advanced_ai_agents/single_agent_apps/ai_consultant_agent) - Market analysis and strategy recommendations with live web research"
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0013"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:35+00:00"
   },
   {
    "entity_id": "ENT-000030",
@@ -11626,8 +12191,8 @@
    "short_description": "Agent skills for designers and builders using Codex, Claude, Cursor, and other AI coding agents",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "mengto",
    "platforms": null,
    "urls": [
     "https://github.com/mengto/skills"
@@ -11635,14 +12200,42 @@
    "github_url": "https://github.com/mengto/skills",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "repeatable design direction",
+    "reusable game architecture and gameplay QA",
+    "procedural implementation steps",
+    "copy/paste snippets",
+    "common pitfalls and guardrails",
+    "reusable workflows instead of one-off chat answers",
+    "**Codex**: load the relevant `SKILL.md` before acting. Repo behavior belongs in `AGENTS.md`; browser work in this repo should use the Codex browser.",
+    "**Claude Code**: reference the relevant skill from `CLAUDE.md`, copy it into a Claude skills setup, or open the `SKILL.md` directly as working context.",
+    "**Cursor**: point Cursor rules or chat context at the specific skill folder. Keep reusable snippets, constraints, and defaults easy to paste.",
+    "**Other agents**: use the same contract: read the narrowest matching skill first, then follow its steps and linked references.",
+    "store prompts as files",
+    "version them",
+    "build libraries + stylecards",
+    "clear constraints",
+    "clear hierarchy",
+    "“change 1–2 things only” iteration",
+    "fonts, spacing, colors",
+    "layout rhythm",
+    "icon style",
+    "`SKILL.md` is the skill an agent loads and follows.",
+    "`REFERENCES.md` is links only. Keep `SKILL.md` lean.",
+    "Visual and interaction skills may include a portable `demo/index.html` and `demo/PROMPT.md`.",
+    "Workflow skills may include fictional `demo/input.md` and `demo/expected-output.md` handoffs when they materially improve proof.",
+    "Keep skills **procedural** (steps, patterns, guardrails), not encyclopedic.",
+    "Prefer explicit triggers: \"Use when...\" beats vague descriptions."
+   ],
+   "technologies": [
+    "HTML"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0164"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T20:45:49+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:02+00:00"
   },
   {
    "entity_id": "ENT-000013",
@@ -11653,10 +12246,10 @@
    "subcategory": "AI Agents",
    "secondary_categories": [],
    "short_description": "A library of Agent Skills and plugins designed to work with the Stitch MCP server, following the Agent Skills open standard and supporting coding agents including Antigravity, Gemini CLI, Claude Code, Cursor, Codex, and OpenCode.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "google-labs-code",
    "platforms": null,
    "urls": [
     "https://github.com/google-labs-code/stitch-skills"
@@ -11664,14 +12257,23 @@
    "github_url": "https://github.com/google-labs-code/stitch-skills",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**`stitch-design`** — design-focused skills",
+    "**`stitch-build`** — build and component skills",
+    "**`stitch-utilities`** — utility and helper skills",
+    "**Validation**: Skills that convert Stitch HTML to other UI frameworks and validate the syntax.",
+    "**Decoupling Data**: Skills that convert static design content into external mock data files.",
+    "**Generate Designs**: Skills that generate new design screens in Stitch from a given set of data."
+   ],
+   "technologies": [
+    "TypeScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0120"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:37+00:00"
   },
   {
    "entity_id": "ENT-000009",
@@ -11716,10 +12318,10 @@
     "Open Source"
    ],
    "short_description": "A Codex plugin for reconstructing objects from reference images as code-only procedural Three.js models; the repository currently calls the plugin img2obj.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "vinhhien112",
    "platforms": null,
    "urls": [
     "https://github.com/vinhhien112/img2obj",
@@ -11729,14 +12331,42 @@
    "github_url": "https://github.com/vinhhien112/img2obj",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "Validates whether a reference is suitable for procedural 3D reconstruction.",
+    "Breaks complex objects into assemblies, parts, visible details, and material systems.",
+    "Generates procedural Three.js geometry instead of downloading meshes or art packs.",
+    "Supports hard-surface, organic, vegetation, fabric, glass, hair/fur, emissive, and decal-oriented capability packs.",
+    "Plans pivots, sockets, parent-child relationships, detachable parts, and other animation-ready anchors.",
+    "Extracts reference-derived PBR evidence such as palette, roughness, height, normal, and ambient-occlusion maps.",
+    "Packages reference and render screenshots for visual comparison and quality review.",
+    "Rejects unsupported geometry or unverified corrections instead of silently substituting guessed output.",
+    "Codex with local plugin support.",
+    "Python 3.10 or newer.",
+    "A browser project using Three.js for the generated object factory.",
+    "AI image and vision access when source cleanup, planning views, or visual review are needed.",
+    "**Overall identity:** silhouette, proportions, camera, materials, and lighting.",
+    "**Critical features:** the small set of parts that makes the object recognizable, such as a roof profile, branch fork, wheel cluster, face, or hand-to-object contact.",
+    "A structured `ObjectSculptSpec` describing geometry, materials, hierarchy, motion, and review targets.",
+    "A generated TypeScript factory for the currently unlocked sculpt phase.",
+    "Comparison sheets and evidence manifests for visual review.",
+    "Optional procedural PBR maps and look-development helpers.",
+    "Review history and phase checkpoints for refinement, promotion, or rollback.",
+    "One image cannot reveal hidden sides or exact dimensions.",
+    "The result is a procedural approximation, not a scanned or extracted mesh.",
+    "Transparent glass, smoke, liquid, fur, fine cloth, and exact likeness may need more references or a lower-fidelity target.",
+    "The generated factory is a construction starting point, not a replacement for a complete production asset pipeline.",
+    "AI vision review is required for visual acceptance; local scripts organize evidence but do not judge similarity by themselves.",
+    "`skills/object-to-threejs-procedural/` contains the Codex workflow and reference contracts."
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0182"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:33+00:00"
   },
   {
    "entity_id": "ENT-000042",
@@ -11751,8 +12381,8 @@
    "short_description": "A three.js agent skills for producing awesome graphics for scenes and games",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "scottstts",
    "platforms": null,
    "urls": [
     "https://github.com/scottstts/threejs-awesome-graphics-agent-skills",
@@ -11762,14 +12392,25 @@
    "github_url": "https://github.com/scottstts/threejs-awesome-graphics-agent-skills",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "deterministic or reproducible inputs;",
+    "named controlling fields and perceptual parameters;",
+    "diagnostic outputs;",
+    "scale, distance, and temporal stability rules;",
+    "an intentional mechanism-backed quality or resolution tier when the system defines one;",
+    "a no-post baseline that still reads.",
+    "The agent using this skill only needs the implementation and the assets for the example itself",
+    "The gallery is for viewing purpose, the agent doesn't need to know that scene setup"
+   ],
+   "technologies": [
+    "JavaScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0177"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:24+00:00"
   },
   {
    "entity_id": "ENT-000027",
@@ -11780,10 +12421,10 @@
    "subcategory": null,
    "secondary_categories": [],
    "short_description": "TurboFieldfare is an independent Swift and Metal runtime for Gemma 4 26B-A4B inference on Apple Silicon Macs.",
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "drumih",
    "platforms": null,
    "urls": [
     "https://github.com/drumih/turbo-fieldfare"
@@ -11791,14 +12432,40 @@
    "github_url": "https://github.com/drumih/turbo-fieldfare",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "An Apple Silicon Mac; the validated target is an 8 GB M2 MacBook Air",
+    "macOS 26 with Metal 4",
+    "Xcode 26 and Swift 6.2 or newer",
+    "Enough free storage for the ~14.3 GB model installation",
+    "An internet connection for the first model install",
+    "Remote streaming repack into the `.gturbo` model format",
+    "Instruction-tuned Gemma 4 26B-A4B with verified chat formatting",
+    "4-bit MLX affine embedding, attention, shared-expert, and routed-expert",
+    "Custom Metal kernels for quantized GEMV, attention, MoE, normalization,",
+    "SSD-backed routed-expert streaming with a bounded expert cache",
+    "Chunked prefill for one-shot prompts and new conversational turns, followed",
+    "FP16 KV storage with bounded circular storage for 25 sliding-window layers",
+    "Exact split-K/V decode attention with distinct normalized K and V paths",
+    "A Swift library, streaming installer, command-line interface, loopback",
+    "Optional image input from a separately installed companion pack: the vision",
+    "Build iPhone and iPad apps, then measure inference speed and memory use on",
+    "Benchmark more Apple Silicon Macs, especially the base 16 GB M4 Mac mini and",
+    "[Local OpenAI-compatible server](docs/OPENAI_SERVER.md)",
+    "[System design](docs/SYSTEM_DESIGN.md)",
+    "[Benchmarks](docs/BENCHMARKS.md)",
+    "[The experiments that shaped TurboFieldfare](docs/OPTIMIZATION_JOURNEY.md)",
+    "[Experiment inventory and summaries](docs/experiments/EXPERIMENT_INVENTORY.md)",
+    "[Implementation references](docs/IMPLEMENTATION_REFERENCES.md)"
+   ],
+   "technologies": [
+    "Swift"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0160"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T20:45:49+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:56+00:00"
   },
   {
    "entity_id": "ENT-000051",
@@ -11813,8 +12480,8 @@
    "short_description": "A Living Library You Can Talk To. Thirty historical figures, their lives narrated, their ideas open to conversation, in English and German. Nonprofit, open source.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "GNU Affero General Public License v3.0",
+   "developer": "chipmates",
    "platforms": null,
    "urls": [
     "https://github.com/chipmates/agoracosmica",
@@ -11827,13 +12494,15 @@
    "documentation_url": null,
    "tags": [],
    "features": [],
-   "technologies": [],
+   "technologies": [
+    "TypeScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0186"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:41+00:00"
   },
   {
    "entity_id": "ENT-000022",
@@ -11846,8 +12515,8 @@
    "short_description": "Claude Code skill for session handoffs — survives context compaction, chain-links across sessions.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "remvisual",
    "platforms": null,
    "urls": [
     "https://github.com/remvisual/claude-handoff",
@@ -11856,14 +12525,26 @@
    "github_url": "https://github.com/remvisual/claude-handoff",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "Required **zero user intervention** (the unstructured session needed \"don't alter anything yet\")",
+    "Traced the **complete failure call chain** (the unstructured session proposed a surface-level fix)",
+    "Found **bugs not listed in the handoff** through structured adjacent exploration",
+    "Produced **justified fixes** instead of correct-but-unexplained ones",
+    "ALWAYS use the /handoff skill. NEVER generate handoff summaries without it.",
+    "**[Beads](https://github.com/gastownhall/beads)** — Issue tracking in your repo. Handoffs auto-detect active beads and use them as chain tags.",
+    "**[OpenViking](https://github.com/volcengine/OpenViking)** — Persistent AI memory. Handoffs search for prior decisions and context from earlier sessions.",
+    "**Git** — git log, diff, status gathered automatically.",
+    "**Any CLI task tracker** — The skills use `bd` (beads) as default — swap in Linear, Jira CLI, or GitHub Issues."
+   ],
+   "technologies": [
+    "Shell"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0155"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:49+00:00"
   },
   {
    "entity_id": "ENT-000020",
@@ -11878,8 +12559,8 @@
    "short_description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "thedotmack",
    "platforms": null,
    "urls": [
     "https://github.com/thedotmack/claude-mem",
@@ -11890,14 +12571,42 @@
    "github_url": "https://github.com/thedotmack/claude-mem",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "🧠 **Persistent Memory** - Context survives across sessions",
+    "📊 **Progressive Disclosure** - Layered memory retrieval with token cost visibility",
+    "🔍 **Skill-Based Search** - Query your project history with mem-search skill",
+    "🖥️ **Web Viewer UI** - Real-time memory stream at the worker URL printed on startup",
+    "💻 **Claude Desktop Skill** - Search memory from Claude Desktop conversations",
+    "🔒 **Privacy Control** - Use `<private>` tags to exclude sensitive content from storage",
+    "⚙️ **Context Configuration** - Fine-grained control over what context gets injected",
+    "🤖 **Automatic Operation** - No manual intervention required",
+    "🔗 **Citations** - Reference past observations with IDs through the worker API or view all in the web viewer",
+    "**[Installation Guide](https://docs.claude-mem.ai/installation)** - Quick start & advanced installation",
+    "**[Usage Guide](https://docs.claude-mem.ai/usage/getting-started)** - How Claude-Mem works automatically",
+    "**[Search Tools](https://docs.claude-mem.ai/usage/search-tools)** - Query your project history with natural language",
+    "**[Cloud Sync](https://docs.claude-mem.ai/cloud-sync)** - Back up your memories to cmem.ai — no daemon, the worker syncs on write",
+    "**[Context Engineering](https://docs.claude-mem.ai/context-engineering)** - AI agent context optimization principles",
+    "**[Progressive Disclosure](https://docs.claude-mem.ai/progressive-disclosure)** - Philosophy behind Claude-Mem's context priming strategy",
+    "**[Overview](https://docs.claude-mem.ai/architecture/overview)** - System components & data flow",
+    "**[Architecture Evolution](https://docs.claude-mem.ai/architecture-evolution)** - The journey from v3 to v5",
+    "**[Hooks Architecture](https://docs.claude-mem.ai/hooks-architecture)** - How Claude-Mem uses lifecycle hooks",
+    "**[Hooks Reference](https://docs.claude-mem.ai/architecture/hooks)** - 7 hook scripts explained",
+    "**[Worker Service](https://docs.claude-mem.ai/architecture/worker-service)** - HTTP API & Bun management",
+    "**[Database](https://docs.claude-mem.ai/architecture/database)** - SQLite schema & FTS5 search",
+    "**[Search Architecture](https://docs.claude-mem.ai/architecture/search-architecture)** - Hybrid search with Chroma vector database",
+    "**[Configuration](https://docs.claude-mem.ai/configuration)** - Environment variables & settings",
+    "**[Development](https://docs.claude-mem.ai/development)** - Building, testing, contributing",
+    "**[Release Branches](https://docs.claude-mem.ai/branches)** - Stable, core-dev, and community-edge branch flow"
+   ],
+   "technologies": [
+    "TypeScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0152"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:45+00:00"
   },
   {
    "entity_id": "ENT-000008",
@@ -11942,7 +12651,7 @@
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
    "license": null,
-   "developer": null,
+   "developer": "maxprokopp",
    "platforms": null,
    "urls": [
     "https://github.com/maxprokopp/film-space",
@@ -11952,14 +12661,23 @@
    "github_url": "https://github.com/maxprokopp/film-space",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**Virtual studio** — A 3D space with a checkerboard floor, grid, and axis guides so you can orient subjects and camera positions.",
+    "**Human stand-ins** — Add, select, rotate, and reposition figure placeholders to block talent in the scene.",
+    "**Edit mode** — Orbit around the studio, zoom in and out, and arrange your blocking from a bird's-eye or close-up view.",
+    "**Camera mode** — Carry your phone through the scene. Physical movement translates into camera movement; tilt and turn to look around, as if you're operating a real camera on set.",
+    "**Lens simulation** — Cycle through 35mm, 50mm, 75mm, and 200mm focal lengths to preview different fields of view.",
+    "**Recording** — Capture the rendered scene (with microphone audio) and save the video to your photo library."
+   ],
+   "technologies": [
+    "Swift"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0173"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:16+00:00"
   },
   {
    "entity_id": "ENT-000055",
@@ -11975,8 +12693,8 @@
    "short_description": "Control Room-first template for managing Hermes agents from one VPS agent to specialist teams and orchestrated workflows",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "shannhk",
    "platforms": null,
    "urls": [
     "https://github.com/shannhk/hermes-agent-control-room",
@@ -11986,14 +12704,42 @@
    "github_url": "https://github.com/shannhk/hermes-agent-control-room",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "A control-plane folder structure for documenting agents.",
+    "Templates for agent runbooks, Docker notes, secret maps, and backups.",
+    "A level-based architecture for growing from one agent to a specialist team.",
+    "A task bus pattern for orchestrator-to-specialist delegation.",
+    "Bundled setup and operations skills an agent can use to build or manage the system.",
+    "One personal Hermes agent",
+    "VPS setup documentation",
+    "Docker migration planning",
+    "Keeping runbooks and secret maps organized",
+    "`hermes-life`",
+    "`hermes-seo`",
+    "`hermes-dev`",
+    "`hermes-cmo`",
+    "`hermes-ops`",
+    "connect to your VPS over SSH",
+    "install base packages",
+    "install Node.js",
+    "install Claude Code",
+    "install Codex CLI",
+    "install Docker",
+    "install Hermes Agent best-effort",
+    "clone this repo to `/root/agent-control-room`",
+    "link bundled skills into `~/.claude/skills`",
+    "secret names",
+    "provider"
+   ],
+   "technologies": [
+    "Shell"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0191"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:48+00:00"
   },
   {
    "entity_id": "ENT-000037",
@@ -12008,8 +12754,8 @@
    "short_description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "img2threejs",
    "platforms": null,
    "urls": [
     "https://github.com/img2threejs/img2threejs",
@@ -12020,14 +12766,41 @@
    "github_url": "https://github.com/img2threejs/img2threejs",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**A specific person or character** — `Maximize likeness: fit the parametric template to the landmarks, de-light and camera-match the reference, then project it. Tell me which regions are inferred.`",
+    "**An animal or creature** — `This is a creature, not a humanoid — use the quadruped body plan and the body-unit proportion system.`",
+    "**A saturated anodized or candy finish** — `The coat is candy-coat, not gem-metal. Keep the hue; do not let the environment steal it.`",
+    "**A cost ceiling** — `Stay at low effort and skip the presentation composer; I only need the evaluation render.`",
+    "**One image per review.** Each pass is judged from exactly one packaged comparison sheet (reference beside render), not a scattering of screenshots.",
+    "**Text output, not binaries.** The result is diffable TypeScript plus a JSON spec — small, reviewable, and version-controllable, instead of multi-megabyte mesh files.",
+    "An `ObjectSculptSpec` JSON: the full component tree, materials, repetition systems, sockets, and a recorded review history for every pass.",
+    "A TypeScript `createObjectNameModel(spec, options)` factory returning a `THREE.Group`, with `root.userData.sculptRuntime` exposing nodes, sockets, colliders, and destruction groups.",
+    "For character builds, `root.userData.rig`: bones, one shared `Skeleton`, bone order and index map, and a `bound` flag computed from whether every skinned mesh actually bound.",
+    "A render plus comparison sheets documenting the fidelity at each pass.",
+    "**v1.0** — object pipeline: staged sculpt, render-vs-reference review loop, action-ready hierarchy.",
+    "**v1.1** — detail-first analysis: required detail inventory, strict-quality gate.",
+    "**v1.2** — humanoid character generator: anatomy track, proportion-lock and feature-placement passes.",
+    "**v1.3** — quality & efficiency: the Divine Eye deterministic review harness, input-integrity and geometry-truth gates, reference-grounded texture and gradient analysis, CIEDE2000 colour math.",
+    "**v1.4 — The Weapon Update** — CS2 image-matched reconstruction: provenance-aware intake, projection-first finishes, family-specific weapon adapters, and structural review gates.",
+    "**v1.4.1** — CS2 hardening: explicit component coverage, a dedicated Glock-18 assembly contract, map-stripped blockout evidence, and stricter geometry-integrity checks.",
+    "**creature generator** — 4 body plans (quadruped / avian / winged-dragon / serpentine), `animalAnatomy` spec, spine-loft geometry, ΔE00 colour gates.",
+    "**v2.0 — The Plugin Update** — the domain registry, pull-based spec augmentation",
+    "**v2.1 — The Character Split**: the in-repo `character` domain joins `plugin-character`, so the base names no domain and the v2.0 plugin split closes.",
+    "**v2.2 — The Environment Update**: buildings, rooms, streets, vegetation, terrain-aware and multi-object reconstruction.",
+    "**v2.3 — The Game Pipeline Update**: Unity and Unreal exporters, a Blender bridge, LOD and collision-mesh generation.",
+    "**v2.4 — The Animation Update**: auto rigging, auto skin weights, Mixamo compatibility, facial rig.",
+    "**v2.5 — The AI Studio Update**: web UI, batch processing, visual prompt builder, cloud rendering.",
+    "**v3.0 — The Procedural World Update**: multi-view reconstruction, procedural city generation, semantic world understanding."
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0172"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:15+00:00"
   },
   {
    "entity_id": "ENT-000021",
@@ -12040,8 +12813,8 @@
    "short_description": "The design language that makes your AI harness better at design.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "pbakaus",
    "platforms": null,
    "urls": [
     "https://github.com/pbakaus/impeccable",
@@ -12050,14 +12823,42 @@
    "github_url": "https://github.com/pbakaus/impeccable",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**24 commands.** A shared design vocabulary with your AI: `polish`, `audit`, `critique`, `distill`, `animate`, `bolder`, `quieter`, and more.",
+    "**61 deterministic detector rules** plus LLM-only critique checks. The CLI and browser extension run the deterministic rules with no LLM and no API key.",
+    "Don't use overused fonts (Arial, Inter, system defaults)",
+    "Don't use gray text on colored backgrounds",
+    "Don't use pure black/gray (always tint)",
+    "Don't wrap everything in cards or nest cards inside cards",
+    "Don't use bounce/elastic easing (feels dated)",
+    "`.impeccable/config.json` (unified shared config)",
+    "`.impeccable/live/config.json` (live-mode framework wiring)",
+    "`.impeccable/design.json` (shared design spec)",
+    "`.impeccable/surfaces/*.md` (route- or artifact-specific strategy and direction contracts)",
+    "`.impeccable/critique/*.md` (review reports)",
+    "Cursor: `.cursor/hooks.json` runs `.cursor/skills/impeccable/scripts/impeccable hook-before-edit`.",
+    "Codex: `.codex/hooks.json` runs `.agents/skills/impeccable/scripts/impeccable hook`, with a `commandWindows` sibling that calls `impeccable.cmd` for cmd.exe.",
+    "Grok Build: `.grok/hooks/impeccable.json` runs `.grok/skills/impeccable/scripts/impeccable hook`. Requires `/hooks-trust` or `--trust`. Findings reach the model on Stop, not after each edit.",
+    "[Cursor](https://cursor.com)",
+    "[Claude Code](https://claude.ai/code)",
+    "[GitHub Copilot](https://github.com/features/copilot)",
+    "[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)",
+    "[Gemini CLI](https://github.com/google-gemini/gemini-cli)",
+    "[Codex CLI](https://github.com/openai/codex)",
+    "[Grok Build](https://x.ai/cli)",
+    "[Hermes Agent](https://hermes-agent.nousresearch.com)",
+    "[OpenCode](https://opencode.ai)",
+    "[Pi](https://pi.dev)"
+   ],
+   "technologies": [
+    "JavaScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0153"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:51:47+00:00"
   },
   {
    "entity_id": "ENT-000031",
@@ -12072,8 +12873,8 @@
    "short_description": "Free, private, on-device dictation for Mac, powered by Apple's SpeechAnalyzer and Foundation Models.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "kuberwastaken",
    "platforms": null,
    "urls": [
     "https://github.com/kuberwastaken/megaphone",
@@ -12084,14 +12885,29 @@
    "github_url": "https://github.com/kuberwastaken/megaphone",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**Fully on-device transcription** — Apple's speech model processes your audio directly on your Mac. There is no transcription API, API key, or internet connection required.",
+    "**Results as soon as you stop speaking** — Megaphone streams audio into the analyzer while you're talking, so most of the work is already done by the time you release the shortcut.",
+    "**Hold-to-talk or toggle mode** — hold `Fn` to dictate, or press `Command-Fn` to start and stop recording. Both shortcuts can be changed.",
+    "**A personal Dictionary** — add names and technical terms yourself, or let Megaphone learn the words you use often. Exact corrections and trigger phrases handle the stubborn edge cases.",
+    "**Multiple languages** — choose any language supported by Apple's on-device model. Megaphone handles the required model downloads from Settings.",
+    "**Plenty of settings** — configure shortcuts, sounds, the recording overlay, clipboard behaviour, voice macros, prompts, and more.",
+    "**It's private by default.** Transcription runs on-device. Your recordings are not uploaded to a server.",
+    "**It's free to use.** There is no per-minute API bill. Apple provides the model with the operating system, and each language only needs to be downloaded once.",
+    "**Use more reasoning where mistakes are expensive.** A copy change does not need the same attention as an audio cancellation bug or an updater replacing a signed app.",
+    "**Test on the real machine.** Mac builds, codesign output, Accessibility behaviour, updater logs, screenshots, and the live website caught things that looked completely fine in the code.",
+    "**Explain the behaviour you want.** Saying “I want to dictate a sentence, then say ‘Hey Megaphone, make that formal’” led to a much better solution than telling it which variable to add.",
+    "**Commit small changes.** We changed the app, updater, website, signing, releases, demo media, and docs without ending up with one giant diff nobody could understand."
+   ],
+   "technologies": [
+    "Swift"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0165"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:04+00:00"
   },
   {
    "entity_id": "ENT-000058",
@@ -12106,8 +12922,8 @@
    "short_description": "a minimal, beginner-friendly VLA to show how robot policies can fuse images, text, and states to generate actions",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "keivalya",
    "platforms": null,
    "urls": [
     "https://github.com/keivalya/mini-vla",
@@ -12117,14 +12933,23 @@
    "github_url": "https://github.com/keivalya/mini-vla",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "beginners can understand the complete VLA training and exec pipeline",
+    "researchers can rapidly prototype new ideas around this",
+    "students can learn diffusion-based action generation w/o heavy dependencies",
+    "support for multiple tasks (MT10 or M50 something, let's see how much I can scale it)",
+    "adding larger vision/text backbones (CLIP, SigLIP, ViT) -- w/o losing simplicity",
+    "arbitrary text-input during inference"
+   ],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0194"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:54+00:00"
   },
   {
    "entity_id": "ENT-000034",
@@ -12139,8 +12964,8 @@
    "short_description": "✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "Apache License 2.0",
+   "developer": "nexu-io",
    "platforms": null,
    "urls": [
     "https://github.com/nexu-io/motion-anything",
@@ -12150,14 +12975,33 @@
    "github_url": "https://github.com/nexu-io/motion-anything",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**Every recipe is an Open-Design-compatible `SKILL.md`** — export any of the 230 portable skills and drop it straight into Open Design's `skills/` (or any agent that reads skills).",
+    "**59 brand packs in Open Design's `DESIGN.md` format** — generation starts on-brand; the same contract your team already uses in OD drives motion here.",
+    "**58 HyperFrames video templates + 112 OD HTML prototype templates** shipped in the library — briefs get matched against them so output starts from proven structure, not a blank canvas.",
+    "**Open Design Cloud is a first-class engine** — the same ACP runtime (`vela`) that powers OD drives motion-anything, with one recharge across GPT / Claude / Gemini / DeepSeek.",
+    "**Shared craft assets** — agent engine icons, the icon library (2,680 icons · 38 categories), and the design language all come from the same family.",
+    "**403 motion recipes** — 77 real effects with live previews, plus curated reference cards. Categories: ambient backgrounds, feedback & delight, interaction, text, transitions.",
+    "**59 design-system brand packs** + **58 video templates** + **112 HTML prototype templates** + **2,680 icons** — generation starts brand-grade, not blank.",
+    "**230 portable skills** — export any recipe as a `SKILL.md` and drop it into [Open Design](https://github.com/nexu-io/open-design) or any agent that reads skills.",
+    "`app/index.html` — the entire client (workbench, editors, library, i18n ×4) in one file.",
+    "`cli/bin/motion.js` — server + CLI in one file: static serving, project store, and the engine dispatch (stream-json / JSONL events / plain / ACP / BYOK behind one interface).",
+    "`app/video/` — the canvas compositor: engine, WebCodecs MP4 export, HTML frame capture, vendored `mp4-muxer` + `gifenc` (MIT).",
+    "`recipes/` — the library. `recipes/web/_fx/shaderbg.js` (58 lines) is the dependency-free WebGL runner behind all shader recipes.",
+    "`skills/` — the router skill + bundled companion skills.",
+    "**v0.1** — recipe library + router skill + workbench + video line + 8 engines + BYOK ← *we are here*",
+    "**v0.x** — richer video motion (recipe reuse inside video), deeper Figma import, streaming BYOK",
+    "**v1** — auto-add motion to existing Open Design artifacts; design-component → motion auto-assign"
+   ],
+   "technologies": [
+    "JavaScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0168"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:09+00:00"
   },
   {
    "entity_id": "ENT-000039",
@@ -12172,8 +13016,8 @@
    "short_description": "Opensource, on-device voice + vision layer for AI agents. Bring any model or coding agent; the whole speech loop (VAD, STT, TTS, barge-in) runs locally. An open alternative to ElevenLabs Agents, Gemini Live, and OpenAI Realtime.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "katipally",
    "platforms": null,
    "urls": [
     "https://github.com/katipally/openlive",
@@ -12183,14 +13027,42 @@
    "github_url": "https://github.com/katipally/openlive",
    "documentation_url": null,
    "tags": [],
-   "features": [],
-   "technologies": [],
+   "features": [
+    "**A model you have a key for.** Anthropic, OpenAI, Google Gemini, xAI, DeepSeek,",
+    "**The coding agent you already use.** Claude Code, Codex, Cursor, OpenCode,",
+    "**On-device voice loop.** Silero VAD, speech to text, Smart-Turn end-of-turn,",
+    "**Ten languages.** English, Spanish, French, German, Italian, Portuguese, Hindi,",
+    "**Speak as yourself.** Settings > Voice records 5 to 30 seconds of you",
+    "**It can see.** Camera or screen frames ride each turn, and the `look` tool grabs",
+    "**Barge-in.** Interrupt any time and it stops mid-word, like a real conversation.",
+    "**Your assistant, your way.** **Assistant style** in Settings > General, your own",
+    "**Tools, skills and connectors.** Settings > Capabilities turns built-in tools",
+    "**It remembers you.** Settings > Memory lists the facts carried into every",
+    "**Set up, then talk.** **New** opens the call setup: pick a project folder,",
+    "**Voice-drive your coding agent.** Pick Claude Code / Codex / Cursor / OpenCode /",
+    "**Sessions are the agent's own.** A call with Claude Code lands in",
+    "**Permission relay.** When the agent wants to run a command or edit files,",
+    "**Narrated progress.** Optional, in calls and in Flow alike (Settings > Voice):",
+    "**Live plans and costs.** The agent's working plan renders as a checklist while it",
+    "**Manage agents in Settings.** Install, sign in, update, and uninstall each",
+    "**A call that stays in reach.** Minimise OpenLive mid-call and the call rides on",
+    "**A transcript you can use.** Agent replies render as markdown with copy buttons",
+    "**Private by design.** Audio never uploads. API keys are encrypted at rest",
+    "**Summon it.** Double tap `Control` (`Ctrl` on Windows and Linux) anywhere, or",
+    "**What it can do.** Answer out loud, type into the app you are in, and drive the",
+    "**Who answers.** The default from Settings > Models > **Who answers you**, the",
+    "**Orb states.** Listening (teal), thinking (violet), acting (magenta, with a",
+    "**Safety.** Flow asks once before it first acts on the machine and remembers the"
+   ],
+   "technologies": [
+    "TypeScript"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0174"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:18+00:00"
   },
   {
    "entity_id": "ENT-000050",
@@ -12205,8 +13077,8 @@
    "short_description": "Give AI agents eyes, ears, and verifiable results. Watch Skill turns video, audio and screen activity into searchable, timestamped evidence and proves work with deterministic contracts, not model opinion. DeepWatch is the agent workspace built on DeepSeek Harness. Python + npm, MCP, CLI, REST, Web.",
    "confidence": "HIGH",
    "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
+   "license": "MIT License",
+   "developer": "oxbshw",
    "platforms": null,
    "urls": [
     "https://github.com/oxbshw/watch-skill",
@@ -12221,13 +13093,15 @@
    "documentation_url": null,
    "tags": [],
    "features": [],
-   "technologies": [],
+   "technologies": [
+    "Python"
+   ],
    "source_count": 1,
    "records": [
     "IMG-0185"
    ],
-   "quality_level": 0,
-   "updated_at": "2026-10-03T23:59:03+00:00"
+   "quality_level": 5,
+   "updated_at": "2026-10-04T01:52:39+00:00"
   }
  ],
  "records": [
@@ -12363,7 +13237,7 @@
      "chars": 420
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -12396,7 +13270,7 @@
      "chars": 272
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -12729,7 +13603,7 @@
      "chars": 707
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -15538,7 +16412,7 @@
      "chars": 493
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -16296,7 +17170,7 @@
      "chars": 990
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -16494,7 +17368,7 @@
      "chars": 848
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -16562,7 +17436,7 @@
      "chars": 880
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17255,7 +18129,7 @@
      "chars": 780
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17327,7 +18201,7 @@
      "chars": 347
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17360,7 +18234,7 @@
      "chars": 194
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17422,7 +18296,7 @@
      "chars": 167
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17528,7 +18402,7 @@
      "chars": 483
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17780,7 +18654,7 @@
      "chars": 398
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -17888,7 +18762,7 @@
      "chars": 451
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18033,7 +18907,7 @@
      "chars": 739
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18069,7 +18943,7 @@
      "chars": 707
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18105,7 +18979,7 @@
      "chars": 652
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18217,7 +19091,7 @@
      "chars": 1232
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18399,7 +19273,7 @@
      "chars": 1265
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18435,7 +19309,7 @@
      "chars": 792
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18512,7 +19386,7 @@
      "chars": 1108
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18549,7 +19423,7 @@
      "chars": 207
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18732,7 +19606,7 @@
      "chars": 500
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18841,7 +19715,7 @@
      "chars": 895
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -18877,7 +19751,7 @@
      "chars": 312
     }
    ],
-   "status": "NEEDS_RESEARCH",
+   "status": "COMPLETED",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -35838,7 +36712,7 @@
      "chars": 9948
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -36206,7 +37080,7 @@
      "chars": 110
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -36273,7 +37147,7 @@
      "chars": 203
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -36433,7 +37307,7 @@
      "chars": 298
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -37064,7 +37938,7 @@
      "chars": 451
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -37540,7 +38414,7 @@
      "chars": 229
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -37569,7 +38443,7 @@
      "chars": 271
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -38227,7 +39101,7 @@
      "chars": 532
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -38725,7 +39599,7 @@
      "chars": 148
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -39055,7 +39929,7 @@
      "chars": 478
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -39496,7 +40370,7 @@
      "chars": 8958
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -39727,7 +40601,7 @@
      "chars": 196
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -40159,7 +41033,7 @@
      "chars": 171
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -40217,7 +41091,7 @@
      "chars": 2769
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -40677,7 +41551,7 @@
      "chars": 4495
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340
@@ -41593,7 +42467,7 @@
      "chars": 207
     }
    ],
-   "status": "NEEDS_VISION",
+   "status": "OCR_REVIEW",
    "visibility": "REVIEW_REQUIRED",
    "width": 1080,
    "height": 2340

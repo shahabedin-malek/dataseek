@@ -25,6 +25,8 @@ EXPORTS = DATA / "exports"
 PROGRESS = ROOT / ".progress"
 DOCS = ROOT / "docs"
 
+# Retained only for the disabled vision module; Ollama is not permitted and the
+# pipeline never contacts this host.
 OLLAMA_HOST_RAW = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 OLLAMA_HOST = OLLAMA_HOST_RAW if OLLAMA_HOST_RAW.startswith("http") else f"http://{OLLAMA_HOST_RAW}"
 VISION_MODEL = os.environ.get("DATASEEK_VISION_MODEL", "qwen3.5:4b")
