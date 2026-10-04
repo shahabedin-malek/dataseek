@@ -44,10 +44,14 @@ def resource_record(db: sqlite3.Connection, row: sqlite3.Row) -> dict:
     technologies = [r["name"] for r in db.execute(
         "SELECT name FROM technologies WHERE entity_id=? ORDER BY technology_id", (entity_id,))]
     # Only a real repository URL counts; the bare "github.com" domain is not an
-    # organisation/repo and must not become a broken relative link.
-    github = next((u for u in urls if re.search(r"github\.com/[^/\s]+/[^/\s?#]+", u)), None)
-    if github and not github.startswith(("http://", "https://")):
-        github = "https://" + github
+    # organisation/repo and must not become a broken relative link. Rebuild it
+    # canonically so fragments/queries (#readme, ?tab=...) are stripped.
+    github = None
+    for u in urls:
+        m = re.search(r"github\.com/([^/\s?#]+)/([^/\s?#]+)", u)
+        if m:
+            github = f"https://github.com/{m.group(1)}/{m.group(2)}"
+            break
     return {
         "entity_id": entity_id,
         "name": row["name"],

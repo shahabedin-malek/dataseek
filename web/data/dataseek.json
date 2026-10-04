@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T02:30:48+00:00",
+ "generated_at": "2026-10-04T02:33:18+00:00",
  "statistics": {
   "records": 907,
   "v2_processed": 907,
@@ -704,7 +704,7 @@
     "github.com",
     "github.com/Katzca/AutoSocial#readme"
    ],
-   "github_url": "https://github.com/Katzca/AutoSocial#readme",
+   "github_url": "https://github.com/Katzca/AutoSocial",
    "documentation_url": null,
    "tags": [
     "Automation",
@@ -2484,7 +2484,7 @@
     "github.com",
     "github.com/HKUDS/CLI-Anything#-claude-code"
    ],
-   "github_url": "https://github.com/HKUDS/CLI-Anything#-claude-code",
+   "github_url": "https://github.com/HKUDS/CLI-Anything",
    "documentation_url": null,
    "tags": [
     "CLI",
@@ -4850,7 +4850,7 @@
     "github.com/0xK3vin/MegaMemory#readme",
     "gittrend.io"
    ],
-   "github_url": "https://github.com/0xK3vin/MegaMemory#readme",
+   "github_url": "https://github.com/0xK3vin/MegaMemory",
    "documentation_url": null,
    "tags": [
     "GitHub",
@@ -5423,7 +5423,7 @@
     "github.com/hpcaitech/Open-Sora#readme",
     "hpc-ai.com"
    ],
-   "github_url": "https://github.com/hpcaitech/Open-Sora#readme",
+   "github_url": "https://github.com/hpcaitech/Open-Sora",
    "documentation_url": null,
    "tags": [
     "AI",
@@ -5649,7 +5649,7 @@
     "github.com/volcengine/OpenViking#readme",
     "gittrend.io"
    ],
-   "github_url": "https://github.com/volcengine/OpenViking#readme",
+   "github_url": "https://github.com/volcengine/OpenViking",
    "documentation_url": null,
    "tags": [
     "AI",
@@ -8597,7 +8597,7 @@
     "github.com",
     "github.com/anthropics/claude-code/tree/main/plugins/frontend-design"
    ],
-   "github_url": "https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design",
+   "github_url": "https://github.com/anthropics/claude-code",
    "documentation_url": null,
    "tags": [
     "GitHub",
@@ -9244,7 +9244,7 @@
     "github.com",
     "github.com/evolution-foundation/evolution-go#readme"
    ],
-   "github_url": "https://github.com/evolution-foundation/evolution-go#readme",
+   "github_url": "https://github.com/evolution-foundation/evolution-go",
    "documentation_url": null,
    "tags": [
     "API",
@@ -9466,7 +9466,7 @@
     "github.com/floci-io/floci#readme",
     "sgittrend.io"
    ],
-   "github_url": "https://github.com/floci-io/floci#readme",
+   "github_url": "https://github.com/floci-io/floci",
    "documentation_url": null,
    "tags": [
     "CLI",
@@ -10729,7 +10729,7 @@
     "github.com/browser-use/jev-ultrafast#readme",
     "gittrend.io"
    ],
-   "github_url": "https://github.com/browser-use/jev-ultrafast#readme",
+   "github_url": "https://github.com/browser-use/jev-ultrafast",
    "documentation_url": null,
    "tags": [
     "CLI",
@@ -10769,7 +10769,7 @@
     "github.com",
     "github.com/dzhng/jevgrep#readme"
    ],
-   "github_url": "https://github.com/dzhng/jevgrep#readme",
+   "github_url": "https://github.com/dzhng/jevgrep",
    "documentation_url": null,
    "tags": [
     "GitHub",
@@ -11122,7 +11122,7 @@
     "github.com/iart-ai/motion-skills#readme",
     "ktgittrend.io"
    ],
-   "github_url": "https://github.com/iart-ai/motion-skills#readme",
+   "github_url": "https://github.com/iart-ai/motion-skills",
    "documentation_url": null,
    "tags": [
     "AI",
@@ -11391,7 +11391,7 @@
     "https://omlx.ai/me",
     "oMLX.ai"
    ],
-   "github_url": "https://github.com/jundot/omlx#readme",
+   "github_url": "https://github.com/jundot/omlx",
    "documentation_url": null,
    "tags": [
     "CLI",
@@ -12745,7 +12745,7 @@
     "github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-fable-5.md",
     "https://github.com/asgeirtj/system"
    ],
-   "github_url": "https://github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-fable-5.md",
+   "github_url": "https://github.com/asgeirtj/system_prompts_leaks",
    "documentation_url": null,
    "tags": [
     "API",
@@ -13200,7 +13200,7 @@
     "github.com/KnockOutEZ/wigolo#readme",
     "gittrend.io"
    ],
-   "github_url": "https://github.com/KnockOutEZ/wigolo#readme",
+   "github_url": "https://github.com/KnockOutEZ/wigolo",
    "documentation_url": null,
    "tags": [
     "AI",
@@ -13246,7 +13246,7 @@
     "github.com/furkankly/zoetrope#readme",
     "gittrend.io"
    ],
-   "github_url": "https://github.com/furkankly/zoetrope#readme",
+   "github_url": "https://github.com/furkankly/zoetrope",
    "documentation_url": null,
    "tags": [
     "GitHub",
