@@ -2,10 +2,10 @@
 
 - ENT-000019: skills — AI > AI Agents — sources: 8
 - ENT-000188: Chrome Web Store — AI > AI Assistants — sources: 5
+- ENT-000198: Spaceship — Other > AI Agents — sources: 5
 - ENT-000209: Buy Me a Coffee — AI > AI Developer Tools — sources: 4
 - ENT-000065: Higgsfield — AI > AI Image — sources: 4
 - ENT-000259: MCP Market — AI > AI Developer Tools — sources: 4
-- ENT-000198: Spaceship — Other > AI Agents — sources: 4
 - ENT-000130: FreeLLMAPI — AI > AI Assistants — sources: 3
 - ENT-000233: Voicebox - Open Source Voice Cloning Desktop App — AI > AI Voice — sources: 3
 - ENT-000066: immich — Development > DevOps — sources: 3
@@ -130,8 +130,10 @@
 - ENT-000276: Open-Sora — AI > AI Video — sources: 1
 - ENT-000223: OpenKnowledge — AI > AI Assistants — sources: 1
 - ENT-000083: OpenMontage — AI > AI Assistants — sources: 1
+- ENT-000329: OpenResearch — AI > AI Agents — sources: 1
 - ENT-000163: OpenStock — Development — sources: 1
 - ENT-000284: OpenViking — AI > AI Agents — sources: 1
+- ENT-000328: OpenWA — Development > DevOps — sources: 1
 - ENT-000043: OpenWhip — Development — sources: 1
 - ENT-000140: OpenWork — Development — sources: 1
 - ENT-000308: Openship — Development > CLI — sources: 1
@@ -145,6 +147,7 @@
 - ENT-000149: REMIXR — Other — sources: 1
 - ENT-000222: Raise, manage and disburse money with full transparency. - Open Collective — Applications > Mobile App — sources: 1
 - ENT-000179: Remotion — AI > AI Agents — sources: 1
+- ENT-000327: Reticle — AI > AI Assistants — sources: 1
 - ENT-000213: Robert Olejnik — Documents > PDF — sources: 1
 - ENT-000049: RockyVoice — AI > AI Voice — sources: 1
 - ENT-000317: RomsHQ - Download Switch, PlayStation & Xbox ROMs (NSP, PKG, ISO) — Other — sources: 1

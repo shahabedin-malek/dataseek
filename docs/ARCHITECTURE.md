@@ -37,6 +37,9 @@ lets majority voting decide alone; raw engine text is retained as evidence.
   (URL fetch + research only, no re-OCR).
 - `scripts/enrich_candidates.py` — corroborates GitHub-canonical candidate
   resources with repository metadata + README (features, license, language).
+- `scripts/resolve_urls_broader.py` — retries *every* stored URL (not just the
+  top 3) for records that still have no resource; creates one only on a
+  confirmed page-metadata match.
 - `scripts/recompute_consensus.py` — re-reconciles from cached OCR after logic
   changes.
 - `scripts/dedupe.py` — exact (SHA-256) and near (dHash) duplicate detection.

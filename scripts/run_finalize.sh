@@ -42,6 +42,9 @@ for round in 1 2 3; do
   fi
 done
 
+echo "$(date -Is) broader official-site resolution (every stored URL)" >> "$LOG"
+"$PY" -u scripts/resolve_urls_broader.py --max-urls 12 >> "$LOG" 2>&1
+
 echo "$(date -Is) enriching candidate resources (official repo metadata)" >> "$LOG"
 "$PY" -u scripts/enrich_candidates.py >> "$LOG" 2>&1
 

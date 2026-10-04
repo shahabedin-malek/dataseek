@@ -1,13 +1,13 @@
 # DataSeek — Continuation Prompt
 
-Updated: 2026-10-04T01:59:34+00:00
+Updated: 2026-10-04T02:18:30+00:00
 
 ## State
 - Project: `/home/chris/dataseek` · venv: `.venv` (Python 3.12)
 - Source (immutable): `/mnt/private-ai-data/Screenshot `
 - Processing version: `v2_multi_ocr`
 - Records: 907 · processed: 907 · pending: 0
-- Unique resources: 324 · URLs: 1126
+- Unique resources: 327 · URLs: 1126
 - OCR statuses: {'OCR_GOOD': 875, 'OCR_CONFLICTING': 12, 'OCR_NEEDS_VISION': 20}
 - Quality levels: {1: 272, 2: 331, 3: 1, 4: 145, 6: 158}
 - Open errors: 0
@@ -20,7 +20,7 @@ Updated: 2026-10-04T01:59:34+00:00
 - Vercel: https://dataseek-gules.vercel.app (production, public)
 
 ## Exact next action
-- LAST_COMPLETED: IMG-0907
+- LAST_COMPLETED: IMG-0821
 - NEXT: IMG-0002
 - OCR pass complete (907/907). 45 record(s) still NEEDS_RESEARCH and 0 NEEDS_VISION (no verifiable identity / no vision host).
 - Upgrade unresolved records from cached OCR (no re-OCR):

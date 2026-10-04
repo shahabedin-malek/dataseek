@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-10-04T01:59:34+00:00",
+ "generated_at": "2026-10-04T02:18:30+00:00",
  "statistics": {
   "records": 907,
   "v2_processed": 907,
-  "resources": 324,
+  "resources": 327,
   "categories": 7,
   "technologies": 18,
-  "github_repositories": 323,
-  "ai_tools": 177,
-  "verified_resources": 323,
+  "github_repositories": 326,
+  "ai_tools": 179,
+  "verified_resources": 326,
   "urls": 1126,
   "open_errors": 0,
   "category_breakdown": [
    {
     "category": "AI",
-    "count": 177
+    "count": 179
    },
    {
     "category": "Development",
-    "count": 69
+    "count": 70
    },
    {
     "category": "Other",
@@ -169,6 +169,57 @@
    "updated_at": "2026-10-04T00:19:38+00:00"
   },
   {
+   "entity_id": "ENT-000198",
+   "name": "Spaceship",
+   "canonical_name": "https://broseph.ai",
+   "type": "Website",
+   "primary_category": "Other",
+   "subcategory": "AI Agents",
+   "secondary_categories": [
+    "AI"
+   ],
+   "short_description": "broseph.ai for sale | Spaceship.com",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "analytics-local.co",
+    "broseph.ai",
+    "docker-compose.dev",
+    "editor.co",
+    "github.com",
+    "github.com/alphaxiv/openresearch-cli",
+    "https://openresearch.sh/install.sh",
+    "install.sh",
+    "landing.co",
+    "openresearch.sh",
+    "openresearch.sh/download",
+    "playwrght.co",
+    "snapotter.com",
+    "sploitus.com",
+    "yury.ai"
+   ],
+   "github_url": "github.com",
+   "documentation_url": null,
+   "tags": [
+    "Website"
+   ],
+   "features": [],
+   "technologies": [],
+   "source_count": 5,
+   "records": [
+    "IMG-0502",
+    "IMG-0549",
+    "IMG-0816",
+    "IMG-0817",
+    "IMG-0852"
+   ],
+   "quality_level": 4,
+   "updated_at": "2026-10-04T02:15:32+00:00"
+  },
+  {
    "entity_id": "ENT-000209",
    "name": "Buy Me a Coffee",
    "canonical_name": "https://buymeacoffee.com",
@@ -304,50 +355,6 @@
    ],
    "quality_level": 4,
    "updated_at": "2026-10-04T01:02:58+00:00"
-  },
-  {
-   "entity_id": "ENT-000198",
-   "name": "Spaceship",
-   "canonical_name": "https://broseph.ai",
-   "type": "Website",
-   "primary_category": "Other",
-   "subcategory": "AI Agents",
-   "secondary_categories": [
-    "AI"
-   ],
-   "short_description": "broseph.ai for sale | Spaceship.com",
-   "confidence": "MEDIUM",
-   "visibility": "REVIEW_REQUIRED",
-   "license": null,
-   "developer": null,
-   "platforms": null,
-   "urls": [
-    "broseph.ai",
-    "github.com",
-    "github.com/alphaxiv/openresearch-cli",
-    "https://openresearch.sh/install.sh",
-    "install.sh",
-    "openresearch.sh",
-    "openresearch.sh/download",
-    "sploitus.com",
-    "yury.ai"
-   ],
-   "github_url": "github.com",
-   "documentation_url": null,
-   "tags": [
-    "Website"
-   ],
-   "features": [],
-   "technologies": [],
-   "source_count": 4,
-   "records": [
-    "IMG-0502",
-    "IMG-0816",
-    "IMG-0817",
-    "IMG-0852"
-   ],
-   "quality_level": 4,
-   "updated_at": "2026-10-04T00:56:12+00:00"
   },
   {
    "entity_id": "ENT-000130",
@@ -5128,6 +5135,47 @@
    "updated_at": "2026-10-03T23:59:03+00:00"
   },
   {
+   "entity_id": "ENT-000329",
+   "name": "OpenResearch",
+   "canonical_name": "https://openresearch.sh",
+   "type": "Website",
+   "primary_category": "AI",
+   "subcategory": "AI Agents",
+   "secondary_categories": [
+    "Documents",
+    "Open Source"
+   ],
+   "short_description": "OpenResearch — AI research agents and autoresearch",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "OpenResearch.app",
+    "OpenResearch.app/Contents/MacoS/orx",
+    "https://openresearch.sh/install.sh",
+    "install.sh",
+    "openresearch.sh"
+   ],
+   "github_url": null,
+   "documentation_url": null,
+   "tags": [
+    "CLI",
+    "GitHub",
+    "Open Source",
+    "Website"
+   ],
+   "features": [],
+   "technologies": [],
+   "source_count": 1,
+   "records": [
+    "IMG-0821"
+   ],
+   "quality_level": 2,
+   "updated_at": "2026-10-04T02:16:54+00:00"
+  },
+  {
    "entity_id": "ENT-000163",
    "name": "OpenStock",
    "canonical_name": "Open-Dev-Society/OpenStock",
@@ -5206,6 +5254,51 @@
    ],
    "quality_level": 6,
    "updated_at": "2026-10-04T00:35:48+00:00"
+  },
+  {
+   "entity_id": "ENT-000328",
+   "name": "OpenWA",
+   "canonical_name": "https://www.open-wa.org",
+   "type": "Website",
+   "primary_category": "Development",
+   "subcategory": "DevOps",
+   "secondary_categories": [
+    "Open Source"
+   ],
+   "short_description": "OpenWA - Open Source WhatsApp API Gateway",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "docker-compose.dev",
+    "eslint.co",
+    "open-wa.org",
+    "www.open-wa.org"
+   ],
+   "github_url": null,
+   "documentation_url": null,
+   "tags": [
+    "API",
+    "Automation",
+    "CLI",
+    "Docker",
+    "GitHub",
+    "Open Source",
+    "Python",
+    "Security",
+    "Self Hosted",
+    "Website"
+   ],
+   "features": [],
+   "technologies": [],
+   "source_count": 1,
+   "records": [
+    "IMG-0635"
+   ],
+   "quality_level": 2,
+   "updated_at": "2026-10-04T02:16:20+00:00"
   },
   {
    "entity_id": "ENT-000043",
@@ -5725,6 +5818,47 @@
    ],
    "quality_level": 4,
    "updated_at": "2026-10-03T23:59:04+00:00"
+  },
+  {
+   "entity_id": "ENT-000327",
+   "name": "Reticle",
+   "canonical_name": "https://reticle.sh",
+   "type": "Website",
+   "primary_category": "AI",
+   "subcategory": "AI Assistants",
+   "secondary_categories": [
+    "Open Source"
+   ],
+   "short_description": "Reticle · Make your coding agent verify its own work",
+   "confidence": "MEDIUM",
+   "visibility": "REVIEW_REQUIRED",
+   "license": null,
+   "developer": null,
+   "platforms": null,
+   "urls": [
+    "eslint.co",
+    "integration.co",
+    "pre-commit.sh",
+    "reticle.sh"
+   ],
+   "github_url": null,
+   "documentation_url": null,
+   "tags": [
+    "GitHub",
+    "JavaScript",
+    "LLM",
+    "Open Source",
+    "Security",
+    "Website"
+   ],
+   "features": [],
+   "technologies": [],
+   "source_count": 1,
+   "records": [
+    "IMG-0547"
+   ],
+   "quality_level": 2,
+   "updated_at": "2026-10-04T02:15:10+00:00"
   },
   {
    "entity_id": "ENT-000213",
@@ -31027,7 +31161,11 @@
    "ocr_status": "OCR_GOOD",
    "confidence": 81.99,
    "quality_level": 1,
-   "entity": null,
+   "entity": {
+    "entity_id": "ENT-000327",
+    "name": "Reticle",
+    "canonical_name": "https://reticle.sh"
+   },
    "urls": [
     "eslint.co",
     "integration.co",
@@ -31097,7 +31235,11 @@
    "ocr_status": "OCR_GOOD",
    "confidence": 83.64,
    "quality_level": 2,
-   "entity": null,
+   "entity": {
+    "entity_id": "ENT-000198",
+    "name": "Spaceship",
+    "canonical_name": "https://broseph.ai"
+   },
    "urls": [
     "analytics-local.co",
     "docker-compose.dev",
@@ -33931,7 +34073,11 @@
    "ocr_status": "OCR_GOOD",
    "confidence": 83.43,
    "quality_level": 2,
-   "entity": null,
+   "entity": {
+    "entity_id": "ENT-000328",
+    "name": "OpenWA",
+    "canonical_name": "https://www.open-wa.org"
+   },
    "urls": [
     "docker-compose.dev",
     "eslint.co",
@@ -39969,7 +40115,11 @@
    "ocr_status": "OCR_GOOD",
    "confidence": 91.69,
    "quality_level": 2,
-   "entity": null,
+   "entity": {
+    "entity_id": "ENT-000329",
+    "name": "OpenResearch",
+    "canonical_name": "https://openresearch.sh"
+   },
    "urls": [
     "OpenResearch.app",
     "OpenResearch.app/Contents/MacoS/orx",
